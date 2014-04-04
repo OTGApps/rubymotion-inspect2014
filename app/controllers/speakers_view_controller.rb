@@ -4,7 +4,7 @@ class RMISpeakersViewController < UIViewController
 
   def init
     super.tap do
-      @speakers = NSMutableArray.arrayWithContentsOfFile("speakers.plist".resource)
+      @speakers = NSMutableArray.arrayWithContentsOfFile("speakers.plist".resource_path)
       @start_with = 0
     end
   end
