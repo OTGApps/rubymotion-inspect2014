@@ -24,7 +24,7 @@ Teacup::Stylesheet.new(:location) do
     textAlignment: UITextAlignmentCenter,
     numberOfLines: 0,
     lineHeight: 20,
-    text: 'Grand-Place, Brussels'
+    text: 'Fort Mason, San Francisco'
 
   style :dots,
     constraints: [constrain_width(220), constrain_below(:title, 10), :center_x, constrain_height(2)],
@@ -32,9 +32,9 @@ Teacup::Stylesheet.new(:location) do
 
   style :description,
     constraints: [constrain_width(220), constrain_below(:dots, 10), :center_x, constrain_height(224)],
-    font: 'Arvo'.uifont(11),
+    font: 'Arvo'.uifont(14),
     numberOfLines: 0,
-    text: "The conference will be held in an elegant “Maison de Maitre” located right on Brussels' historical square, the Grand-Place.\n\nAs a UNESCO World Heritage Site, the Grand-Place is one of the most beautiful squares of the world, and is also the center of the city, surrounded by hotels, restaurants and bars.\n\nTraditional Belgian food and beverages will be served on-site."
+    text: "The conference will be held at Fort Mason, a former US Army post located in the Marina district of San Francisco. Protected as a National Historic Landmark, Fort Mason is located right on the water, conveniently accessible by car and public transportation, and is just a 10 minute walk from Fisherman's Wharf."
 
   style :title2,
     constraints: [constrain_width(220), :top, :center_x, constrain_height(25)],

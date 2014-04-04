@@ -20,7 +20,7 @@ class RMILocationViewController < UIViewController
     @map.zoomEnabled = false
     @map.scrollEnabled = false
     @map.mapType = MKMapTypeHybrid
-    @map.region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(50.846719, 4.352673), MKCoordinateSpanMake(0.001, 0.001))
+    @map.region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(37.8078, -122.4297), MKCoordinateSpanMake(0.02, 0.02))
 
     @map_height_constraint = Teacup::Constraint.new(@map, :height).equals(100).nslayoutconstraint
     @map.addConstraint(@map_height_constraint)
@@ -58,7 +58,7 @@ class RMILocationViewController < UIViewController
   def mapViewDidFinishLoadingMap(map)
     @pin = MKPointAnnotation.alloc.init
     @pin.coordinate = @map.region.center
-    @pin.title = 'Grand-Place'
+    @pin.title = 'Fort Mason, San Francisco'
     @map.addAnnotation @pin
   end
 
@@ -81,7 +81,7 @@ class RMILocationViewController < UIViewController
   end
 
   def button_tapped(sender)
-    "http://maps.apple.com/?ll=50.846719,4.352673&spn=0.01&q=Grand-Place,%20Brussels,%20Belgium".nsurl.open
+    "http://maps.apple.com/?ll=37.8078,-122.4297&spn=0.01&q=Fort%20Mason,%20San%20Francisco".nsurl.open
   end
 
   def viewDidLayoutSubviews
