@@ -19,9 +19,9 @@ Motion::Project::App.setup do |app|
   end
 
   app.archs['iPhoneOS'] = ['armv7']
-  app.deployment_target = "6.0"
+  app.deployment_target = "7.0"
 
-  app.name = 'Inspect 2013'
+  app.name = 'Inspect 2014'
 
   app.frameworks += %w{MapKit}
 
