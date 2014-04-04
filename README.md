@@ -7,13 +7,16 @@ conference.
 
 ## Getting started
 
-Obviously you will need a working copy of [RubyMotion](http://rubymotion.com)
-(1.34 at the time of writing this) and Xcode with command-line tools installed.
-You'll also need to setup [Cocoapods](http://cocoapods.org/) and Bundler on
+Obviously you will need a working copy of [RubyMotion](http://rubymotion.com) (1.34 at the time of writing this) and Xcode with command-line tools installed. You'll also need to setup [Cocoapods](http://cocoapods.org/) and Bundler on
 your machine.
 
-Once you have all this, simply run `bundle` the first time then `rake` to build
-and launch the simulator (see RubyMotion docs for more informations).
+To run the application:
+
+1. `bundle`
+2. `rake pod:install`
+3. `rake`
+
+See RubyMotion docs for more information.
 
 ## Authors
 
