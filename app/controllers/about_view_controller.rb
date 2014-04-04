@@ -29,7 +29,12 @@ class RMIAboutViewController < UIViewController
         self.open_epic
       end
     end
+
+    self.navigationController.navigationBar.translucent = false
+    self.automaticallyAdjustsScrollViewInsets = false
+    self.edgesForExtendedLayout = UIRectEdgeNone
   end
+
   def show_menu(sender)
     self.navigationController.slideMenuController.toggleMenuAnimated(self)
   end

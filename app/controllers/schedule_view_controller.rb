@@ -36,6 +36,10 @@ class RMIScheduleViewController < UIViewController
       end
     end
     @header_view.buttons.first.selected = true
+
+    self.navigationController.navigationBar.translucent = false
+    self.automaticallyAdjustsScrollViewInsets = false
+    self.edgesForExtendedLayout = UIRectEdgeNone
   end
 
   def show_menu(sender)

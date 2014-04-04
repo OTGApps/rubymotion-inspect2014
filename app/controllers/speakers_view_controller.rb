@@ -16,6 +16,10 @@ class RMISpeakersViewController < UIViewController
     self.view.current_page_index = @start_with
     self.view.contentSize = CGSizeMake(320, 630)
     self.view.datasource = self
+
+    self.navigationController.navigationBar.translucent = false
+    self.automaticallyAdjustsScrollViewInsets = false
+    self.edgesForExtendedLayout = UIRectEdgeNone
   end
 
   def page_at_index(index)

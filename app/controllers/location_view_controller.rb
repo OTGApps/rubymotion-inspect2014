@@ -49,6 +49,10 @@ class RMILocationViewController < UIViewController
       subview(UIImageView, :dots)
       subview(UILabel, :description)
     end
+
+    self.navigationController.navigationBar.translucent = false
+    self.automaticallyAdjustsScrollViewInsets = false
+    self.edgesForExtendedLayout = UIRectEdgeNone
   end
 
   def show_menu(sender)
