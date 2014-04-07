@@ -10,3 +10,4 @@ gem 'afmotion', '~> 2.1.0'
 
 # Development
 gem 'awesome_print_motion'
+gem "bubble-wrap", "~> 1.5.0"
