@@ -10,4 +10,4 @@ gem 'ProMotion'
 
 # Development
 gem 'awesome_print_motion'
-gem "bubble-wrap", "~> 1.5.0"
+gem "bubble-wrap", "~> 1.5.0", :require => ['bubble-wrap/core']
