@@ -1,18 +1,7 @@
 # -*- encoding : utf-8 -*-
-class RMIPartyViewController < UIViewController
+class RMIPartyViewController < GenericScreen
   stylesheet :location
-
-  def init
-    super.tap do
-      self.navigationItem.title = "The After-Party"
-      self.navigationItem.leftBarButtonItem = UIBarButtonItem.alloc.initWithImage(
-        'menuicon.png'.uiimage,
-        style: UIBarButtonItemStylePlain,
-        target: self,
-        action: "show_menu:"
-      )
-    end
-  end
+  title 'The After-Party'
 
   layout :root do |v|
     @map = subview(MKMapView, :map)
@@ -54,10 +43,6 @@ class RMIPartyViewController < UIViewController
     self.navigationController.navigationBar.translucent = false
     self.automaticallyAdjustsScrollViewInsets = false
     self.edgesForExtendedLayout = UIRectEdgeNone
-  end
-
-  def show_menu(sender)
-    App.delegate.root_vc.presentMenuViewController
   end
 
   def mapViewDidFinishLoadingMap(map)

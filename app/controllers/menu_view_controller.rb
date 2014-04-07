@@ -4,7 +4,7 @@ class RMIMenuViewController < UIViewController
 
   layout :root do
     subview(UIButton.custom, :talks).on(:touch) do
-      App.delegate.root_vc.contentViewController = InspectNavController.alloc.initWithRootViewController(RMIScheduleViewController.alloc.init(:talks)) unless self.current == :talks
+      App.delegate.root_vc.contentViewController = InspectNavController.alloc.initWithRootViewController(RMIScheduleViewController.new(schedule_name: :talks)) unless self.current == :talks
       App.delegate.root_vc.hideMenuViewController
       self.current = :talks
     end

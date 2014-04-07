@@ -10,7 +10,7 @@ class AppDelegate < PM::Delegate
     menu = RMIMenuViewController.new
     menu.current = :talks
 
-    self.root_vc = REFrostedViewController.alloc.initWithContentViewController(InspectNavController.alloc.initWithRootViewController(RMIScheduleViewController.alloc.init(:talks)), menuViewController:menu)
+    self.root_vc = REFrostedViewController.alloc.initWithContentViewController(InspectNavController.alloc.initWithRootViewController(RMIScheduleViewController.new(schedule_name: :talks)), menuViewController:menu)
     self.root_vc.direction = REFrostedViewControllerDirectionLeft
     self.root_vc.menuViewSize = [(Device.screen.width / 2) + 30, 0]
 

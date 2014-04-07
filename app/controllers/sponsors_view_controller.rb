@@ -1,18 +1,7 @@
 # -*- encoding : utf-8 -*-
-class RMISponsorsViewController < UIViewController
+class RMISponsorsViewController < GenericScreen
   stylesheet :sponsors
-
-  def init
-    super.tap do
-      self.navigationItem.title = "Our sponsors"
-      self.navigationItem.leftBarButtonItem = UIBarButtonItem.alloc.initWithImage(
-        'menuicon.png'.uiimage,
-        style: UIBarButtonItemStylePlain,
-        target: self,
-        action: "show_menu:"
-      )
-    end
-  end
+  title 'Our sponsors'
 
   def sponsor(tag, url)
     view = subview(UIImageView, tag)

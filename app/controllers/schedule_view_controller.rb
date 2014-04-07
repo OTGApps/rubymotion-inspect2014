@@ -1,20 +1,26 @@
 # -*- encoding : utf-8 -*-
-class RMIScheduleViewController < UIViewController
+class RMIScheduleViewController < GenericScreen
+  attr_accessor :schedule_name
   stylesheet :schedule_screen
+  title "Talks"
+
+  def on_init
+    super
+    # @schedule_name = schedule
+    @current_day = 0
+    load_data
+    "talks_cached".add_observer(self, :reload_talks)
+  end
 
   def init(schedule)
     super().tap do
       self.title = "Talks"
-      @schedule_name = schedule
-      @current_day = 0
-      load_data
       self.navigationItem.leftBarButtonItem = UIBarButtonItem.alloc.initWithImage(
         'menuicon.png'.uiimage,
         style: UIBarButtonItemStylePlain,
         target: self,
         action: "show_menu:"
       )
-      "talks_cached".add_observer(self, :reload_talks)
     end
   end
 

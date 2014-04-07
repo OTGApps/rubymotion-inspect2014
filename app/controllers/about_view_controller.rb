@@ -1,16 +1,7 @@
 # -*- encoding : utf-8 -*-
-class RMIAboutViewController < PM::Screen
+class RMIAboutViewController < GenericScreen
   stylesheet :about
   title 'About'
-
-  def on_init
-    set_nav_bar_button :left, {
-      target: App.delegate,
-      image: 'menuicon.png'.uiimage,
-      action: :show_menu,
-      accessibility_label: "Menu"
-    }
-  end
 
   layout :root do
     @scroll = subview(UIScrollView, :content) do
