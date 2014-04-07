@@ -17,7 +17,7 @@ Teacup::Stylesheet.new(:menu) do
     backgroundColor: UIColor.clearColor,
     frame: CGRectMake(20, 16, 20, 25),
     font: 'Arvo-Bold'.uifont(25),
-    color: '#f80043'.uicolor,
+    color: Settings.app_color,
     text: '#'
 
   style :title,
@@ -95,4 +95,3 @@ Teacup::Stylesheet.new(:menu) do
     contentHorizontalAlignment: UIControlContentHorizontalAlignmentRight,
     titleEdgeInsets: UIEdgeInsetsMake(0, 0, 0, 20)
 end
-

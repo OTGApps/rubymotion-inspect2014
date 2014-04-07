@@ -1,20 +1,16 @@
-# -*- encoding : utf-8 -*-
-class AppDelegate
-  def application(application, didFinishLaunchingWithOptions:launchOptions)
+class AppDelegate < PM::Delegate
+  # Color from the ribbon in the logo at http://www.rubymotion.com/conference/2014/
+  tint_color Settings.app_color
+
+  def on_load(app, options)
     setup
+    appearance
 
     menu = RMIMenuViewController.new
     menu.current = :talks
     talks = RMITalksController.new
 
-    UINavigationBar.appearance.titleTextAttributes = { UITextAttributeFont => 'Cassannet Regular'.uifont(20) }
-
-    @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
-    root = NVSlideMenuController.alloc.initWithMenuViewController(menu, andContentViewController: talks)
-    #root.panGestureEnabled = false
-    @window.rootViewController = root
-    @window.makeKeyAndVisible
-    true
+    open NVSlideMenuController.alloc.initWithMenuViewController(menu, andContentViewController: talks)
   end
 
   def setup
@@ -32,7 +28,11 @@ class AppDelegate
     end
   end
 
-  def applicationDidBecomeActive(application)
+  def appearance
+    UINavigationBar.appearance.titleTextAttributes = { UITextAttributeFont => 'Cassannet Regular'.uifont(20) }
+  end
+
+  def on_activate
     cache_talks
   end
 
