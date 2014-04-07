@@ -27,7 +27,11 @@ This version was built upon the original #inspect2013 app, but started as a new 
 
 ## Contributing
 
-Fork, Clone, Commit, Push, Pull-Request
+1. Fork it.
+2. Work on a feature branch.
+3. Send a pull request.
+
+*We also like it when people who can't contribute [open an issue](https://github.com/MohawkApps/rubymotion-inspect2014/issues)*
 
 ## License
 
