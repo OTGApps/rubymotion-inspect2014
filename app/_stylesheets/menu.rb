@@ -1,12 +1,9 @@
 # -*- encoding : utf-8 -*-
 Teacup::Stylesheet.new(:menu) do
   style :root,
-    gradient: {
-      colors: ['#7a7a7a'.uicolor, '#414141'.uicolor]
-    }
+    backgroundColor: UIColor.clearColor
 
   style :header,
-    backgroundColor: 'background-menu-header.png'.uiimage.uicolor,
     constraints: [
       :top_left,
       :full_width,
@@ -14,35 +11,32 @@ Teacup::Stylesheet.new(:menu) do
     ]
 
   style :hash,
-    backgroundColor: UIColor.clearColor,
-    frame: CGRectMake(20, 16, 20, 25),
+    frame: CGRectMake(20, 40, 20, 25),
     font: 'Arvo-Bold'.uifont(25),
     color: '#f80043'.uicolor,
     text: '#'
 
   style :title,
-    backgroundColor: UIColor.clearColor,
-    frame: CGRectMake(40, 16, 190, 25),
+    frame: CGRectMake(40, 40, 190, 25),
     font: 'Arvo-Bold'.uifont(25),
-    color: UIColor.whiteColor,
-    text: 'INSPECT 2013'
+    color: UIColor.blackColor,
+    text: 'INSPECT 2014'
 
   style :talks,
-    backgroundColor: 'background-menu.png'.uiimage.uicolor,
     constraints: [
       :full_width,
       constrain_height(43),
-      constrain_below(:header, -4),
+      constrain_below(:header, 10),
     ],
     title: 'TALKS',
     titleFont: 'Cassannet Regular'.uifont(14),
+    titleColor: UIColor.whiteColor,
     image: 'icon-talks.png'.uiimage,
     contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
     imageEdgeInsets: UIEdgeInsetsMake(0, 14, 0, 0),
     titleEdgeInsets: UIEdgeInsetsMake(0, 24, 0, 0)
 
   style :location,
-    backgroundColor: 'background-menu.png'.uiimage.uicolor,
     constraints: [
       :full_width,
       constrain_height(43),
@@ -50,13 +44,13 @@ Teacup::Stylesheet.new(:menu) do
     ],
     title: 'LOCATION',
     titleFont: 'Cassannet Regular'.uifont(14),
+    titleColor: UIColor.whiteColor,
     image: 'icon-location.png'.uiimage,
     contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
     imageEdgeInsets: UIEdgeInsetsMake(0, 10, 0, 0),
     titleEdgeInsets: UIEdgeInsetsMake(0, 20, 0, 0)
 
   style :party,
-    backgroundColor: 'background-menu.png'.uiimage.uicolor,
     constraints: [
       :full_width,
       constrain_height(43),
@@ -64,6 +58,7 @@ Teacup::Stylesheet.new(:menu) do
     ],
     title: 'PARTY',
     titleFont: 'Cassannet Regular'.uifont(14),
+    titleColor: UIColor.whiteColor,
     image: 'icon-beer.png'.uiimage,
     contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
     imageEdgeInsets: UIEdgeInsetsMake(0, 14, 0, 0),
@@ -95,4 +90,3 @@ Teacup::Stylesheet.new(:menu) do
     contentHorizontalAlignment: UIControlContentHorizontalAlignmentRight,
     titleEdgeInsets: UIEdgeInsetsMake(0, 0, 0, 20)
 end
-
