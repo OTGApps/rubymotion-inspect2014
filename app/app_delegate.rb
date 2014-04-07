@@ -9,7 +9,7 @@ class AppDelegate
 
     UINavigationBar.appearance.titleTextAttributes = { UITextAttributeFont => 'Cassannet Regular'.uifont(20) }
 
-    self.root_vc = REFrostedViewController.alloc.initWithContentViewController(RMITalksController.new, menuViewController:menu)
+    self.root_vc = REFrostedViewController.alloc.initWithContentViewController(InspectNavController.alloc.initWithRootViewController(RMIScheduleViewController.alloc.init(:talks)), menuViewController:menu)
     self.root_vc.direction = REFrostedViewControllerDirectionLeft
 
     @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)

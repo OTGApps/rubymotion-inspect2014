@@ -4,6 +4,7 @@ class RMIScheduleViewController < UIViewController
 
   def init(schedule)
     super().tap do
+      self.title = "Talks"
       @schedule_name = schedule
       @current_day = 0
       load_data
