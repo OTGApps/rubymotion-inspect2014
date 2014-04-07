@@ -7,24 +7,19 @@ Bundler.setup
 Bundler.require
 
 Motion::Project::App.setup do |app|
-
-  app.archs['iPhoneOS'] = ['armv7']
-  app.deployment_target = "7.0"
-
   app.name = 'Inspect 2014'
-
+  app.deployment_target = '7.0'
   app.frameworks += %w{MapKit}
-
   app.identifier = 'com.mohawkapps.inspect'
   app.version = '1'
   app.short_version = '1.0.0'
+  app.prerendered_icon = true
 
   app.pods do
     pod 'NVSlideMenuController'
   end
   app.vendor_project('vendor/MTLabel', :xcode, :target => 'MTLabel', :headers_dir => 'MTLabel')
 
-  app.prerendered_icon = true
   app.development do
     app.entitlements['get-task-allow'] = true
     app.codesign_certificate = "iPhone Developer: Mark Rickert (YA2VZGDX4S)"
