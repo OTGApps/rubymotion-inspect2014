@@ -30,7 +30,6 @@ Motion::Project::App.setup do |app|
 
   app.pods do
     pod 'NVSlideMenuController'
-    pod 'AFNetworking'
   end
   app.vendor_project('vendor/MTLabel', :xcode, :target => 'MTLabel', :headers_dir => 'MTLabel')
 
