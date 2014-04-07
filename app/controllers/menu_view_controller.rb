@@ -38,8 +38,4 @@ class RMIMenuViewController < UIViewController
       self.current = :about
     end
   end
-
-  def shouldAutorotate
-    false
-  end
 end

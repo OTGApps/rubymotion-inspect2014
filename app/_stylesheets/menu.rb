@@ -16,7 +16,7 @@ Teacup::Stylesheet.new(:menu) do
   style :hash,
     frame: CGRectMake(10, 40, 20, 25),
     font: inspect_font,
-    color: '#f80043'.uicolor,
+    color: Settings.app_color,
     text: '#'
 
   style :title,
