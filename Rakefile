@@ -7,16 +7,6 @@ Bundler.setup
 Bundler.require
 
 Motion::Project::App.setup do |app|
-  app.development do
-    app.provisioning_profile = ENV['RM_DEV_PROFILE']
-    app.codesign_certificate = ENV['RM_DEV_CERTIFICATE']
-    app.entitlements['get-task-allow'] = true
-  end
-
-  app.release do
-    app.provisioning_profile = ENV['RM_PUB_PROFILE']
-    app.codesign_certificate = ENV['RM_PUB_CERTIFICATE']
-  end
 
   app.archs['iPhoneOS'] = ['armv7']
   app.deployment_target = "7.0"
@@ -34,4 +24,16 @@ Motion::Project::App.setup do |app|
   app.vendor_project('vendor/MTLabel', :xcode, :target => 'MTLabel', :headers_dir => 'MTLabel')
 
   app.prerendered_icon = true
+  app.development do
+    app.entitlements['get-task-allow'] = true
+    app.codesign_certificate = "iPhone Developer: Mark Rickert (YA2VZGDX4S)"
+    app.provisioning_profile = "../Provisioning/WildcardDevelopment.mobileprovision"
+  end
+
+  app.release do
+    app.info_plist['AppStoreRelease'] = true
+    app.entitlements['get-task-allow'] = false
+    app.codesign_certificate = "iPhone Distribution: Mohawk Apps, LLC (DW9QQZR4ZL)"
+    app.provisioning_profile = "./provisioning/release.mobileprovision"
+  end
 end
