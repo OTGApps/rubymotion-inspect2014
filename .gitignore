@@ -17,3 +17,4 @@ nbproject
 vendor/Pods
 
 xcuserdata
+/vendor/Podfile.lock
