@@ -2,8 +2,7 @@
 
 ## What is it?
 
-*RubyMotion Inspect* is the official app for the RubyMotion Inspect annual
-conference.
+*RubyMotion Inspect* is the official app for the RubyMotion Inspect annual conference.
 
 ## Getting started
 
@@ -18,19 +17,13 @@ To run the application:
 
 See RubyMotion docs for more information.
 
-## Authors
+## Original Authors
 
-### Hugues Lismonde
+This version was built upon the original #inspect2013 app, but started as a new repository. Authors of the original app are:
 
-* http://epic.net
-* http://twitter.com/hlidotbe
-* http://github.com/hlidotbe
-
-### Laurent Sansonetti
-
-* http://hipbyte.com
-* http://twitter.com/lrz
-* http://github.com/lrz
+* [EPIC Agency](http://epic.net)
+* [Hughes Lismonde](http://github.com/hlidotbe)
+* [Laurent Sansonetti](http://github.com/lrz)
 
 ## Contributing
 
