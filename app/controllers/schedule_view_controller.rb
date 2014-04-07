@@ -43,7 +43,7 @@ class RMIScheduleViewController < UIViewController
   end
 
   def show_menu(sender)
-    self.navigationController.slideMenuController.toggleMenuAnimated(self)
+    App.delegate.root_vc.presentMenuViewController
   end
 
   def load_data

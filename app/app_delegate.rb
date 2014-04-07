@@ -1,18 +1,19 @@
-# -*- encoding : utf-8 -*-
 class AppDelegate
+  attr_accessor :root_vc
+
   def application(application, didFinishLaunchingWithOptions:launchOptions)
     setup
 
     menu = RMIMenuViewController.new
     menu.current = :talks
-    talks = RMITalksController.new
 
     UINavigationBar.appearance.titleTextAttributes = { UITextAttributeFont => 'Cassannet Regular'.uifont(20) }
 
+    self.root_vc = REFrostedViewController.alloc.initWithContentViewController(RMITalksController.new, menuViewController:menu)
+    self.root_vc.direction = REFrostedViewControllerDirectionLeft
+
     @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
-    root = NVSlideMenuController.alloc.initWithMenuViewController(menu, andContentViewController: talks)
-    #root.panGestureEnabled = false
-    @window.rootViewController = root
+    @window.rootViewController = self.root_vc
     @window.makeKeyAndVisible
     true
   end
