@@ -1,19 +1,16 @@
 # -*- encoding : utf-8 -*-
-class RMIAboutViewController < UIViewController
+class RMIAboutViewController < PM::Screen
   stylesheet :about
+  title 'About'
 
-  def init
-    super.tap do
-      self.navigationItem.title = "About"
-      self.navigationItem.leftBarButtonItem = UIBarButtonItem.alloc.initWithImage(
-        'menuicon.png'.uiimage,
-        style: UIBarButtonItemStylePlain,
-        target: self,
-        action: "show_menu:"
-      )
-    end
+  def on_init
+    set_nav_bar_button :left, {
+      target: App.delegate,
+      image: 'menuicon.png'.uiimage,
+      action: :show_menu,
+      accessibility_label: "Menu"
+    }
   end
-
 
   layout :root do
     @scroll = subview(UIScrollView, :content) do
@@ -29,14 +26,6 @@ class RMIAboutViewController < UIViewController
         self.open_epic
       end
     end
-
-    self.navigationController.navigationBar.translucent = false
-    self.automaticallyAdjustsScrollViewInsets = false
-    self.edgesForExtendedLayout = UIRectEdgeNone
-  end
-
-  def show_menu(sender)
-    App.delegate.root_vc.presentMenuViewController
   end
 
   def viewDidLayoutSubviews

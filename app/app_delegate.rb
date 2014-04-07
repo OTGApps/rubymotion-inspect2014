@@ -14,7 +14,7 @@ class AppDelegate < PM::Delegate
     self.root_vc.direction = REFrostedViewControllerDirectionLeft
     self.root_vc.menuViewSize = [(Device.screen.width / 2) + 30, 0]
 
-    open self.root_vc 
+    open self.root_vc
   end
 
   def setup
@@ -49,6 +49,10 @@ class AppDelegate < PM::Delegate
         "talks_cached".post_notification
       end
     end
+  end
+
+  def show_menu
+    self.root_vc.presentMenuViewController
   end
 
   #Flurry exception handler
