@@ -10,3 +10,4 @@ gem 'ProMotion'
 
 # Development
 gem 'awesome_print_motion'
+gem "bubble-wrap", "~> 1.5.0"

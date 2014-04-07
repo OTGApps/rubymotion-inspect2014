@@ -11,6 +11,7 @@ GEM
       motion-cocoapods (~> 1.4.0)
       motion-require (>= 0.1)
     awesome_print_motion (0.1.0)
+    bubble-wrap (1.5.0)
     claide (0.5.0)
     cocoapods (0.31.1)
       activesupport (>= 3.2.15, < 4)
@@ -58,6 +59,7 @@ DEPENDENCIES
   ProMotion
   afmotion (~> 2.1.0)
   awesome_print_motion
+  bubble-wrap (~> 1.5.0)
   motion-cocoapods (~> 1.2)
   rake
   sugarcube
