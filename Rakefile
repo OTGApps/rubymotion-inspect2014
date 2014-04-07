@@ -15,8 +15,8 @@ Motion::Project::App.setup do |app|
 
   app.frameworks += %w{MapKit}
 
-  app.identifier = 'net.epic.RubyMotion'
   app.version = app.short_version = "1.0"
+  app.identifier = 'com.mohawkapps.inspect'
 
   app.pods do
     pod 'NVSlideMenuController'
