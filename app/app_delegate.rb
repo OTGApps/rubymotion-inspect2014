@@ -1,4 +1,5 @@
 class AppDelegate < PM::Delegate
+  attr_accessor :root_vc
   # Color from the ribbon in the logo at http://www.rubymotion.com/conference/2014/
   tint_color Settings.app_color
 
@@ -8,9 +9,12 @@ class AppDelegate < PM::Delegate
 
     menu = RMIMenuViewController.new
     menu.current = :talks
-    talks = RMITalksController.new
 
-    open NVSlideMenuController.alloc.initWithMenuViewController(menu, andContentViewController: talks)
+    self.root_vc = REFrostedViewController.alloc.initWithContentViewController(InspectNavController.alloc.initWithRootViewController(RMIScheduleViewController.alloc.init(:talks)), menuViewController:menu)
+    self.root_vc.direction = REFrostedViewControllerDirectionLeft
+    self.root_vc.menuViewSize = [(Device.screen.width / 2) + 30, 0]
+
+    open self.root_vc 
   end
 
   def setup
