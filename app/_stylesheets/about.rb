@@ -18,14 +18,14 @@ Teacup::Stylesheet.new(:about) do
     font: 'Cassannet Regular'.uifont(20),
     textAlignment: UITextAlignmentCenter,
     numberOfLines: 1,
-    text: '#INSPECT BRUSSELS 2013'
+    text: '#INSPECT 2014'
 
   style :about,
     constraints: [constrain_width(220), constrain_below(:title, 10), :center_x, constrain_height(200)],
     font: 'Arvo'.uifont(11),
     textAlignment: UITextAlignmentCenter,
     numberOfLines: 0,
-    text: "A RubyMotion Conference\nwww.rubymotion.com\n\nOrganized by HipByte\ninfo@hipbyte.com\n\nWith the help of:\nMarc Lainez, Stephanie Dijoux, Yannick Schutz\n\nCopyright © HipByte SPRL 2012-2013"
+    text: "A RubyMotion Conference\nwww.rubymotion.com\n\nOrganized by HipByte\ninfo@hipbyte.com\n\nWith the help of:\nMarc Lainez, Stephanie Dijoux, Yannick Schutz, Mark Rickert, Todd Werth, Gant Laborde\n\nCopyright © HipByte SPRL 2012-2014"
 
   tw_image = 'icon-twitter-large.png'.uiimage
 
