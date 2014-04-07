@@ -11,6 +11,7 @@ class AppDelegate
 
     self.root_vc = REFrostedViewController.alloc.initWithContentViewController(InspectNavController.alloc.initWithRootViewController(RMIScheduleViewController.alloc.init(:talks)), menuViewController:menu)
     self.root_vc.direction = REFrostedViewControllerDirectionLeft
+    self.root_vc.menuViewSize = [(Device.screen.width / 2) + 30, 0]
 
     @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
     @window.rootViewController = self.root_vc

@@ -1,5 +1,8 @@
 # -*- encoding : utf-8 -*-
 Teacup::Stylesheet.new(:menu) do
+
+  inspect_font = 'Prada'.uifont(25)
+
   style :root,
     backgroundColor: UIColor.clearColor
 
@@ -11,16 +14,16 @@ Teacup::Stylesheet.new(:menu) do
     ]
 
   style :hash,
-    frame: CGRectMake(20, 40, 20, 25),
-    font: 'Arvo-Bold'.uifont(25),
+    frame: CGRectMake(10, 40, 20, 25),
+    font: inspect_font,
     color: '#f80043'.uicolor,
     text: '#'
 
   style :title,
-    frame: CGRectMake(40, 40, 190, 25),
-    font: 'Arvo-Bold'.uifont(25),
+    frame: CGRectMake(30, 40, 190, 25),
+    font: inspect_font,
     color: UIColor.blackColor,
-    text: 'INSPECT 2014'
+    text: 'inspect 2014'
 
   style :talks,
     constraints: [
@@ -30,7 +33,7 @@ Teacup::Stylesheet.new(:menu) do
     ],
     title: 'TALKS',
     titleFont: 'Cassannet Regular'.uifont(14),
-    titleColor: UIColor.whiteColor,
+    titleColor: UIColor.blackColor,
     image: 'icon-talks.png'.uiimage,
     contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
     imageEdgeInsets: UIEdgeInsetsMake(0, 14, 0, 0),
@@ -44,7 +47,7 @@ Teacup::Stylesheet.new(:menu) do
     ],
     title: 'LOCATION',
     titleFont: 'Cassannet Regular'.uifont(14),
-    titleColor: UIColor.whiteColor,
+    titleColor: UIColor.blackColor,
     image: 'icon-location.png'.uiimage,
     contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
     imageEdgeInsets: UIEdgeInsetsMake(0, 10, 0, 0),
@@ -58,7 +61,7 @@ Teacup::Stylesheet.new(:menu) do
     ],
     title: 'PARTY',
     titleFont: 'Cassannet Regular'.uifont(14),
-    titleColor: UIColor.whiteColor,
+    titleColor: UIColor.blackColor,
     image: 'icon-beer.png'.uiimage,
     contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
     imageEdgeInsets: UIEdgeInsetsMake(0, 14, 0, 0),
