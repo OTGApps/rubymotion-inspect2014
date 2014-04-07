@@ -7,3 +7,6 @@ gem 'rake'
 gem 'rake-hooks'
 gem 'motion-dtrace'
 gem 'afmotion', '~> 2.1.0'
+
+# Development
+gem 'awesome_print_motion'
