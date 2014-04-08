@@ -1,5 +1,4 @@
-# -*- encoding : utf-8 -*-
-class RMISponsorsViewController < GenericScreen
+class SponsorsViewController < GenericScreen
   stylesheet :sponsors
   title 'Our sponsors'
 
@@ -37,10 +36,6 @@ class RMISponsorsViewController < GenericScreen
     self.navigationController.navigationBar.translucent = false
     self.automaticallyAdjustsScrollViewInsets = false
     self.edgesForExtendedLayout = UIRectEdgeNone
-  end
-
-  def show_menu(sender)
-    App.delegate.root_vc.presentMenuViewController
   end
 
   def viewDidLayoutSubviews

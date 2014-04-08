@@ -1,5 +1,4 @@
-# -*- encoding : utf-8 -*-
-class RMILocationViewController < GenericScreen
+class LocationViewController < GenericScreen
   stylesheet :location
   title 'The Location'
 

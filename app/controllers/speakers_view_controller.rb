@@ -1,4 +1,3 @@
-# -*- encoding : utf-8 -*-
 class RMISpeakersViewController < UIViewController
   attr_accessor :start_with
 

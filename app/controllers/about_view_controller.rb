@@ -1,5 +1,4 @@
-# -*- encoding : utf-8 -*-
-class RMIAboutViewController < GenericScreen
+class AboutViewController < GenericScreen
   stylesheet :about
   title 'About'
 

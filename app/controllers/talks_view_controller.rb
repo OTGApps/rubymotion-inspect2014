@@ -1,27 +1,13 @@
-# -*- encoding : utf-8 -*-
-class RMIScheduleViewController < GenericScreen
-  attr_accessor :schedule_name
+class TalksViewController < GenericScreen
   stylesheet :schedule_screen
   title "Talks"
 
   def on_init
     super
-    # @schedule_name = schedule
+    @schedule_name = :talks
     @current_day = 0
     load_data
     "talks_cached".add_observer(self, :reload_talks)
-  end
-
-  def init(schedule)
-    super().tap do
-      self.title = "Talks"
-      self.navigationItem.leftBarButtonItem = UIBarButtonItem.alloc.initWithImage(
-        'menuicon.png'.uiimage,
-        style: UIBarButtonItemStylePlain,
-        target: self,
-        action: "show_menu:"
-      )
-    end
   end
 
   layout do
@@ -47,10 +33,6 @@ class RMIScheduleViewController < GenericScreen
     self.navigationController.navigationBar.translucent = false
     self.automaticallyAdjustsScrollViewInsets = false
     self.edgesForExtendedLayout = UIRectEdgeNone
-  end
-
-  def show_menu(sender)
-    App.delegate.root_vc.presentMenuViewController
   end
 
   def load_data

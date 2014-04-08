@@ -1,5 +1,4 @@
-# -*- encoding : utf-8 -*-
-class RMIPartyViewController < GenericScreen
+class PartyViewController < GenericScreen
   stylesheet :location
   title 'The After-Party'
 
