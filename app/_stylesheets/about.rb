@@ -27,7 +27,7 @@ Teacup::Stylesheet.new(:about) do
     numberOfLines: 0,
     text: "A RubyMotion Conference\nwww.rubymotion.com\n\nOrganized by HipByte\ninfo@hipbyte.com\n\nWith the help of:\nMarc Lainez, Stephanie Dijoux, Yannick Schutz, Mark Rickert, Todd Werth, Gant Laborde\n\nCopyright © HipByte SPRL 2012-2014"
 
-  tw_image = 'icon-twitter-large.png'.uiimage
+  tw_image = 'twitter-about'.uiimage
 
   style :twitter,
     constraints: [

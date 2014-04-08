@@ -8,7 +8,7 @@ class AboutViewController < GenericScreen
       subview(UILabel, :title)
       subview(UILabel, :about)
       subview(UIButton.custom, :twitter).on(:touch) do
-        self.open_twitter
+        open_twitter
       end
       subview(UILabel, :twitter_title)
       subview(UIView, :line)
