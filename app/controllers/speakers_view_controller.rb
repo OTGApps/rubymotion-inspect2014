@@ -1,5 +1,4 @@
-# -*- encoding : utf-8 -*-
-class RMISpeakersViewController < UIViewController
+class SpeakersViewController < UIViewController
   attr_accessor :start_with
 
   def init
@@ -10,7 +9,7 @@ class RMISpeakersViewController < UIViewController
   end
 
   def loadView
-    self.view = RMIVerticalSwipeScrollView.alloc.initWithFrame(
+    self.view = VerticalSwipeScrollView.alloc.initWithFrame(
       CGRectMake(0, 0, 320, 460)
     )
     self.view.current_page_index = @start_with
@@ -24,7 +23,7 @@ class RMISpeakersViewController < UIViewController
 
   def page_at_index(index)
     return if index < 0 || index >= @speakers.length
-    RMISpeakerView.alloc.init(@speakers[index])
+    SpeakerView.alloc.init(@speakers[index])
   end
 
 end

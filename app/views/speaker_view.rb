@@ -1,5 +1,4 @@
-# -*- encoding : utf-8 -*-
-class RMISpeakerView < UIView
+class SpeakerView < UIView
   attr_reader :speaker_image, :speaker_label, :speaker_company_label, :speaker_description_label, :speaker_twitter, :speaker_www
 
   def init(speaker)

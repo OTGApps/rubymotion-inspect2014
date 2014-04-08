@@ -1,22 +1,20 @@
-class AppDelegate
+class AppDelegate < PM::Delegate
   attr_accessor :root_vc
+  # Color from the ribbon in the logo at http://www.rubymotion.com/conference/2014/
+  tint_color Settings.app_color
 
-  def application(application, didFinishLaunchingWithOptions:launchOptions)
+  def on_load(app, options)
     setup
+    appearance
 
-    menu = RMIMenuViewController.new
+    menu = MenuViewController.new
     menu.current = :talks
 
-    UINavigationBar.appearance.titleTextAttributes = { UITextAttributeFont => 'Cassannet Regular'.uifont(20) }
-
-    self.root_vc = REFrostedViewController.alloc.initWithContentViewController(InspectNavController.alloc.initWithRootViewController(RMIScheduleViewController.alloc.init(:talks)), menuViewController:menu)
+    self.root_vc = REFrostedViewController.alloc.initWithContentViewController(InspectNavController.alloc.initWithRootViewController(TalksViewController.new), menuViewController:menu)
     self.root_vc.direction = REFrostedViewControllerDirectionLeft
     self.root_vc.menuViewSize = [(Device.screen.width / 2) + 30, 0]
 
-    @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
-    @window.rootViewController = self.root_vc
-    @window.makeKeyAndVisible
-    true
+    open self.root_vc
   end
 
   def setup
@@ -34,7 +32,11 @@ class AppDelegate
     end
   end
 
-  def applicationDidBecomeActive(application)
+  def appearance
+    UINavigationBar.appearance.titleTextAttributes = { UITextAttributeFont => 'Cassannet Regular'.uifont(20) }
+  end
+
+  def on_activate
     cache_talks
   end
 
@@ -47,6 +49,10 @@ class AppDelegate
         "talks_cached".post_notification
       end
     end
+  end
+
+  def show_menu
+    self.root_vc.presentMenuViewController
   end
 
   #Flurry exception handler

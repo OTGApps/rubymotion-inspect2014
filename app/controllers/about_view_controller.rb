@@ -1,19 +1,6 @@
-# -*- encoding : utf-8 -*-
-class RMIAboutViewController < UIViewController
+class AboutViewController < GenericScreen
   stylesheet :about
-
-  def init
-    super.tap do
-      self.navigationItem.title = "About"
-      self.navigationItem.leftBarButtonItem = UIBarButtonItem.alloc.initWithImage(
-        'menuicon.png'.uiimage,
-        style: UIBarButtonItemStylePlain,
-        target: self,
-        action: "show_menu:"
-      )
-    end
-  end
-
+  title 'About'
 
   layout :root do
     @scroll = subview(UIScrollView, :content) do
@@ -29,14 +16,6 @@ class RMIAboutViewController < UIViewController
         self.open_epic
       end
     end
-
-    self.navigationController.navigationBar.translucent = false
-    self.automaticallyAdjustsScrollViewInsets = false
-    self.edgesForExtendedLayout = UIRectEdgeNone
-  end
-
-  def show_menu(sender)
-    App.delegate.root_vc.presentMenuViewController
   end
 
   def viewDidLayoutSubviews
