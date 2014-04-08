@@ -1,4 +1,4 @@
-class RMIMenuViewController < UIViewController
+class MenuViewController < UIViewController
   stylesheet :menu
   attr_accessor :current
 

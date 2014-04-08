@@ -1,5 +1,4 @@
-# -*- encoding : utf-8 -*-
-class RMIScheduleSpeakerCellView < UITableViewCell
+class ScheduleSpeakerCellView < UITableViewCell
 
   attr_reader :time_label, :title_label, :speaker_label, :speaker_company_label, :speaker_image
 

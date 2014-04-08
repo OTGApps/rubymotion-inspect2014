@@ -17,7 +17,7 @@ class TalksViewController < GenericScreen
     end
     @table_view.dataSource = self
     @table_view.delegate = self
-    @header_view = subview(RMIScheduleHeaderView, :header_view, {days: @days})
+    @header_view = subview(ScheduleHeaderView, :header_view, {days: @days})
     @header_view.buttons.each do |button|
       button.on(:touch) do
         @header_view.clear_selection
@@ -76,7 +76,7 @@ class TalksViewController < GenericScreen
   def tableView(table_view, didSelectRowAtIndexPath: path)
     i = path.indexAtPosition(1)
     return if @current_schedule[i]['type'] == 'break'
-    speakers = RMISpeakersViewController.new
+    speakers = SpeakersViewController.new
     speakers.navigationItem.title = "Speakers"
     speakers.start_with = @current_schedule[i]['speaker_index'].to_i
     self.navigationController.pushViewController(
@@ -90,9 +90,9 @@ class TalksViewController < GenericScreen
   def tableView(table_view, cellForRowAtIndexPath: path)
     item = @current_schedule[path.indexAtPosition(1)]
     if item['type'] == 'break'
-      cell = table_view.dequeueReusableCellWithIdentifier("schedule_break_cell") || RMIScheduleBreakCellView.alloc.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: "schedule_break_cell")
+      cell = table_view.dequeueReusableCellWithIdentifier("schedule_break_cell") || ScheduleBreakCellView.alloc.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: "schedule_break_cell")
     else
-      cell = table_view.dequeueReusableCellWithIdentifier("schedule_speaker_cell") || RMIScheduleSpeakerCellView.alloc.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: "schedule_speaker_cell")
+      cell = table_view.dequeueReusableCellWithIdentifier("schedule_speaker_cell") || ScheduleSpeakerCellView.alloc.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: "schedule_speaker_cell")
     end
     cell.fill(item)
     cell

@@ -7,7 +7,7 @@ class AppDelegate < PM::Delegate
     setup
     appearance
 
-    menu = RMIMenuViewController.new
+    menu = MenuViewController.new
     menu.current = :talks
 
     self.root_vc = REFrostedViewController.alloc.initWithContentViewController(InspectNavController.alloc.initWithRootViewController(TalksViewController.new), menuViewController:menu)

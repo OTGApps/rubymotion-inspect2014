@@ -1,10 +1,9 @@
-# -*- encoding : utf-8 -*-
-class RMIVerticalSwipeScrollView < UIScrollView
+class VerticalSwipeScrollView < UIScrollView
   include SugarCube::Timer
   attr_accessor :current_page_index, :datasource
 
   SCROLL_TRIGGER_HEIGHT = 50
-  
+
   def initWithFrame(frame)
     super.tap do
       self.delegate = self
@@ -14,12 +13,12 @@ class RMIVerticalSwipeScrollView < UIScrollView
       @current_page_index = 0
     end
   end
-  
+
   def datasource=(source)
     @datasource = source
     reload_data
   end
-  
+
   def reload_data
     self.setContentOffset(CGPointZero, animated: false)
     self.subviews.each do |v|
@@ -33,7 +32,7 @@ class RMIVerticalSwipeScrollView < UIScrollView
     self.addSubview @next_page_view if @next_page_view
     self.order_and_size_views
   end
-  
+
   def order_and_size_views
     if @current_page_view
       self.sendSubviewToBack @current_page_view
@@ -48,12 +47,12 @@ class RMIVerticalSwipeScrollView < UIScrollView
       @previous_page_view.frame = CGRectMake(0, -contentSize.height, contentSize.width, contentSize.height)
     end
   end
-  
+
   def scrollViewDidScroll(scroll_view)
     offset_y = scroll_view.contentOffset.y
     @current_page_view.fix_speaker_image(offset_y)
     return unless scroll_view.dragging?
-    
+
     @goto = :none
     if offset_y < 0
       return unless @previous_page_view
@@ -68,7 +67,7 @@ class RMIVerticalSwipeScrollView < UIScrollView
       end
     end
   end
-  
+
   def scrollViewDidEndDragging(scroll_view, willDecelerate: decelerate)
     case @goto
     when :next
@@ -118,5 +117,5 @@ class RMIVerticalSwipeScrollView < UIScrollView
       end
     end
   end
-  
+
 end

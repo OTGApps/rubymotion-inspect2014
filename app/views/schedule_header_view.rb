@@ -1,5 +1,4 @@
-# -*- encoding : utf-8 -*-
-class RMIScheduleHeaderView < UIView
+class ScheduleHeaderView < UIView
   attr_reader :buttons
 
   def initWithFrame(frame)
@@ -8,11 +7,11 @@ class RMIScheduleHeaderView < UIView
       subview(UIImageView, {image: img, frame: CGRectMake(0, 0, img.size.width, img.size.height)})
     end
   end
-  
+
   def clear_selection
     @buttons.each {|button| button.selected = false }
   end
-  
+
   def days=(days)
     @days = days
     if @buttons
@@ -26,7 +25,7 @@ class RMIScheduleHeaderView < UIView
     w = default_image.size.width
     h = default_image.size.height
     offset = (320 - (@days.size * w)) / (@days.size + 1)
-    
+
     @days.each_with_index do |day, i|
       title = "DAY #{i+1} • #{day[1..-1]}TH"
       button = subview(UIButton.custom, {

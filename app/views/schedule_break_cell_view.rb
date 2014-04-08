@@ -1,5 +1,4 @@
-# -*- encoding : utf-8 -*-
-class RMIScheduleBreakCellView < UITableViewCell
+class ScheduleBreakCellView < UITableViewCell
 
   attr_reader :time_label, :title_label, :break_icon
 
