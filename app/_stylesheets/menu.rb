@@ -2,6 +2,7 @@
 Teacup::Stylesheet.new(:menu) do
 
   inspect_font = 'Prada'.uifont(25)
+  sans_14 = 'JosefinSans-Bold'.uifont(14)
 
   style :root,
     backgroundColor: UIColor.clearColor
@@ -32,7 +33,7 @@ Teacup::Stylesheet.new(:menu) do
       constrain_below(:header, 10),
     ],
     title: 'TALKS',
-    titleFont: 'Cassannet Regular'.uifont(14),
+    titleFont: sans_14,
     titleColor: UIColor.blackColor,
     image: 'icon-talks.png'.uiimage,
     contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
@@ -46,7 +47,7 @@ Teacup::Stylesheet.new(:menu) do
       constrain_below(:talks)
     ],
     title: 'LOCATION',
-    titleFont: 'Cassannet Regular'.uifont(14),
+    titleFont: sans_14,
     titleColor: UIColor.blackColor,
     image: 'icon-location.png'.uiimage,
     contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
@@ -60,7 +61,7 @@ Teacup::Stylesheet.new(:menu) do
       constrain_below(:location)
     ],
     title: 'PARTY',
-    titleFont: 'Cassannet Regular'.uifont(14),
+    titleFont: sans_14,
     titleColor: UIColor.blackColor,
     image: 'icon-beer.png'.uiimage,
     contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
@@ -76,7 +77,7 @@ Teacup::Stylesheet.new(:menu) do
       constrain(:bottom).equals(:root, :bottom).minus(90)
     ],
     title: 'Sponsors',
-    titleFont: 'Cassannet Regular'.uifont(14),
+    titleFont: sans_14,
     contentHorizontalAlignment: UIControlContentHorizontalAlignmentRight,
     titleEdgeInsets: UIEdgeInsetsMake(0, 0, 0, 20)
 
@@ -89,7 +90,7 @@ Teacup::Stylesheet.new(:menu) do
       constrain(:bottom).equals(:root, :bottom).minus(45)
     ],
     title: 'About',
-    titleFont: 'Cassannet Regular'.uifont(14),
+    titleFont: sans_14,
     contentHorizontalAlignment: UIControlContentHorizontalAlignmentRight,
     titleEdgeInsets: UIEdgeInsetsMake(0, 0, 0, 20)
 end

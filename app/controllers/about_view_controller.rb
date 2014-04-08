@@ -12,9 +12,17 @@ class AboutViewController < GenericScreen
       end
       subview(UILabel, :twitter_title)
       subview(UIView, :line)
-      subview(UIButton.custom, :epic).on(:touch) do
-        self.open_epic
+      subview(UILabel, :made_by)
+
+      made_by_icons = subview(UIView, :made_by_icons) do
+        subview(UIButton.custom, :mohawk).on(:touch) do
+          open_mohawk
+        end
+        subview(UIButton.custom, :iconoclast).on(:touch) do
+          open_iconoclast
+        end
       end
+
     end
   end
 
@@ -26,7 +34,11 @@ class AboutViewController < GenericScreen
     "https://twitter.com/RubyMotion".nsurl.open
   end
 
-  def open_epic
-    "http://epic.net".nsurl.open
+  def open_mohawk
+    "http://www.mohawkapps.com".nsurl.open
+  end
+
+  def open_iconoclast
+    "http://www.iconoclastlabs.com".nsurl.open
   end
 end
