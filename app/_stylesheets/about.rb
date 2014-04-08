@@ -7,7 +7,7 @@ Teacup::Stylesheet.new(:about) do
     constraints: [:top, :full],
     backgroundColor: UIColor.whiteColor
 
-  rm_image = 'icon-rm.png'.uiimage
+  rm_image = 'logo-rubymotion'.uiimage
 
   style :rubymotion,
     constraints: [constrain_top(20), :center_x, constrain_size(rm_image.size.width, rm_image.size.height)],
