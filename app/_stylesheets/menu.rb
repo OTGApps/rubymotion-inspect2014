@@ -32,7 +32,7 @@ Teacup::Stylesheet.new(:menu) do
       constrain_below(:header, 10),
     ],
     title: 'TALKS',
-    titleFont: 'Cassannet Regular'.uifont(14),
+    titleFont: sans_14,
     titleColor: UIColor.blackColor,
     image: 'icon-talks.png'.uiimage,
     contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
@@ -46,7 +46,7 @@ Teacup::Stylesheet.new(:menu) do
       constrain_below(:talks)
     ],
     title: 'LOCATION',
-    titleFont: 'Cassannet Regular'.uifont(14),
+    titleFont: sans_14,
     titleColor: UIColor.blackColor,
     image: 'icon-location.png'.uiimage,
     contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
@@ -60,7 +60,7 @@ Teacup::Stylesheet.new(:menu) do
       constrain_below(:location)
     ],
     title: 'PARTY',
-    titleFont: 'Cassannet Regular'.uifont(14),
+    titleFont: sans_14,
     titleColor: UIColor.blackColor,
     image: 'icon-beer.png'.uiimage,
     contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,

@@ -6,7 +6,7 @@ Teacup::Stylesheet.new(:schedule_cell) do
     }
 
   style :time,
-    font: 'Arvo-Bold'.uifont(18),
+    font: 'JosefinSans-Bold'.uifont(18),
     text: '00:00',
     textColor: '#535353'.uicolor,
     backgroundColor: UIColor.clearColor,
@@ -15,7 +15,7 @@ Teacup::Stylesheet.new(:schedule_cell) do
 
   style :title,
     backgroundColor: UIColor.clearColor,
-    font: 'Cassannet Regular'.uifont(14),
+    font: 'JosefinSans-Bold'.uifont(14),
     fontColor: '#6a6a6a'.uicolor,
     text: 'Break - Have a cup of coffee',
     frame: CGRectMake(100, 6, 200, 18),
@@ -24,16 +24,16 @@ Teacup::Stylesheet.new(:schedule_cell) do
 
   style :speaker,
     backgroundColor: UIColor.clearColor,
-    font: 'Cassannet Regular'.uifont(14),
+    font: 'JosefinSans-Bold'.uifont(14),
     textColor: '#6a6a6a'.uicolor,
     text: 'Laurent Sansonetti'.upcase,
     frame: CGRectMake(135, 47, 165, 10)
 
   style :speaker_company,
     backgroundColor: UIColor.clearColor,
-    font: 'Cassannet Regular'.uifont(12),
+    font: 'JosefinSans-Bold'.uifont(12),
     textColor: '#6a6a6a'.uicolor,
-    text: 'HipBytes',
+    text: 'HipByte',
     frame: CGRectMake(135, 59, 165, 12)
 
   style :speaker_image,

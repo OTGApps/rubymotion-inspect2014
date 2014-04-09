@@ -1,13 +1,19 @@
 # -*- encoding : utf-8 -*-
 Teacup::Stylesheet.new(:about) do
+  inspect_font = 'Prada'.uifont(25)
+  body_font = 'JosefinSans-Bold'.uifont(14)
+  sans_10 = 'JosefinSans-Bold'.uifont(10)
+  sans_15 = 'JosefinSans-Bold'.uifont(15)
+
   style :root,
     backgroundColor: UIColor.whiteColor
 
   style :content,
-    constraints: [:top, :full],
-    backgroundColor: UIColor.whiteColor
+    width: Device.screen.width,
+    height: Device.screen.height,
+    alwaysBounceVertical: true
 
-  rm_image = 'icon-rm.png'.uiimage
+  rm_image = 'logo-rubymotion'.uiimage
 
   style :rubymotion,
     constraints: [constrain_top(20), :center_x, constrain_size(rm_image.size.width, rm_image.size.height)],
@@ -15,31 +21,31 @@ Teacup::Stylesheet.new(:about) do
 
   style :title,
     constraints: [:full_width, constrain_below(:rubymotion, 10), :center_x, constrain_height(30)],
-    font: 'Cassannet Regular'.uifont(20),
+    font: inspect_font,
     textAlignment: UITextAlignmentCenter,
     numberOfLines: 1,
-    text: '#INSPECT 2014'
+    text: '#inspect 2014'
 
   style :about,
-    constraints: [constrain_width(220), constrain_below(:title, 10), :center_x, constrain_height(200)],
-    font: 'Arvo'.uifont(11),
+    constraints: [constrain_width(Device.screen.width - 40), constrain_below(:title, 10), :center_x, constrain_height(180)],
+    font: body_font,
     textAlignment: UITextAlignmentCenter,
     numberOfLines: 0,
-    text: "A RubyMotion Conference\nwww.rubymotion.com\n\nOrganized by HipByte\ninfo@hipbyte.com\n\nWith the help of:\nMarc Lainez, Stephanie Dijoux, Yannick Schutz, Mark Rickert, Todd Werth, Gant Laborde\n\nCopyright © HipByte SPRL 2012-2014"
+    text: "A RubyMotion Conference\nwww.rubymotion.com\n\nOrganized by HipByte\ninfo@hipbyte.com\n\nWith the help of:\nTodd Werth, Mark Rickert, Gant Laborde\n\nCopyright © HipByte SPRL 2012-2014"
 
-  tw_image = 'icon-twitter-large.png'.uiimage
+  tw_image = 'twitter-about'.uiimage
 
   style :twitter,
     constraints: [
       :center_x,
       constrain_size(tw_image.size.width, tw_image.size.height),
-      constrain_below(:about, 10),
+      constrain_below(:about, 5),
     ],
     image: tw_image
 
   style :twitter_title,
-    constraints: [:full_width, constrain_below(:twitter), :center_x, constrain_height(18)],
-    font: 'Cassannet Regular'.uifont(15),
+    constraints: [:full_width, constrain_below(:twitter, 5), :center_x, constrain_height(18)],
+    font: sans_15,
     textAlignment: UITextAlignmentCenter,
     numberOfLines: 1,
     text: 'FOLLOW US'
@@ -48,18 +54,37 @@ Teacup::Stylesheet.new(:about) do
     constraints: [constrain_below(:twitter_title, 10), constrain_size(220, 1), :center_x],
     backgroundColor: '#c6c6c6'.uicolor
 
-  epic_image = 'icon-epic.png'.uiimage
-  style :epic,
+  style :made_by,
+    backgroundColor: UIColor.whiteColor,
+    constraints: [constrain_below(:twitter_title, 7), constrain_size(60, 10), :center_x],
+    font: sans_10,
+    textAlignment: UITextAlignmentCenter,
+    numberOfLines: 1,
+    text: 'MADE BY'
+
+  style :made_by_icons,
     constraints: [
       :center_x,
-      constrain_size(130, epic_image.size.height),
-      constrain_below(:line, 10),
+      constrain_below(:line, 20),
+      constrain_size(160, 80)
+    ]
+
+  mohawk_image = 'logo_mohawkapps'.uiimage
+  style :mohawk,
+    constraints: [
+      :top,
+      :left,
+      constrain_size(mohawk_image.size.width, mohawk_image.size.height),
     ],
-    font: 'Cassannet Regular'.uifont(15),
-    titleColor: '#808080'.uicolor,
-    title: 'made by',
-    image: epic_image,
-    imageEdgeInsets: UIEdgeInsetsMake(0, 60, 0, 0),
-    titleEdgeInsets: UIEdgeInsetsMake(0, -130, 0, 0)
+    image: mohawk_image
+
+  iconoclast_image = 'logo_iconoclast'.uiimage
+  style :iconoclast,
+    constraints: [
+      :top,
+      :right,
+      constrain_size(iconoclast_image.size.width, iconoclast_image.size.height),
+    ],
+    image: iconoclast_image
 
 end
