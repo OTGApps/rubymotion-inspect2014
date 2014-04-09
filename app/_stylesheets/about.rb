@@ -31,7 +31,7 @@ Teacup::Stylesheet.new(:about) do
     font: body_font,
     textAlignment: UITextAlignmentCenter,
     numberOfLines: 0,
-    text: "A RubyMotion Conference\nwww.rubymotion.com\n\nOrganized by HipByte\ninfo@hipbyte.com\n\nWith the help of:\nTodd Werth, Mark Rickert, Gant Laborde\n\nCopyright © HipByte SPRL 2012-2014"
+    text: "A RubyMotion Conference\nwww.rubymotion.com\n\nOrganized by HipByte & InfiniteRed\ninfo@hipbyte.com\n\nWith the help of:\nMark Rickert, Gant Laborde\n\nCopyright © HipByte SPRL 2012-2014"
 
   tw_image = 'twitter-about'.uiimage
 
