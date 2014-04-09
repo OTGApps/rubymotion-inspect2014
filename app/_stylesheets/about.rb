@@ -1,4 +1,3 @@
-# -*- encoding : utf-8 -*-
 Teacup::Stylesheet.new(:about) do
   inspect_font = 'Prada'.uifont(25)
   body_font = 'JosefinSans-Bold'.uifont(14)

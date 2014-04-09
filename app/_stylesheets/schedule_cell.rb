@@ -1,4 +1,3 @@
-# -*- encoding : utf-8 -*-
 Teacup::Stylesheet.new(:schedule_cell) do
   style :content_view,
     gradient: {
