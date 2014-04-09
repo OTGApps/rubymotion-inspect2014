@@ -52,11 +52,11 @@ Teacup::Stylesheet.new(:schedule_cell) do
 
   style :line,
     frame: CGRectMake(80, 0, 1, 32),
-    backgroundColor: '#c6c6c6'.uicolor
+    backgroundColor: Settings.grey_color
 
   style :line2,
     frame: CGRectMake(80, 0, 1, 80),
-    backgroundColor: '#c6c6c6'.uicolor
+    backgroundColor: Settings.grey_color
 
   style :frame,
     frame: CGRectMake(100, 45, 26, 26),

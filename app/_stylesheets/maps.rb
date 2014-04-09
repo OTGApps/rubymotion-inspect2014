@@ -27,7 +27,7 @@ Teacup::Stylesheet.new :maps do
 
   style :line,
     constraints: [constrain_below(:title, 10), constrain_size(220, 1), :center_x],
-    backgroundColor: '#c6c6c6'.uicolor
+    backgroundColor: Settings.grey_color
 
   style :description, extends: :font_sans_15,
     constraints: [constrain_width(220), constrain_below(:line, 10), :center_x, constrain_height(224)],

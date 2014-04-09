@@ -44,7 +44,7 @@ Teacup::Stylesheet.new(:about) do
 
   style :line,
     constraints: [constrain_below(:twitter_title, 10), constrain_size(220, 1), :center_x],
-    backgroundColor: '#c6c6c6'.uicolor
+    backgroundColor: Settings.grey_color
 
   style :made_by, extends: :font_sans_10,
     backgroundColor: UIColor.whiteColor,
