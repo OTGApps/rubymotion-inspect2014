@@ -13,11 +13,11 @@ class TalksViewController < GenericTableScreen
     "talks_cached".add_observer(self, :reload_talks)
   end
 
-  def will_appear
+  def view_will_appear(animated)
     # We only want to create the views once.
     @view_is_set_up ||= begin
-      layout(self.view.superview) do
-        @header_view = subview(ScheduleHeaderView, :header_view, {days: @days})
+      layout(table_view.superview) do
+        @header_view = subview(ScheduleHeaderView, :header_view, { days: @days })
         @header_view.buttons.each do |button|
           button.on(:touch) do
             @header_view.clear_selection
@@ -34,6 +34,20 @@ class TalksViewController < GenericTableScreen
       table_view.contentInset = UIEdgeInsetsMake(60, 0, 0, 0);
       true
     end
+  end
+
+  def view_did_appear(animated)
+    return unless @header_view
+
+    @header_view.alpha = 0.0
+    table_view.superview.bringSubviewToFront(@header_view) if @header_view
+
+    UIView.animateWithDuration(0.25,
+      animations: lambda {
+         @header_view.alpha = 1.0
+      },
+      completion:nil
+    )
   end
 
   def table_data
@@ -58,7 +72,8 @@ class TalksViewController < GenericTableScreen
       cell_identifier: "schedule_speaker_cell",
       cell_class: ScheduleSpeakerCellView,
       height: 80.0,
-      item: item
+      item: item,
+      action: :tapped_talk
     }
   end
 
@@ -69,6 +84,14 @@ class TalksViewController < GenericTableScreen
       height: 32.0,
       item: item
     }
+  end
+
+  def tapped_talk(args)
+    spk = SpeakersViewController.new
+    spk.navigationItem.title = "Speakers"
+    spk.start_with = args[:cell][:item][:speaker_index]
+
+    open spk
   end
 
   def load_data
@@ -83,26 +106,12 @@ class TalksViewController < GenericTableScreen
     end
     @days = @schedule.keys.reverse
     @current_schedule = @schedule[@days[@current_day]]
-    build_cells
   end
 
   def reload_talks
     load_data
     update_table_data
   end
-
-  #
-  # def tableView(table_view, didSelectRowAtIndexPath: path)
-  #   i = path.indexAtPosition(1)
-  #   return if @current_schedule[i]['type'] == 'break'
-  #   speakers = SpeakersViewController.new
-  #   speakers.navigationItem.title = "Speakers"
-  #   speakers.start_with = @current_schedule[i]['speaker_index'].to_i
-  #   self.navigationController.pushViewController(
-  #     speakers,
-  #     animated: true
-  #   )
-  # end
 
   def scrollViewWillBeginDragging(scrollView)
     @startContentOffset = @lastContentOffset = scrollView.contentOffset.y;
@@ -126,5 +135,4 @@ class TalksViewController < GenericTableScreen
     # @lastContentOffset = currentOffset
 
   end
-
 end
