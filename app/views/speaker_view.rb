@@ -13,8 +13,8 @@ class SpeakerView < UIView
       @content_view.addSubview arrow
       background = UIView.alloc.initWithFrame(CGRectMake(0, 18, 320, 287))
       background.backgroundColor = UIColor.whiteColor
-      dots = UIImageView.alloc.initWithFrame(CGRectMake(52, 48, 215, 2))
-      dots.image = 'dots.png'.uiimage
+      dots = UIView.alloc.initWithFrame(CGRectMake(52, 48, 215, 2))
+      dots.backgroundColor = '#c6c6c6'.uicolor
       background.addSubview dots
       @speaker_label = UILabel.alloc.initWithFrame(CGRectMake(0, 14, 320, 16))
       @speaker_label.font = 'Cassannet Regular'.uifont(15)
