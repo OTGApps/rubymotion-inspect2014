@@ -33,7 +33,7 @@ class ScheduleHeaderView < UIView
         frame: CGRectMake(((i+1) * offset) + (i * w), 20, w, h),
         tag: i
       })
-      button.titleLabel.font = 'Arvo'.uifont(11)
+      button.titleLabel.font = 'JosefinSans-Bold'.uifont(11)
       button.setTitle(title, forState: :normal.uicontrolstate)
       button.setBackgroundImage(default_image, forState: :normal.uicontrolstate)
       button.setTitleColor(UIColor.blackColor, forState: :normal.uicontrolstate)
