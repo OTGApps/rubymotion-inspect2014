@@ -1,5 +1,5 @@
 class PartyViewController < GenericScreen
-  stylesheet :location
+  stylesheet :party
   title 'The After-Party'
 
   layout :root do |v|
@@ -34,9 +34,9 @@ class PartyViewController < GenericScreen
 
     subview(UIImageView, :arrow)
     @scroll = subview(UIScrollView, :content) do
-      subview(MTLabel, :title2)
-      subview(UIImageView, :dots2)
-      subview(UILabel, :description2)
+      subview(MTLabel, :title)
+      subview(UIView, :line)
+      subview(UILabel, :description)
     end
 
     self.navigationController.navigationBar.translucent = false

@@ -1,4 +1,3 @@
-# -*- encoding : utf-8 -*-
 Teacup::Stylesheet.new(:menu) do
 
   inspect_font = 'Prada'.uifont(25)
@@ -69,7 +68,7 @@ Teacup::Stylesheet.new(:menu) do
     titleEdgeInsets: UIEdgeInsetsMake(0, 28, 0, 0)
 
   style :sponsors,
-    backgroundImage: 'button-menu-ticket.png'.uiimage,
+    backgroundImage: 'button-menu-ticket'.uiimage,
     constraints: [
       :left,
       constrain_width(119),
@@ -78,11 +77,11 @@ Teacup::Stylesheet.new(:menu) do
     ],
     title: 'Sponsors',
     titleFont: sans_14,
-    contentHorizontalAlignment: UIControlContentHorizontalAlignmentRight,
-    titleEdgeInsets: UIEdgeInsetsMake(0, 0, 0, 20)
+    contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
+    titleEdgeInsets: UIEdgeInsetsMake(-3, 15, 0, 0)
 
   style :about,
-    backgroundImage: 'button-menu-ticket.png'.uiimage,
+    backgroundImage: 'button-menu-ticket'.uiimage,
     constraints: [
       :left,
       constrain_width(119),
@@ -91,6 +90,6 @@ Teacup::Stylesheet.new(:menu) do
     ],
     title: 'About',
     titleFont: sans_14,
-    contentHorizontalAlignment: UIControlContentHorizontalAlignmentRight,
-    titleEdgeInsets: UIEdgeInsetsMake(0, 0, 0, 20)
+    contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
+    titleEdgeInsets: UIEdgeInsetsMake(-3, 15, 0, 0)
 end
