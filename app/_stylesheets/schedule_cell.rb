@@ -3,7 +3,7 @@ Teacup::Stylesheet.new(:schedule_cell) do
 
   style :content_view,
     gradient: {
-      colors: ['#efefef'.uicolor, '#e1e1e1'.uicolor]
+      colors: ['#ffffff'.uicolor, '#ffffff'.uicolor]
     }
 
   style :time, extends: :font_sans_18,
@@ -41,7 +41,7 @@ Teacup::Stylesheet.new(:schedule_cell) do
 
   style :ticket,
     frame: CGRectMake(312, 0, 8, 80),
-    image: 'cell-ticket'.uiimage
+    image: 'ticket'.uiimage
 
   style :dot,
     frame: CGRectMake(70, 5, 21, 21),

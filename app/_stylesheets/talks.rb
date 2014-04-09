@@ -1,6 +1,6 @@
 Teacup::Stylesheet.new(:talks) do
   style :root,
-    backgroundColor: '#f0f0f0'.uicolor,
+    backgroundColor: UIColor.whiteColor,
     constraints: [:full]
 
   style :header_view,
