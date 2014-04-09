@@ -24,7 +24,7 @@ class PartyViewController < GenericScreen
     @open_button_top_constraint = Teacup::Constraint.new(@open_button, :top).equals(@map, :bottom).nslayoutconstraint
     v.addConstraint @open_button_top_constraint
 
-    @open_button.titleLabel.font = 'Arvo'.uifont(11)
+    @open_button.titleLabel.font = 'JosefinSans-Bold'.uifont(11)
     @open_button.setBackgroundImage(default_image, forState: :normal.uicontrolstate)
     @open_button.setTitleColor(UIColor.whiteColor, forState: :normal.uicontrolstate)
 
