@@ -1,8 +1,8 @@
-class ScheduleBreakCellView < UITableViewCell
+class ScheduleBreakCellView < PM::TableViewCell
 
   attr_reader :time_label, :title_label, :break_icon
 
-  def initWithStyle(style, reuseIdentifier: identifier)
+  def initWithStyle(style_name, reuseIdentifier: reuseIdentifier)
     super.tap do
       selectionStyle = UITableViewCellSelectionStyleNone
 
@@ -16,12 +16,12 @@ class ScheduleBreakCellView < UITableViewCell
     end
   end
 
-  def fill(item)
-    @time_label.text = item['time']
-    @title_label.text = item['title']
-    @break_icon.image = item['icon'].uiimage
+  def item=(i)
+    @time_label.text = i['time']
+    @title_label.text = i['title']
+    @break_icon.image = i['icon'].uiimage
   end
-
+  
   def layoutSubviews
     super
     self.contentView.layer.sublayers[0].frame = self.contentView.bounds

@@ -24,8 +24,8 @@ class TalksViewController < GenericTableScreen
             button.selected = true
             @current_day = button.tag
             @current_schedule = @schedule[@days[@current_day]]
-            @table_view.reloadData
-            @table_view.scrollToRowAtIndexPath([0, 0].nsindexpath, atScrollPosition: UITableViewScrollPositionTop, animated: true)
+            update_table_data
+            table_view.scrollToRowAtIndexPath([0, 0].nsindexpath, atScrollPosition: UITableViewScrollPositionTop, animated: true)
           end
         end
         @header_view.buttons.first.selected = true
@@ -36,45 +36,40 @@ class TalksViewController < GenericTableScreen
     end
   end
 
-
   def table_data
     [{
-      title: nil,
-      cells: [
-        { title: "First"},
-        { title: "Washington"},
-        { title: "Oregon"},
-        { title: "Washington"},
-        { title: "Oregon"},
-        { title: "Washington"},
-        { title: "Oregon"},
-        { title: "Washington"},
-        { title: "Oregon"},
-        { title: "Washington"},
-        { title: "Oregon"},
-        { title: "Washington"},
-        { title: "Oregon"},
-        { title: "Washington"},
-        { title: "Oregon"},
-        { title: "Washington"},
-        { title: "Oregon"},
-        { title: "Washington"},
-        { title: "Oregon"},
-        { title: "Washington"},
-        { title: "Oregon"},
-        { title: "Washington"},
-        { title: "Oregon"},
-        { title: "Washington"},
-        { title: "Oregon"},
-        { title: "Washington"},
-        { title: "Oregon"},
-        { title: "Washington"},
-        { title: "Oregon"},
-        { title: "Washington"},
-        { title: "Oregon"},
-        { title: "Washington"},
-      ]
+      cells: build_cells
     }]
+  end
+
+  def build_cells
+    return [] unless @current_schedule
+
+    cells = []
+    @current_schedule.each do |item|
+      cell = (item['type'] == 'break') ? break_cell(item) : talk_cell(item)
+      cells << cell
+    end
+    cells
+  end
+
+  def talk_cell(item)
+    {
+      title: "Talk",
+      subtitle: item['title'],
+      cell_identifier: "schedule_speaker_cell",
+      cell_class: PM::TableViewCell,
+    }
+  end
+
+  def break_cell(item)
+    {
+      cell_identifier: "schedule_break_cell",
+      cell_class: ScheduleBreakCellView,
+      time_label: item['time'],
+      title_label: item['title'],
+      break_icon: item['icon']
+    }
   end
 
   def load_data
@@ -89,16 +84,18 @@ class TalksViewController < GenericTableScreen
     end
     @days = @schedule.keys.reverse
     @current_schedule = @schedule[@days[@current_day]]
+    build_cells
   end
-  #
-  # def reload_talks
-  #   load_data
-  #   @table_view.reloadData
-  # end
-  #
-  # def viewDidUnload
-  #   "talks_cached".remove_observer(self)
-  # end
+
+  def reload_talks
+    load_data
+    update_table_data
+  end
+
+  def viewDidUnload
+    "talks_cached".remove_observer(self)
+  end
+
   #
   # #{{{ Table view delegate
   # def tableView(table_view, heightForRowAtIndexPath: path)
@@ -128,7 +125,6 @@ class TalksViewController < GenericTableScreen
   # end
   # #}}}
   #
-  # #{{{ Table view datasource
   # def tableView(table_view, cellForRowAtIndexPath: path)
   #   item = @current_schedule[path.indexAtPosition(1)]
   #   if item['type'] == 'break'
