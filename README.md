@@ -1,4 +1,4 @@
-# RubyMotion Inspect
+# RubyMotion Inspect [![Code Climate](https://codeclimate.com/github/MohawkApps/rubymotion-inspect2014.png)](https://codeclimate.com/github/MohawkApps/rubymotion-inspect2014)
 
 ## What is it?
 
