@@ -10,7 +10,7 @@ class TalksViewController < GenericTableScreen
     @schedule_name = :talks
     @current_day = 0
     load_data
-    # "talks_cached".add_observer(self, :reload_talks)
+    "talks_cached".add_observer(self, :reload_talks)
   end
 
   def will_appear
@@ -31,7 +31,7 @@ class TalksViewController < GenericTableScreen
         @header_view.buttons.first.selected = true
       end
 
-      table_view.contentInset = UIEdgeInsetsMake(65, 0, 0, 0);
+      table_view.contentInset = UIEdgeInsetsMake(60, 0, 0, 0);
       true
     end
   end
@@ -55,10 +55,10 @@ class TalksViewController < GenericTableScreen
 
   def talk_cell(item)
     {
-      title: "Talk",
-      subtitle: item['title'],
       cell_identifier: "schedule_speaker_cell",
-      cell_class: PM::TableViewCell,
+      cell_class: ScheduleSpeakerCellView,
+      height: 80.0,
+      item: item
     }
   end
 
@@ -66,9 +66,8 @@ class TalksViewController < GenericTableScreen
     {
       cell_identifier: "schedule_break_cell",
       cell_class: ScheduleBreakCellView,
-      time_label: item['time'],
-      title_label: item['title'],
-      break_icon: item['icon']
+      height: 32.0,
+      item: item
     }
   end
 
@@ -97,21 +96,6 @@ class TalksViewController < GenericTableScreen
   end
 
   #
-  # #{{{ Table view delegate
-  # def tableView(table_view, heightForRowAtIndexPath: path)
-  #   i = path.indexAtPosition(1)
-  #   if @current_schedule[i]['type'] == 'break'
-  #     32.0
-  #   else
-  #     80.0
-  #   end
-  # end
-  #
-  # def tableView(tableView, heightForFooterInSection:section)
-  #    # This will create a "invisible" footer
-  #    return 0.01
-  # end
-  #
   # def tableView(table_view, didSelectRowAtIndexPath: path)
   #   i = path.indexAtPosition(1)
   #   return if @current_schedule[i]['type'] == 'break'
@@ -123,33 +107,6 @@ class TalksViewController < GenericTableScreen
   #     animated: true
   #   )
   # end
-  # #}}}
-  #
-  # def tableView(table_view, cellForRowAtIndexPath: path)
-  #   item = @current_schedule[path.indexAtPosition(1)]
-  #   if item['type'] == 'break'
-  #     cell = table_view.dequeueReusableCellWithIdentifier("schedule_break_cell") || ScheduleBreakCellView.alloc.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: "schedule_break_cell")
-  #   else
-  #     cell = table_view.dequeueReusableCellWithIdentifier("schedule_speaker_cell") || ScheduleSpeakerCellView.alloc.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier: "schedule_speaker_cell")
-  #   end
-  #   cell.fill(item)
-  #   cell
-  # end
-  #
-  # def tableView(table_view, numberOfRowsInSection: section)
-  #   @current_schedule.size
-  # end
-  #
-  # #def tableView(table_view, willDeselectRowAtIndexPath: path)
-  # #end
-  #
-  # #def tableView(table_view, willSelectRowAtIndexPath: path)
-  # #end
-  #
-  # def numberOfSectionsInTableView(table_view)
-  #   1
-  # end
-  # #}}}
 
   def scrollViewWillBeginDragging(scrollView)
     @startContentOffset = @lastContentOffset = scrollView.contentOffset.y;
@@ -171,8 +128,6 @@ class TalksViewController < GenericTableScreen
     # currentOffset = scrollView.contentOffset.y
     # differenceFromLast = @lastContentOffset - currentOffset
     # @lastContentOffset = currentOffset
-    #
-    # ap
 
   end
 
