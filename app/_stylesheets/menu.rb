@@ -1,7 +1,7 @@
-# -*- encoding : utf-8 -*-
 Teacup::Stylesheet.new(:menu) do
 
   inspect_font = 'Prada'.uifont(25)
+  sans_14 = 'JosefinSans-Bold'.uifont(14)
 
   style :root,
     backgroundColor: UIColor.clearColor
@@ -68,7 +68,7 @@ Teacup::Stylesheet.new(:menu) do
     titleEdgeInsets: UIEdgeInsetsMake(0, 28, 0, 0)
 
   style :sponsors,
-    backgroundImage: 'button-menu-ticket.png'.uiimage,
+    backgroundImage: 'button-menu-ticket'.uiimage,
     constraints: [
       :left,
       constrain_width(119),
@@ -76,12 +76,12 @@ Teacup::Stylesheet.new(:menu) do
       constrain(:bottom).equals(:root, :bottom).minus(90)
     ],
     title: 'Sponsors',
-    titleFont: 'Cassannet Regular'.uifont(14),
-    contentHorizontalAlignment: UIControlContentHorizontalAlignmentRight,
-    titleEdgeInsets: UIEdgeInsetsMake(0, 0, 0, 20)
+    titleFont: sans_14,
+    contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
+    titleEdgeInsets: UIEdgeInsetsMake(-3, 15, 0, 0)
 
   style :about,
-    backgroundImage: 'button-menu-ticket.png'.uiimage,
+    backgroundImage: 'button-menu-ticket'.uiimage,
     constraints: [
       :left,
       constrain_width(119),
@@ -89,7 +89,7 @@ Teacup::Stylesheet.new(:menu) do
       constrain(:bottom).equals(:root, :bottom).minus(45)
     ],
     title: 'About',
-    titleFont: 'Cassannet Regular'.uifont(14),
-    contentHorizontalAlignment: UIControlContentHorizontalAlignmentRight,
-    titleEdgeInsets: UIEdgeInsetsMake(0, 0, 0, 20)
+    titleFont: sans_14,
+    contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
+    titleEdgeInsets: UIEdgeInsetsMake(-3, 15, 0, 0)
 end
