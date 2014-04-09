@@ -8,4 +8,7 @@ Teacup::Stylesheet.new(:talks) do
     width: '100%',
     top: 60
 
+  style :blur,
+    frame: :full
+
 end
