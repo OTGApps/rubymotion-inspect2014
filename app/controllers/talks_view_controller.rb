@@ -1,5 +1,5 @@
 class TalksViewController < GenericScreen
-  stylesheet :schedule_screen
+  stylesheet :talks
   title "Talks"
 
   def on_init
