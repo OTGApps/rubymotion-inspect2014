@@ -91,10 +91,6 @@ class TalksViewController < GenericTableScreen
     update_table_data
   end
 
-  def viewDidUnload
-    "talks_cached".remove_observer(self)
-  end
-
   #
   # def tableView(table_view, didSelectRowAtIndexPath: path)
   #   i = path.indexAtPosition(1)
