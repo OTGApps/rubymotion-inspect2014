@@ -11,8 +11,12 @@ Teacup::Stylesheet.new(:fonts) do
 
   style :font_sans_10,
     font: 'JosefinSans-Bold'.uifont(10)
+  style :font_sans_12,
+    font: 'JosefinSans-Bold'.uifont(12)
   style :font_sans_15,
     font: 'JosefinSans-Bold'.uifont(15)
+  style :font_sans_18,
+    font: 'JosefinSans-Bold'.uifont(18)
   style :font_sans_20,
     font: 'JosefinSans-Bold'.uifont(20)
 
