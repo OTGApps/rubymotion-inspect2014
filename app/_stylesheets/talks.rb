@@ -1,15 +1,12 @@
-# -*- encoding : utf-8 -*-
-Teacup::Stylesheet.new(:schedule_screen) do
+Teacup::Stylesheet.new(:talks) do
   style :root,
     backgroundColor: '#f0f0f0'.uicolor,
     constraints: [:full]
 
   style :header_view,
-    constraints: [
-      :top_left,
-      :full_width,
-      constrain_height(73)
-    ]
+    height: 73,
+    width: '100%',
+    top: 60
 
   style :table_view,
     separatorStyle: UITableViewCellSeparatorStyleSingleLine,

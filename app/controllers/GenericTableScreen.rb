@@ -1,4 +1,4 @@
-class GenericScreen < PM::Screen
+class GenericTableScreen < PM::TableScreen
   def on_init
     set_nav_bar_button :left, {
       target: App.delegate,

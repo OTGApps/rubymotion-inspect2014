@@ -1,4 +1,4 @@
-class ScheduleSpeakerCellView < UITableViewCell
+class ScheduleSpeakerCellView < PM::TableViewCell
 
   attr_reader :time_label, :title_label, :speaker_label, :speaker_company_label, :speaker_image
 
@@ -23,12 +23,12 @@ class ScheduleSpeakerCellView < UITableViewCell
     end
   end
 
-  def fill(item)
-    @time_label.text = item['time']
-    @title_label.text = item['title']
-    @speaker_label.text = item['speaker']
-    @speaker_company_label.text = item['speaker_company']
-    @speaker_image.image = item['speaker_image'].uiimage.rounded(3)
+  def item=(i)
+    @time_label.text = i['time']
+    @title_label.text = i['title']
+    @speaker_label.text = i['speaker']
+    @speaker_company_label.text = i['speaker_company']
+    @speaker_image.image = i['speaker_image'].uiimage.rounded(3)
   end
 
   def layoutSubviews
