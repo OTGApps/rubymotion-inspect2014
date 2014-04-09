@@ -27,7 +27,15 @@ class AboutViewController < GenericScreen
   end
 
   def viewDidLayoutSubviews
-    @scroll.contentSize = CGSizeMake(320, 500)
+    scrollViewHeight = 0
+
+    @scroll.subviews.each do |view|
+      if scrollViewHeight < view.frame.origin.y + view.frame.size.height
+        scrollViewHeight = view.frame.origin.y + view.frame.size.height
+      end
+    end
+
+    @scroll.contentSize = CGSizeMake(@scroll.frame.size.width, scrollViewHeight)
   end
 
   def open_twitter

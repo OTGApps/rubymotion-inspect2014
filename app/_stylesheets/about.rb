@@ -9,7 +9,9 @@ Teacup::Stylesheet.new(:about) do
     backgroundColor: UIColor.whiteColor
 
   style :content,
-    constraints: [:top, :full]
+    width: Device.screen.width,
+    height: Device.screen.height,
+    alwaysBounceVertical: true
 
   rm_image = 'logo-rubymotion'.uiimage
 
