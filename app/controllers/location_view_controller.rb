@@ -34,7 +34,7 @@ class LocationViewController < GenericScreen
     subview(UIImageView, :arrow)
     @scroll = subview(UIScrollView, :content) do
       subview(MTLabel, :title)
-      subview(UIImageView, :dots)
+      subview(UIView, :line)
       subview(UILabel, :description)
     end
 
