@@ -1,15 +1,11 @@
 Teacup::Stylesheet.new(:about) do
-  inspect_font = 'Prada'.uifont(25)
-  body_font = 'JosefinSans-Bold'.uifont(14)
-  sans_10 = 'JosefinSans-Bold'.uifont(10)
-  sans_15 = 'JosefinSans-Bold'.uifont(15)
+  import :fonts
 
   style :root,
     backgroundColor: UIColor.whiteColor
 
   style :content,
-    width: Device.screen.width,
-    height: Device.screen.height,
+    frame: :full,
     alwaysBounceVertical: true
 
   rm_image = 'logo-rubymotion'.uiimage
@@ -18,16 +14,14 @@ Teacup::Stylesheet.new(:about) do
     constraints: [constrain_top(20), :center_x, constrain_size(rm_image.size.width, rm_image.size.height)],
     image: rm_image
 
-  style :title,
+  style :title, extends: :font_inspect,
     constraints: [:full_width, constrain_below(:rubymotion, 10), :center_x, constrain_height(30)],
-    font: inspect_font,
     textAlignment: UITextAlignmentCenter,
     numberOfLines: 1,
     text: '#inspect 2014'
 
-  style :about,
+  style :about, extends: :font_about,
     constraints: [constrain_width(Device.screen.width - 40), constrain_below(:title, 10), :center_x, constrain_height(180)],
-    font: body_font,
     textAlignment: UITextAlignmentCenter,
     numberOfLines: 0,
     text: "A RubyMotion Conference\nwww.rubymotion.com\n\nOrganized by HipByte & InfiniteRed\ninfo@hipbyte.com\n\nWith the help of:\nMark Rickert, Gant Laborde\n\nCopyright © HipByte SPRL 2012-2014"
@@ -42,9 +36,8 @@ Teacup::Stylesheet.new(:about) do
     ],
     image: tw_image
 
-  style :twitter_title,
+  style :twitter_title, extends: :font_sans_15,
     constraints: [:full_width, constrain_below(:twitter, 5), :center_x, constrain_height(18)],
-    font: sans_15,
     textAlignment: UITextAlignmentCenter,
     numberOfLines: 1,
     text: 'FOLLOW US'
@@ -53,10 +46,9 @@ Teacup::Stylesheet.new(:about) do
     constraints: [constrain_below(:twitter_title, 10), constrain_size(220, 1), :center_x],
     backgroundColor: '#c6c6c6'.uicolor
 
-  style :made_by,
+  style :made_by, extends: :font_sans_10,
     backgroundColor: UIColor.whiteColor,
     constraints: [constrain_below(:twitter_title, 7), constrain_size(60, 10), :center_x],
-    font: sans_10,
     textAlignment: UITextAlignmentCenter,
     numberOfLines: 1,
     text: 'MADE BY'
