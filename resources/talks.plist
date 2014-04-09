@@ -132,7 +132,7 @@
 			<key>title</key>
 			<string>Lunch</string>
 			<key>icon</key>
-			<string>pan.png</string>
+			<string>lunch.png</string>
 		</dict>
 		<dict>
 			<key>type</key>
@@ -385,7 +385,7 @@
 			<key>title</key>
 			<string>Lunch</string>
 			<key>icon</key>
-			<string>pan.png</string>
+			<string>lunch.png</string>
 		</dict>
 		<dict>
 			<key>type</key>
