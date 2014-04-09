@@ -40,7 +40,7 @@ class TalksViewController < GenericTableScreen
     return unless @header_view
 
     @header_view.alpha = 0.0
-    table_view.superview.bringSubviewToFront(@header_view) if @header_view
+    table_view.superview.bringSubviewToFront(@header_view)
 
     UIView.animateWithDuration(0.25,
       animations: lambda {
