@@ -4,11 +4,9 @@ Teacup::Stylesheet.new(:talks) do
     constraints: [:full]
 
   style :header_view,
-    constraints: [
-      :top_left,
-      :full_width,
-      constrain_height(73)
-    ]
+    height: 73,
+    width: '100%',
+    top: 60
 
   style :table_view,
     separatorStyle: UITableViewCellSeparatorStyleSingleLine,
