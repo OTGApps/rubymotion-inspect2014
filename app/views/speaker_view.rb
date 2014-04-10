@@ -14,17 +14,17 @@ class SpeakerView < UIView
       background = UIView.alloc.initWithFrame(CGRectMake(0, 18, 320, 287))
       background.backgroundColor = UIColor.whiteColor
       dots = UIView.alloc.initWithFrame(CGRectMake(52, 48, 215, 2))
-      dots.backgroundColor = '#c6c6c6'.uicolor
+      dots.backgroundColor = Settings.grey_color
       background.addSubview dots
       @speaker_label = UILabel.alloc.initWithFrame(CGRectMake(0, 14, 320, 16))
-      @speaker_label.font = 'Cassannet Regular'.uifont(15)
+      @speaker_label.font = 'JosefinSans-Bold'.uifont(15)
       @speaker_label.text = speaker['name'].upcase
       @speaker_label.textColor = UIColor.blackColor
       @speaker_label.textAlignment = UITextAlignmentCenter
       background.addSubview @speaker_label
       @speaker_company_label = UILabel.alloc.initWithFrame(CGRectMake(0, 37, 320, 15))
       @speaker_company_label.text = speaker['company']
-      @speaker_company_label.font = 'Cassannet Regular'.uifont(15)
+      @speaker_company_label.font = 'JosefinSans-Bold'.uifont(15)
       @speaker_company_label.textColor = UIColor.blackColor
       @speaker_company_label.textAlignment = UITextAlignmentCenter
       @speaker_company_label.backgroundColor = UIColor.whiteColor
@@ -38,7 +38,7 @@ class SpeakerView < UIView
       @speaker_description_label.textColor = UIColor.blackColor
       @speaker_description_label.backgroundColor = UIColor.whiteColor
       @speaker_description_label.numberOfLines = 0
-      @speaker_description_label.font = 'Arvo'.uifont(13)
+      @speaker_description_label.font = 'JosefinSans-Bold'.uifont(13)
       @speaker_description_label.sizeToFit
       background.addSubview @speaker_description_label
 

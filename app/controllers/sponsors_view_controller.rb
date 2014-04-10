@@ -1,6 +1,6 @@
 class SponsorsViewController < GenericScreen
   stylesheet :sponsors
-  title 'Our sponsors'
+  title 'Our Sponsors'
 
   def sponsor(tag, url)
     view = subview(UIImageView, tag)

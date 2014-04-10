@@ -44,7 +44,7 @@ class ScheduleSpeakerCellView < PM::TableViewCell
   end
 
   def self.title_height(title, width)
-    @font ||= 'Cassannet Regular'.uifont(14)
+    @font ||= 'JosefinSans-Bold'.uifont(14)
     c = CGSizeMake(width, 36)
     s = title.sizeWithFont(@font, constrainedToSize: c)
     s.height

@@ -17,7 +17,11 @@ class TalksViewController < GenericTableScreen
     # We only want to create the views once.
     @view_is_set_up ||= begin
       layout(table_view.superview) do
-        @header_view = subview(ScheduleHeaderView, :header_view, { days: @days })
+        @header_view = subview(ScheduleHeaderView, :header_view, { days: @days }) do
+          @blur = subview(UIToolbar, :blur)
+        end
+        @header_view.sendSubviewToBack(@blur)
+
         @header_view.buttons.each do |button|
           button.on(:touch) do
             @header_view.clear_selection
@@ -31,7 +35,7 @@ class TalksViewController < GenericTableScreen
         @header_view.buttons.first.selected = true
       end
 
-      table_view.contentInset = UIEdgeInsetsMake(60, 0, 0, 0);
+      table_view.contentInset = UIEdgeInsetsMake(69, 0, 0, 0);
       true
     end
   end

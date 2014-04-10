@@ -1,7 +1,5 @@
 Teacup::Stylesheet.new(:menu) do
-
-  inspect_font = 'Prada'.uifont(25)
-  sans_14 = 'JosefinSans-Bold'.uifont(14)
+  import :fonts
 
   style :root,
     backgroundColor: UIColor.clearColor
@@ -13,83 +11,68 @@ Teacup::Stylesheet.new(:menu) do
       constrain_height(59)
     ]
 
-  style :hash,
+  style :hash, extends: :font_inspect,
     frame: CGRectMake(10, 40, 20, 25),
-    font: inspect_font,
     color: Settings.app_color,
     text: '#'
 
-  style :title,
+  style :title, extends: :font_inspect,
     frame: CGRectMake(30, 40, 190, 25),
-    font: inspect_font,
     color: UIColor.blackColor,
     text: 'inspect 2014'
 
-  style :talks,
+  style :menu_buttons, extends: :font_menu,
+    titleColor: UIColor.blackColor,
+    contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
+    imageEdgeInsets: UIEdgeInsetsMake(0, 14, 0, 0),
+    titleEdgeInsets: UIEdgeInsetsMake(0, 24, 0, 0),
     constraints: [
       :full_width,
       constrain_height(43),
+    ]
+
+
+  style :talks, extends: :menu_buttons,
+    constraints: [
       constrain_below(:header, 10),
     ],
     title: 'TALKS',
-    titleFont: sans_14,
-    titleColor: UIColor.blackColor,
-    image: 'icon-talks.png'.uiimage,
-    contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
-    imageEdgeInsets: UIEdgeInsetsMake(0, 14, 0, 0),
-    titleEdgeInsets: UIEdgeInsetsMake(0, 24, 0, 0)
+    image: 'menu-talks'.uiimage
 
-  style :location,
+  style :location, extends: :menu_buttons,
     constraints: [
-      :full_width,
-      constrain_height(43),
       constrain_below(:talks)
     ],
     title: 'LOCATION',
-    titleFont: sans_14,
-    titleColor: UIColor.blackColor,
-    image: 'icon-location.png'.uiimage,
-    contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
-    imageEdgeInsets: UIEdgeInsetsMake(0, 10, 0, 0),
-    titleEdgeInsets: UIEdgeInsetsMake(0, 20, 0, 0)
+    image: 'menu-location'.uiimage
 
-  style :party,
+  style :party, extends: :menu_buttons,
     constraints: [
-      :full_width,
-      constrain_height(43),
       constrain_below(:location)
     ],
     title: 'PARTY',
-    titleFont: sans_14,
-    titleColor: UIColor.blackColor,
-    image: 'icon-beer.png'.uiimage,
-    contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
-    imageEdgeInsets: UIEdgeInsetsMake(0, 14, 0, 0),
-    titleEdgeInsets: UIEdgeInsetsMake(0, 28, 0, 0)
+    image: 'menu-beer'.uiimage
 
-  style :sponsors,
+  style :bottom_buttons, extends: :font_menu,
     backgroundImage: 'button-menu-ticket'.uiimage,
+    contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
+    titleEdgeInsets: UIEdgeInsetsMake(-3, 15, 0, 0)
+
+  style :sponsors, extends: :bottom_buttons,
     constraints: [
       :left,
       constrain_width(119),
       constrain_height(36),
       constrain(:bottom).equals(:root, :bottom).minus(90)
     ],
-    title: 'Sponsors',
-    titleFont: sans_14,
-    contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
-    titleEdgeInsets: UIEdgeInsetsMake(-3, 15, 0, 0)
+    title: 'Sponsors'
 
-  style :about,
-    backgroundImage: 'button-menu-ticket'.uiimage,
+  style :about, extends: :bottom_buttons,
     constraints: [
       :left,
       constrain_width(119),
       constrain_height(36),
       constrain(:bottom).equals(:root, :bottom).minus(45)
     ],
-    title: 'About',
-    titleFont: sans_14,
-    contentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft,
-    titleEdgeInsets: UIEdgeInsetsMake(-3, 15, 0, 0)
+    title: 'About'
 end

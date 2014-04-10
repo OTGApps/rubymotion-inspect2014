@@ -33,7 +33,7 @@ class AppDelegate < PM::Delegate
   end
 
   def appearance
-    UINavigationBar.appearance.titleTextAttributes = { UITextAttributeFont => 'Cassannet Regular'.uifont(20) }
+    UINavigationBar.appearance.titleTextAttributes = { UITextAttributeFont => 'Prada'.uifont(20) }
   end
 
   def on_activate
