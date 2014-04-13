@@ -40,6 +40,10 @@ class TalksViewController < GenericTableScreen
     end
   end
 
+  def will_disappear
+    @header_view.alpha = 0.0
+  end
+
   def view_did_appear(animated)
     return unless @header_view
 
