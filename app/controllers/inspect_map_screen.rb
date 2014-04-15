@@ -54,7 +54,7 @@ class InspectMapScreen < GenericScreen
     UIView.animateWithDuration(0.5, animations: lambda do
       if @map_height_constraint.constant == 100
         @map_height_constraint.constant = 360
-        @open_button_top_constraint.constant = -50
+        @open_button_top_constraint.constant = -75
       else
         @map_height_constraint.constant = 100
         @open_button_top_constraint.constant = 0
