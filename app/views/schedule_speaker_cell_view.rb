@@ -4,8 +4,6 @@ class ScheduleSpeakerCellView < PM::TableViewCell
 
   def initWithStyle(style, reuseIdentifier: identifier)
     super.tap do
-      #selectionStyle = UITableViewCellSelectionStyleNone
-
       self.contentView.stylesheet = Teacup::Stylesheet[:schedule_cell]
       layout(self.contentView, :content_view) do
         subview(UIView, :line2)

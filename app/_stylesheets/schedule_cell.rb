@@ -3,32 +3,28 @@ Teacup::Stylesheet.new(:schedule_cell) do
 
   style :content_view,
     gradient: {
-      colors: ['#ffffff'.uicolor, '#ffffff'.uicolor]
+      colors: ['#ffffff'.uicolor]
     }
 
   style :time, extends: :font_sans_18,
     text: '00:00',
     textColor: '#535353'.uicolor,
-    backgroundColor: UIColor.clearColor,
     frame: CGRectMake(0, 0, 80, 32),
     textAlignment: UITextAlignmentCenter
 
   style :title, extends: :font_about,
-    backgroundColor: UIColor.clearColor,
     fontColor: '#6a6a6a'.uicolor,
     text: 'Break',
     frame: CGRectMake(100, 6, 200, 18),
     lineHeight: 14 * 1.1,
     maxNumberOfLines: 2
 
-  style :speaker, extends: :font_about,
-    backgroundColor: UIColor.clearColor,
+  style :speaker, extends: :font_sans_12,
     textColor: '#6a6a6a'.uicolor,
     text: 'Laurent Sansonetti'.upcase,
     frame: CGRectMake(135, 47, 165, 10)
 
   style :speaker_company, extends: :font_sans_12,
-    backgroundColor: UIColor.clearColor,
     textColor: '#6a6a6a'.uicolor,
     frame: CGRectMake(135, 59, 165, 12)
 
