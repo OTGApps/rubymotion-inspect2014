@@ -19,7 +19,7 @@ Teacup::Stylesheet.new(:schedule_cell) do
     lineHeight: 14 * 1.1,
     maxNumberOfLines: 2
 
-  style :speaker, extends: :font_about,
+  style :speaker, extends: :font_sans_12,
     textColor: '#6a6a6a'.uicolor,
     text: 'Laurent Sansonetti'.upcase,
     frame: CGRectMake(135, 47, 165, 10)
