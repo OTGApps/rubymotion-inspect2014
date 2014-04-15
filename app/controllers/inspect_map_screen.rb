@@ -28,7 +28,6 @@ class InspectMapScreen < GenericScreen
       self.button_tapped(self)
     end
 
-    subview(UIImageView, :arrow)
     @scroll = subview(UIScrollView, :content) do
       subview(MTLabel, :title)
       subview(UIView, :line)
