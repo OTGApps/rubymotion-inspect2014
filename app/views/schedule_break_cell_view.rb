@@ -21,7 +21,7 @@ class ScheduleBreakCellView < PM::TableViewCell
     @title_label.text = i['title']
     @break_icon.image = i['icon'].uiimage
   end
-  
+
   def layoutSubviews
     super
     self.contentView.layer.sublayers[0].frame = self.contentView.bounds
