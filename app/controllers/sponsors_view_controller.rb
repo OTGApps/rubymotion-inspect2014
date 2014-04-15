@@ -40,5 +40,8 @@ class SponsorsViewController < GenericScreen
 
   def viewDidLayoutSubviews
     @scroll.contentSize = CGSizeMake(320, 650)
+  def sponsors
+    @sponsors_var ||= NSMutableArray.arrayWithContentsOfFile("sponsors.plist".resource_path)
+  end
   end
 end

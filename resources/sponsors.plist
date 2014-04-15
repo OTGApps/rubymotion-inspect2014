@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Heroku</string>
+			<key>image</key>
+			<string>sponsors/heroku</string>
+			<key>www</key>
+			<string>http://heroku.com</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JetBrains</string>
+			<key>image</key>
+			<string>sponsors/jetbrains</string>
+			<key>www</key>
+			<string>http://jetbrains.com</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Cyrus Innovation</string>
+			<key>image</key>
+			<string>sponsors/cyrus-innovation</string>
+			<key>www</key>
+			<string>http://cyrusinnovation.com</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Nedap</string>
+			<key>image</key>
+			<string>sponsors/nedap</string>
+			<key>www</key>
+			<string>http://nedap.com</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Boxcar</string>
+			<key>image</key>
+			<string>sponsors/boxcar</string>
+			<key>www</key>
+			<string>http://boxcar.io</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Pragmatic Studio</string>
+			<key>image</key>
+			<string>sponsors/pragmatic-studio</string>
+			<key>www</key>
+			<string>http://pragmaticstudio.com</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Belighted</string>
+			<key>image</key>
+			<string>sponsors/belighted</string>
+			<key>www</key>
+			<string>http://belighted.be</string>
+		</dict>
+	</array>
+</plist>
