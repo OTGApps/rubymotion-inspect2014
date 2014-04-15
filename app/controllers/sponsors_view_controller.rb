@@ -29,6 +29,5 @@ class SponsorsViewController < GenericTableScreen
   def sponsors
     @sponsors_var ||= NSMutableArray.arrayWithContentsOfFile("sponsors.plist".resource_path)
   end
-  end
 
 end
