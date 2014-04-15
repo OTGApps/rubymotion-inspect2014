@@ -40,6 +40,10 @@ class TalksViewController < GenericTableScreen
     end
   end
 
+  def will_disappear
+    @header_view.alpha = 0.0
+  end
+
   def view_did_appear(animated)
     return unless @header_view
 
@@ -91,11 +95,7 @@ class TalksViewController < GenericTableScreen
   end
 
   def tapped_talk(args)
-    spk = SpeakersViewController.new
-    spk.navigationItem.title = "Speakers"
-    spk.start_with = args[:cell][:item][:speaker_index]
-
-    open spk
+    open SpeakersViewController.new({speaker: args[:cell][:item][:speaker_index]})
   end
 
   def load_data
