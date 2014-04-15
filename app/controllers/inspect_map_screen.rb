@@ -15,21 +15,19 @@ class InspectMapScreen < GenericScreen
     @map.addGestureRecognizer(@map_tap)
 
     @open_button = subview(UIButton.custom, :open_button)
-    default_image = 'button-ticket-active'.uiimage
-    @open_button.addConstraint Teacup::Constraint.new(@open_button, :width).equals(default_image.size.width).nslayoutconstraint
-    @open_button.addConstraint Teacup::Constraint.new(@open_button, :height).equals(default_image.size.height).nslayoutconstraint
+    @open_button.addConstraint Teacup::Constraint.new(@open_button, :width).equals(184).nslayoutconstraint
+    @open_button.addConstraint Teacup::Constraint.new(@open_button, :height).equals(58).nslayoutconstraint
     @open_button_top_constraint = Teacup::Constraint.new(@open_button, :top).equals(@map, :bottom).nslayoutconstraint
     v.addConstraint @open_button_top_constraint
 
-    @open_button.titleLabel.font = 'JosefinSans-Bold'.uifont(11)
-    @open_button.setBackgroundImage(default_image, forState: :normal.uicontrolstate)
+    @open_button.titleLabel.font = 'JosefinSans-Bold'.uifont(14)
+    @open_button.setBackgroundColor(Settings.app_color)
     @open_button.setTitleColor(UIColor.whiteColor, forState: :normal.uicontrolstate)
 
     @open_button.on(:touch) do
       self.button_tapped(self)
     end
 
-    subview(UIImageView, :arrow)
     @scroll = subview(UIScrollView, :content) do
       subview(MTLabel, :title)
       subview(UIView, :line)
@@ -56,7 +54,7 @@ class InspectMapScreen < GenericScreen
     UIView.animateWithDuration(0.5, animations: lambda do
       if @map_height_constraint.constant == 100
         @map_height_constraint.constant = 360
-        @open_button_top_constraint.constant = -50
+        @open_button_top_constraint.constant = -75
       else
         @map_height_constraint.constant = 100
         @open_button_top_constraint.constant = 0

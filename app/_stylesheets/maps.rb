@@ -7,20 +7,16 @@ Teacup::Stylesheet.new :maps do
   style :map,
     constraints: [:top, :full_width]
 
-  style :arrow,
-    constraints: [:full_width, constrain_height(18), constrain_below(:map).minus(18)],
-    image: 'speaker-arrow'.uiimage
-
   style :open_button,
     constraints: [:center_x],
-    title: 'Open in Map'
+    title: 'Open in Maps'
 
   style :content,
-    constraints: [constrain_below(:arrow), :full_width, constrain(:height).equals(:root, :height).minus(100)],
+    constraints: [constrain_below(:map), :full_width, constrain(:height).equals(:root, :height).minus(100)],
     backgroundColor: UIColor.whiteColor
 
   style :title, extends: :font_sans_20,
-    constraints: [constrain_width(220), :top, :center_x, constrain_height(25)],
+    constraints: [constrain_width(220), constrain_top(15), :center_x, constrain_height(25)],
     textAlignment: UITextAlignmentCenter,
     numberOfLines: 0,
     lineHeight: 20
