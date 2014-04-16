@@ -1,4 +1,4 @@
-class SpeakersViewController < PM::Screen
+class SpeakerViewController < PM::Screen
   attr_accessor :speaker
   stylesheet :speaker
   title 'Speaker'
