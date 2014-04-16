@@ -37,18 +37,7 @@ class AppDelegate < PM::Delegate
   end
 
   def on_activate
-    cache_talks
-  end
-
-  def cache_talks
-    AFMotion::HTTP.get("http://rubymotion.com/conference/talks.plist", q: Time.now.to_i) do |result|
-      if result && result.body
-        path = "talks.plist".document_path
-        path.remove_file! if path.file_exists?
-        NSFileManager.defaultManager.createFileAtPath(path, contents: result.body, attributes: nil)
-        "talks_cached".post_notification
-      end
-    end
+    Networking.cache_data
   end
 
   def show_menu
