@@ -17,7 +17,7 @@ Teacup::Stylesheet.new(:speaker) do
 
   style :speaker_name, extends: :font_sans_18,
     constraints: [:full_width, constrain_below(:speaker_image, 10), :center_x, constrain_height(30)],
-    textAlignment: UITextAlignmentCenter,
+    textAlignment: NSTextAlignmentCenter,
     numberOfLines: 1
 
   style :line,
@@ -27,13 +27,12 @@ Teacup::Stylesheet.new(:speaker) do
   style :speaker_company, extends: :font_sans_14,
     backgroundColor: UIColor.whiteColor,
     constraints: [constrain_below(:speaker_name, 5), :center_x],
-    textAlignment: UITextAlignmentCenter,
+    textAlignment: NSTextAlignmentCenter,
     numberOfLines: 1
 
-  # TODO - Change all UITextAlignment instances to NSTextAlignment
   style :speaker_bio, extends: :font_sans_16,
     constraints: [constrain_below(:speaker_company, 20), constrain_width(220), :center_x],
-    textAlignment: UITextAlignmentLeft,
+    textAlignment: NSTextAlignmentLeft,
     numberOfLines: 0
 
   twitter_image = 'twitter'.uiimage

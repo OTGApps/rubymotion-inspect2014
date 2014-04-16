@@ -19,13 +19,13 @@ Teacup::Stylesheet.new(:about) do
 
   style :title, extends: :font_inspect,
     constraints: [:full_width, constrain_below(:rubymotion, 10), :center_x, constrain_height(30)],
-    textAlignment: UITextAlignmentCenter,
+    textAlignment: NSTextAlignmentCenter,
     numberOfLines: 1,
     text: '#inspect 2014'
 
   style :about, extends: :font_about,
     constraints: [constrain_width(Device.screen.width - 40), constrain_below(:title, 10), :center_x, constrain_height(180)],
-    textAlignment: UITextAlignmentCenter,
+    textAlignment: NSTextAlignmentCenter,
     numberOfLines: 0,
     text: "A RubyMotion Conference\nwww.rubymotion.com\n\nOrganized by HipByte & InfiniteRed\ninfo@hipbyte.com\n\nWith the help of:\nMark Rickert, Gant Laborde\n\nCopyright © HipByte SPRL 2012-2014"
 
@@ -41,7 +41,7 @@ Teacup::Stylesheet.new(:about) do
 
   style :twitter_title, extends: :font_sans_15,
     constraints: [:full_width, constrain_below(:twitter, 5), :center_x, constrain_height(18)],
-    textAlignment: UITextAlignmentCenter,
+    textAlignment: NSTextAlignmentCenter,
     numberOfLines: 1,
     text: 'FOLLOW US'
 
@@ -52,7 +52,7 @@ Teacup::Stylesheet.new(:about) do
   style :made_by, extends: :font_sans_10,
     backgroundColor: UIColor.whiteColor,
     constraints: [constrain_below(:twitter_title, 17), constrain_size(60, 10), :center_x],
-    textAlignment: UITextAlignmentCenter,
+    textAlignment: NSTextAlignmentCenter,
     numberOfLines: 1,
     text: 'MADE BY'
 
