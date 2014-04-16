@@ -40,11 +40,12 @@ class SpeakerViewController < PM::Screen
       @speaker_www.on(:touch) do
         s['www'].nsurl.open
       end
-
-      @scroll.contentSize = CGSizeMake(@content.frame.size.width, @content.frame.size.height + 44)
-
       true
     end
+  end
+
+  def on_appear
+    @scroll.contentSize = CGSizeMake(Device.screen.width, @content.totalHeight)
   end
 
   def speaker_properties
