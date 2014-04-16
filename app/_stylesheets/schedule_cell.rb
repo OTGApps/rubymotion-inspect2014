@@ -10,7 +10,7 @@ Teacup::Stylesheet.new(:schedule_cell) do
     text: '00:00',
     textColor: '#535353'.uicolor,
     frame: CGRectMake(0, 0, 80, 32),
-    textAlignment: UITextAlignmentCenter
+    textAlignment: NSTextAlignmentCenter
 
   style :title, extends: :font_about,
     fontColor: '#6a6a6a'.uicolor,

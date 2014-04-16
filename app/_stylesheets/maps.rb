@@ -17,7 +17,7 @@ Teacup::Stylesheet.new :maps do
 
   style :title, extends: :font_sans_20,
     constraints: [constrain_width(220), constrain_top(15), :center_x, constrain_height(25)],
-    textAlignment: UITextAlignmentCenter,
+    textAlignment: NSTextAlignmentCenter,
     numberOfLines: 0,
     lineHeight: 20
 
