@@ -60,7 +60,6 @@ Teacup::Stylesheet.new(:about) do
   iconoclast_image = 'logo_iconoclast'.uiimage
 
   style :made_by_icons,
-    backgroundColor: UIColor.blueColor,
     constraints: [
       :center_x,
       constrain_below(:line, 20),
