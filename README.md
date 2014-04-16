@@ -1,13 +1,14 @@
 # RubyMotion Inspect [![Code Climate](https://codeclimate.com/github/MohawkApps/rubymotion-inspect2014.png)](https://codeclimate.com/github/MohawkApps/rubymotion-inspect2014)
 
+![App Icon](/resources/Icon@2x.png)
+
 ## What is it?
 
 *RubyMotion Inspect* is the official app for the RubyMotion Inspect annual conference.
 
 ## Getting started
 
-Obviously you will need a working copy of [RubyMotion](http://rubymotion.com) (1.34 at the time of writing this) and Xcode with command-line tools installed. You'll also need to setup [Cocoapods](http://cocoapods.org/) and Bundler on
-your machine.
+You will need a license for [RubyMotion](http://rubymotion.com) and Xcode with command-line tools installed. You'll also need to setup [Cocoapods](http://cocoapods.org/) and Bundler on your machine (beyond the scope of this readme).
 
 To run the application:
 
@@ -15,11 +16,11 @@ To run the application:
 2. `rake pod:install`
 3. `rake`
 
-See RubyMotion docs for more information.
+## Authors
 
 ## Original Authors
 
-This version was built upon the original #inspect2013 app, but started as a new repository. Authors of the original app are:
+This version was built upon the original #inspect2013 app, but started as a new repository and __heavily__ refactored to update to more modern RubyMotion programming techniques and for iOS 7. Authors of the original app are:
 
 * [EPIC Agency](http://epic.net)
 * [Hughes Lismonde](http://github.com/hlidotbe)
