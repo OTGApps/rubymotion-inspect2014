@@ -28,6 +28,7 @@ class AboutViewController < GenericScreen
   end
 
   def on_appear
+    super
     @scroll.contentSize = CGSizeMake(Device.screen.width, @content.totalHeight + 44)
   end
 
