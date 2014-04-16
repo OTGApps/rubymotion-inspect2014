@@ -27,12 +27,9 @@ class AboutViewController < GenericScreen
     end
   end
 
-def will_appear
-  @view_is_set_up ||= begin
-    @scroll.contentSize = CGSizeMake(@content.frame.size.width, @content.frame.size.height - 44)
-    true
+  def on_appear
+    @scroll.contentSize = CGSizeMake(Device.screen.width, @content.totalHeight + 44)
   end
-end
 
   def open_twitter
     "https://twitter.com/RubyMotion".nsurl.open
