@@ -26,9 +26,8 @@ class SpeakerViewController < PM::Screen
 
   def will_appear
     @view_is_set_up ||= begin
-      ap "speaker: #{@speaker}"
       s = speaker_properties
-      ap s
+      ap s if BW.debug?
       @speaker_image.image = s['speaker_image'].uiimage
       @speaker_name.text = s['name']
       @speaker_company.text = " #{s['company']}  "
@@ -41,11 +40,12 @@ class SpeakerViewController < PM::Screen
       @speaker_www.on(:touch) do
         s['www'].nsurl.open
       end
-
-      @scroll.contentSize = CGSizeMake(@content.frame.size.width, @content.frame.size.height + 44)
-
       true
     end
+  end
+
+  def on_appear
+    @scroll.contentSize = CGSizeMake(Device.screen.width, @content.totalHeight)
   end
 
   def speaker_properties

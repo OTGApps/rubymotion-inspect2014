@@ -129,9 +129,9 @@ class TalksViewController < GenericTableScreen
     scrollDirection = (@lastContentOffset > scrollView.contentOffset.y) ? SCROLL_DIRECTION_UP : SCROLL_DIRECTION_DOWN
 
     if scrollDirection == SCROLL_DIRECTION_DOWN
-      ap 'scrolling down'
+      ap 'scrolling down' if BW.debug?
     elsif scrollDirection == SCROLL_DIRECTION_UP
-      ap 'scrolling up'
+      ap 'scrolling up' if BW.debug?
     end
 
     # currentOffset = scrollView.contentOffset.y
