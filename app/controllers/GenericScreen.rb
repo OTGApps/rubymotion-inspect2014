@@ -7,4 +7,16 @@ class GenericScreen < PM::Screen
       accessibility_label: "Menu"
     }
   end
+
+  def on_appear
+    label = UILabel.alloc.initWithFrame([[0,0],[198,44]])
+    label.backgroundColor = :clear.uicolor
+    label.setFont('Prada'.uifont(25))
+    label.textAlignment = UITextAlignmentCenter
+    label.textColor = :black.uicolor
+    label.adjustsFontSizeToFitWidth = true
+    label.text = self.navigationItem.title
+    self.navigationItem.titleView = label
+    self.navigationItem.titleView.origin = [0,0]
+  end
 end
