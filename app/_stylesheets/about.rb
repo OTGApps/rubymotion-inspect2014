@@ -4,9 +4,12 @@ Teacup::Stylesheet.new(:about) do
   style :root,
     backgroundColor: UIColor.whiteColor
 
-  style :content,
+  style :scroll,
     frame: :full,
     alwaysBounceVertical: true
+
+  style :content,
+    frame: :full
 
   rm_image = 'logo-rubymotion'.uiimage
 
@@ -43,24 +46,27 @@ Teacup::Stylesheet.new(:about) do
     text: 'FOLLOW US'
 
   style :line,
-    constraints: [constrain_below(:twitter_title, 10), constrain_size(220, 1), :center_x],
+    constraints: [constrain_below(:twitter_title, 20), constrain_size(220, 1), :center_x],
     backgroundColor: Settings.grey_color
 
   style :made_by, extends: :font_sans_10,
     backgroundColor: UIColor.whiteColor,
-    constraints: [constrain_below(:twitter_title, 7), constrain_size(60, 10), :center_x],
+    constraints: [constrain_below(:twitter_title, 17), constrain_size(60, 10), :center_x],
     textAlignment: UITextAlignmentCenter,
     numberOfLines: 1,
     text: 'MADE BY'
 
+  mohawk_image = 'logo_mohawkapps'.uiimage
+  iconoclast_image = 'logo_iconoclast'.uiimage
+
   style :made_by_icons,
+    backgroundColor: UIColor.blueColor,
     constraints: [
       :center_x,
       constrain_below(:line, 20),
-      constrain_size(160, 80)
+      constrain_size(160, mohawk_image.size.height)
     ]
 
-  mohawk_image = 'logo_mohawkapps'.uiimage
   style :mohawk,
     constraints: [
       :top,
@@ -69,7 +75,6 @@ Teacup::Stylesheet.new(:about) do
     ],
     image: mohawk_image
 
-  iconoclast_image = 'logo_iconoclast'.uiimage
   style :iconoclast,
     constraints: [
       :top,
