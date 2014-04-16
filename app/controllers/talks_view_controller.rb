@@ -95,7 +95,7 @@ class TalksViewController < GenericTableScreen
   end
 
   def tapped_talk(args)
-    open SpeakersViewController.new({speaker: args[:cell][:item][:speaker_index]})
+    open SpeakerViewController.new({speaker: args[:cell][:item][:speaker_index]})
   end
 
   def load_data
