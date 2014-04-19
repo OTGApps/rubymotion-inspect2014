@@ -6,7 +6,7 @@ class SpeakerViewController < PM::Screen
   layout :root do
     @scroll = subview(UIScrollView, :scroll) do
       @content = subview(UIView, :content) do
-        @speaker_image = subview(UIImageView, :speaker_image)
+        @speaker_image = subview(CachedImage, :speaker_image)
         @speaker_name = subview(UILabel, :speaker_name)
 
         @speaker_company_line = subview(UIView, :line)
@@ -28,7 +28,8 @@ class SpeakerViewController < PM::Screen
     @view_is_set_up ||= begin
       s = speaker_properties
       ap s if BW.debug?
-      @speaker_image.image = s['speaker_image'].uiimage
+      @speaker_image.placeholder = 'speaker_placeholder'
+      @speaker_image.set_image s['speaker_image']
       @speaker_name.text = s['name']
       @speaker_company.text = " #{s['company']}  "
       @speaker_bio.text = s['description']
