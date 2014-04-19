@@ -1,7 +1,5 @@
 class CachedImage < UIImageView
-  # TODO - Change this constant after the PR is merged into master.
-  # URL_PREFIX = 'https://raw.githubusercontent.com/MohawkApps/rubymotion-inspect2014/master/'
-  URL_PREFIX = 'https://raw.githubusercontent.com/MohawkApps/rubymotion-inspect2014/speaker-image-caching/'
+  URL_PREFIX = 'https://raw.githubusercontent.com/MohawkApps/rubymotion-inspect2014/master/'
   attr_accessor :placeholder
 
   def set_image(i)
