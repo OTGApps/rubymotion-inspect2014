@@ -6,7 +6,7 @@ class InspectMapScreen < GenericScreen
     @map.zoomEnabled = false
     @map.scrollEnabled = false
     @map.mapType = MKMapTypeHybrid
-    @map.region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(map_data['latitude'], map_data['longitude']), MKCoordinateSpanMake(map_data['span'], map_data['span']))
+    @map.region = MKCoordinateRegionMake(coordinate, MKCoordinateSpanMake(map_data['span'], map_data['span']))
 
     @map_height_constraint = Teacup::Constraint.new(@map, :height).equals(150).nslayoutconstraint
     @map.addConstraint(@map_height_constraint)
@@ -59,8 +59,19 @@ class InspectMapScreen < GenericScreen
     end)
   end
 
+  def coordinate
+    CLLocationCoordinate2DMake(map_data['latitude'], map_data['longitude'])
+  end
+
   def button_tapped(sender)
-    "http://maps.apple.com/?ll=#{map_data['latitude']},#{map_data['longitude']}&spn=#{map_data['span']}&q=#{map_data['pin_title']}".stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding).nsurl.open
+    # Create an MKMapItem to pass to the Maps app
+    coordinate = CLLocationCoordinate2DMake(16.775, -3.009);
+    placemark = MKPlacemark.alloc.initWithCoordinate(coordinate, addressDictionary:nil)
+    map_item = MKMapItem.alloc.initWithPlacemark(placemark)
+    map_item.setName(map_data['place'])
+
+    # Pass the map item to the Maps app
+    map_item.openInMapsWithLaunchOptions(nil)
   end
 
   def viewDidLayoutSubviews
