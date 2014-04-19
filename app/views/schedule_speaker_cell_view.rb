@@ -15,7 +15,7 @@ class ScheduleSpeakerCellView < PM::TableViewCell
         @title_label.resizeToFitText = true
         @speaker_label = subview(UILabel, :speaker)
         @speaker_company_label = subview(UILabel, :speaker_company)
-        @speaker_image = subview(UIImageView, :speaker_image)
+        @speaker_image = subview(CachedImage, :speaker_image)
         subview(UIImageView, :frame)
       end
     end
@@ -26,7 +26,8 @@ class ScheduleSpeakerCellView < PM::TableViewCell
     @title_label.text = i['title']
     @speaker_label.text = i['speaker']
     @speaker_company_label.text = i['speaker_company']
-    @speaker_image.image = i['speaker_image'].uiimage.rounded(3)
+    @speaker_image.placeholder = 'speaker_placeholder_small'
+    @speaker_image.set_image i['speaker_image']
   end
 
   def layoutSubviews
