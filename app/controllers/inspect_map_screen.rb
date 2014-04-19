@@ -38,7 +38,6 @@ class InspectMapScreen < GenericScreen
   def mapViewDidFinishLoadingMap(map)
     @pin = MKPointAnnotation.alloc.init
     @pin.coordinate = @map.region.center
-    @pin.title = map_data['pin_title']
     @map.addAnnotation @pin
   end
 
