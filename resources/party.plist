@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>place</key>
+	<string>Délirium Café</string>
+	<key>pin_title</key>
+	<string>Délirium Café</string>
+	<key>description</key>
+	<string>On Friday night you are invited to an awesome after-party at the Délirium Café.\n\nThe Délirium is known for its long beer list, standing at 2,004 different brands in January 2004 as recorded in the The Guinness Book of Records.\n\nThe bar is located in the small alley called Impasse de la Fidélité, only a couple of hundred metres from the Grand-Place. Don&apos;t miss the Jeanneke Pis statue nearby!</string>
+	<key>latitude</key>
+	<real>50.848418</real>
+	<key>longitude</key>
+	<real>4.353877</real>
+	<key>span</key>
+	<real>0.001</real>
+</dict>
+</plist>
