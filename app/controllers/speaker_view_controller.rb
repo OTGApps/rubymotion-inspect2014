@@ -50,7 +50,16 @@ class SpeakerViewController < PM::Screen
   end
 
   def speaker_properties
-    @speakers ||= NSMutableArray.arrayWithContentsOfFile("speakers.plist".resource_path)
+    path = "speakers.plist"
+    if path.document_path.file_exists?
+      @speakers = NSMutableArray.arrayWithContentsOfFile(path.document_path)
+      unless @speakers
+        @speakers = NSMutableArray.arrayWithContentsOfFile(path.resource_path)
+      end
+    else
+      @speakers = NSMutableArray.arrayWithContentsOfFile(path.resource_path)
+    end
+
     return if @speaker < 0 || @speaker >= @speakers.length
     @speakers[@speaker]
   end

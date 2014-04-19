@@ -29,7 +29,16 @@ class SponsorsViewController < GenericTableScreen
   end
 
   def sponsors
-    @sponsors_var ||= NSMutableArray.arrayWithContentsOfFile("sponsors.plist".resource_path)
+    path = "sponsors.plist"
+    if path.document_path.file_exists?
+      sponsors = NSMutableArray.arrayWithContentsOfFile(path.document_path)
+      unless sponsors
+        sponsors = NSMutableArray.arrayWithContentsOfFile(path.resource_path)
+      end
+    else
+      sponsors = NSMutableArray.arrayWithContentsOfFile(path.resource_path)
+    end
+    sponsors
   end
 
 end

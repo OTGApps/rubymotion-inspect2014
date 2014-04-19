@@ -6,7 +6,7 @@ class ScheduleSpeakerCellView < PM::TableViewCell
     super.tap do
       self.contentView.stylesheet = Teacup::Stylesheet[:schedule_cell]
       layout(self.contentView, :content_view) do
-        subview(UIView, :line2)
+        subview(UIView, :line)
         @dot = subview(UIImageView, :dot)
         subview(UIImageView, :ticket)
         @time_label = subview(UILabel, :time)
@@ -28,6 +28,10 @@ class ScheduleSpeakerCellView < PM::TableViewCell
     @speaker_company_label.text = i['speaker_company']
     @speaker_image.placeholder = 'speaker_placeholder_small'
     @speaker_image.set_image i['speaker_image']
+  end
+
+  def multi_line?
+    @title_label.numberOfLines > 1
   end
 
   def layoutSubviews
