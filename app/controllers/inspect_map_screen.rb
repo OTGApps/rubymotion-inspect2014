@@ -8,7 +8,7 @@ class InspectMapScreen < GenericScreen
     @map.mapType = MKMapTypeHybrid
     @map.region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(lat, lon), MKCoordinateSpanMake(span, span))
 
-    @map_height_constraint = Teacup::Constraint.new(@map, :height).equals(100).nslayoutconstraint
+    @map_height_constraint = Teacup::Constraint.new(@map, :height).equals(150).nslayoutconstraint
     @map.addConstraint(@map_height_constraint)
 
     @map_tap = UITapGestureRecognizer.alloc.initWithTarget(self, action: "map_tapped:")
@@ -33,10 +33,6 @@ class InspectMapScreen < GenericScreen
       subview(UIView, :line)
       subview(UILabel, :description)
     end
-
-    self.navigationController.navigationBar.translucent = false
-    self.automaticallyAdjustsScrollViewInsets = false
-    self.edgesForExtendedLayout = UIRectEdgeNone
   end
 
   def mapViewDidFinishLoadingMap(map)
@@ -52,11 +48,11 @@ class InspectMapScreen < GenericScreen
 
   def map_tapped(sender)
     UIView.animateWithDuration(0.5, animations: lambda do
-      if @map_height_constraint.constant == 100
+      if @map_height_constraint.constant == 150
         @map_height_constraint.constant = 360
         @open_button_top_constraint.constant = -75
       else
-        @map_height_constraint.constant = 100
+        @map_height_constraint.constant = 150
         @open_button_top_constraint.constant = 0
       end
       self.view.setNeedsUpdateConstraints
