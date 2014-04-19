@@ -6,9 +6,9 @@ class InspectMapScreen < GenericScreen
     @map.zoomEnabled = false
     @map.scrollEnabled = false
     @map.mapType = MKMapTypeHybrid
-    @map.region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(lat, lon), MKCoordinateSpanMake(span, span))
+    @map.region = MKCoordinateRegionMake(coordinate, MKCoordinateSpanMake(map_data['span'], map_data['span']))
 
-    @map_height_constraint = Teacup::Constraint.new(@map, :height).equals(100).nslayoutconstraint
+    @map_height_constraint = Teacup::Constraint.new(@map, :height).equals(150).nslayoutconstraint
     @map.addConstraint(@map_height_constraint)
 
     @map_tap = UITapGestureRecognizer.alloc.initWithTarget(self, action: "map_tapped:")
@@ -29,20 +29,15 @@ class InspectMapScreen < GenericScreen
     end
 
     @scroll = subview(UIScrollView, :content) do
-      subview(MTLabel, :title)
+      subview(MTLabel, :title, {text: map_data['place']})
       subview(UIView, :line)
-      subview(UILabel, :description)
+      subview(UILabel, :description, {text:map_data['description'].gsub('\\n', "\n")})
     end
-
-    self.navigationController.navigationBar.translucent = false
-    self.automaticallyAdjustsScrollViewInsets = false
-    self.edgesForExtendedLayout = UIRectEdgeNone
   end
 
   def mapViewDidFinishLoadingMap(map)
     @pin = MKPointAnnotation.alloc.init
     @pin.coordinate = @map.region.center
-    @pin.title = pin_title
     @map.addAnnotation @pin
   end
 
@@ -52,11 +47,11 @@ class InspectMapScreen < GenericScreen
 
   def map_tapped(sender)
     UIView.animateWithDuration(0.5, animations: lambda do
-      if @map_height_constraint.constant == 100
+      if @map_height_constraint.constant == 150
         @map_height_constraint.constant = 360
         @open_button_top_constraint.constant = -75
       else
-        @map_height_constraint.constant = 100
+        @map_height_constraint.constant = 150
         @open_button_top_constraint.constant = 0
       end
       self.view.setNeedsUpdateConstraints
@@ -64,15 +59,37 @@ class InspectMapScreen < GenericScreen
     end)
   end
 
+  def coordinate
+    CLLocationCoordinate2DMake(map_data['latitude'], map_data['longitude'])
+  end
+
   def button_tapped(sender)
-    "http://maps.apple.com/?ll=#{lat},#{lon}&spn=#{span}&q=#{pin_title}".stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding).nsurl.open
+    # Create an MKMapItem to pass to the Maps app
+    coordinate = CLLocationCoordinate2DMake(16.775, -3.009);
+    placemark = MKPlacemark.alloc.initWithCoordinate(coordinate, addressDictionary:nil)
+    map_item = MKMapItem.alloc.initWithPlacemark(placemark)
+    map_item.setName(map_data['place'])
+
+    # Pass the map item to the Maps app
+    map_item.openInMapsWithLaunchOptions(nil)
   end
 
   def viewDidLayoutSubviews
     @scroll.contentSize = CGSizeMake(320, 400)
   end
 
-  def span
-    0.02
+  def map_data
+    @map_data ||= begin
+      path = map_data_file
+      if path.document_path.file_exists?
+        data = NSMutableDictionary.dictionaryWithContentsOfFile(path.document_path)
+        unless data
+          data = NSMutableDictionary.dictionaryWithContentsOfFile(path.resource_path)
+        end
+      else
+        data = NSMutableDictionary.dictionaryWithContentsOfFile(path.resource_path)
+      end
+      data
+    end
   end
 end

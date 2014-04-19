@@ -7,7 +7,6 @@ class TalksViewController < GenericTableScreen
 
   def on_init
     super
-    @schedule_name = :talks
     @current_day = 0
     load_data
     "talks_cached".add_observer(self, :reload_talks)
@@ -99,7 +98,7 @@ class TalksViewController < GenericTableScreen
   end
 
   def load_data
-    path = "#{@schedule_name}.plist"
+    path = "talks.plist"
     if path.document_path.file_exists?
       @schedule = NSMutableDictionary.dictionaryWithContentsOfFile(path.document_path)
       unless @schedule
