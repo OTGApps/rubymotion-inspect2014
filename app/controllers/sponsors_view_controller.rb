@@ -4,6 +4,7 @@ class SponsorsViewController < GenericTableScreen
 
   def table_data
     [{
+      title: "Thanks to our generous sponsors:",
       cells: build_cells
     }]
   end
@@ -17,6 +18,7 @@ class SponsorsViewController < GenericTableScreen
         height: (index == 0) ? 144 : 72,
         action: :open_sponsor_url,
         arguments: { url: sponsor['www'] },
+        accessory_type: UITableViewCellAccessoryDisclosureIndicator
       }
     end
     cells
