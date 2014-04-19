@@ -6,11 +6,11 @@ class ScheduleBreakCellView < PM::TableViewCell
     super.tap do
       selectionStyle = UITableViewCellSelectionStyleNone
 
-      self.contentView.stylesheet = Teacup::Stylesheet[:schedule_cell]
+      self.contentView.stylesheet = Teacup::Stylesheet[:break_cell]
       layout(self.contentView, :content_view) do
         subview(UIView, :line)
         @time_label = subview(UILabel, :time)
-        @title_label = subview(MTLabel, :title)
+        @title_label = subview(UILabel, :title)
         @break_icon = subview(UIImageView, :icon)
       end
     end

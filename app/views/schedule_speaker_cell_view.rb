@@ -6,7 +6,7 @@ class ScheduleSpeakerCellView < PM::TableViewCell
     super.tap do
       self.contentView.stylesheet = Teacup::Stylesheet[:schedule_cell]
       layout(self.contentView, :content_view) do
-        subview(UIView, :line2)
+        subview(UIView, :line)
         @dot = subview(UIImageView, :dot)
         subview(UIImageView, :ticket)
         @time_label = subview(UILabel, :time)
