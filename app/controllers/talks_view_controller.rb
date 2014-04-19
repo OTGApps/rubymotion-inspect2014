@@ -117,26 +117,40 @@ class TalksViewController < GenericTableScreen
     update_table_data
   end
 
+  def header_frame
+    @header_frame ||= CGRectMake(0, 60, Device.screen.width, 73)
+  end
+
+  def header_min_y
+    -header_frame.size.height
+  end
+
   def scrollViewWillBeginDragging(scrollView)
-    @startContentOffset = @lastContentOffset = scrollView.contentOffset.y;
+    @lastContentOffset = scrollView.contentOffset.y
   end
 
   def scrollViewDidScroll(scrollView)
     return unless scrollView
     return unless @lastContentOffset
 
-    wasAnimated = false
-    scrollDirection = (@lastContentOffset > scrollView.contentOffset.y) ? SCROLL_DIRECTION_UP : SCROLL_DIRECTION_DOWN
+    currentOffset = scrollView.contentOffset.y
+    scrollDirection = (@lastContentOffset > currentOffset) ? SCROLL_DIRECTION_UP : SCROLL_DIRECTION_DOWN
+
+    differenceFromLast = @lastContentOffset - currentOffset
+    @lastContentOffset = currentOffset
 
     if scrollDirection == SCROLL_DIRECTION_DOWN
-      ap 'scrolling down' if BW.debug?
-    elsif scrollDirection == SCROLL_DIRECTION_UP
-      ap 'scrolling up' if BW.debug?
+      if @header_view.frame.origin.y > header_min_y && currentOffset > -133
+        @header_view.frame = CGRectMake(@header_view.origin.x,
+                                        @header_view.origin.y - differenceFromLast.abs,
+                                        @header_view.size.width,
+                                        @header_view.size.height)
+      end
+    elsif scrollDirection == SCROLL_DIRECTION_UP && scrollView.contentSize.height > (currentOffset + frame.size.height)
+      # @header_view.layer.removeAllAnimations
+      UIView.animateWithDuration(0.2, animations: lambda do
+        @header_view.frame = header_frame
+      end)
     end
-
-    # currentOffset = scrollView.contentOffset.y
-    # differenceFromLast = @lastContentOffset - currentOffset
-    # @lastContentOffset = currentOffset
-
   end
 end
