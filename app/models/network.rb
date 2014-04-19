@@ -1,7 +1,5 @@
 class Networking
-  # TODO - Update this url once the PR is accepted
-  #RAW_PATH = 'https://raw.githubusercontent.com/MohawkApps/rubymotion-inspect2014/master/resources/'
-  RAW_PATH = 'https://raw.githubusercontent.com/MohawkApps/rubymotion-inspect2014/location-party-plist/resources/'
+  RAW_PATH = 'https://raw.githubusercontent.com/MohawkApps/rubymotion-inspect2014/master/resources/'
 
   def self.cache_data
     ['talks.plist', 'speakers.plist', 'sponsors.plist', 'location.plist', 'party.plist'].each do |cache_file|
