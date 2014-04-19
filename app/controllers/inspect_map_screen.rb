@@ -6,7 +6,7 @@ class InspectMapScreen < GenericScreen
     @map.zoomEnabled = false
     @map.scrollEnabled = false
     @map.mapType = MKMapTypeHybrid
-    @map.region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(lat, lon), MKCoordinateSpanMake(span, span))
+    @map.region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(map_data['latitude'], map_data['longitude']), MKCoordinateSpanMake(map_data['span'], map_data['span']))
 
     @map_height_constraint = Teacup::Constraint.new(@map, :height).equals(150).nslayoutconstraint
     @map.addConstraint(@map_height_constraint)
@@ -29,16 +29,16 @@ class InspectMapScreen < GenericScreen
     end
 
     @scroll = subview(UIScrollView, :content) do
-      subview(MTLabel, :title)
+      subview(MTLabel, :title, {text: map_data['place']})
       subview(UIView, :line)
-      subview(UILabel, :description)
+      subview(UILabel, :description, {text:map_data['description'].gsub('\\n', "\n")})
     end
   end
 
   def mapViewDidFinishLoadingMap(map)
     @pin = MKPointAnnotation.alloc.init
     @pin.coordinate = @map.region.center
-    @pin.title = pin_title
+    @pin.title = map_data['pin_title']
     @map.addAnnotation @pin
   end
 
@@ -61,14 +61,25 @@ class InspectMapScreen < GenericScreen
   end
 
   def button_tapped(sender)
-    "http://maps.apple.com/?ll=#{lat},#{lon}&spn=#{span}&q=#{pin_title}".stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding).nsurl.open
+    "http://maps.apple.com/?ll=#{map_data['latitude']},#{map_data['longitude']}&spn=#{map_data['span']}&q=#{map_data['pin_title']}".stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding).nsurl.open
   end
 
   def viewDidLayoutSubviews
     @scroll.contentSize = CGSizeMake(320, 400)
   end
 
-  def span
-    0.02
+  def map_data
+    @map_data ||= begin
+      path = map_data_file
+      if path.document_path.file_exists?
+        data = NSMutableDictionary.dictionaryWithContentsOfFile(path.document_path)
+        unless data
+          data = NSMutableDictionary.dictionaryWithContentsOfFile(path.resource_path)
+        end
+      else
+        data = NSMutableDictionary.dictionaryWithContentsOfFile(path.resource_path)
+      end
+      data
+    end
   end
 end
