@@ -13,7 +13,7 @@ class SponsorsViewController < GenericTableScreen
     sponsors.each_with_index do |sponsor, index|
       cells << {
         cell_class: SponsorCell,
-        sponsor_image: sponsor['image'].uiimage,
+        sponsor_image: sponsor['image'],
         height: (index == 0) ? 144 : 72,
         action: :open_sponsor_url,
         arguments: { url: sponsor['www'] },
