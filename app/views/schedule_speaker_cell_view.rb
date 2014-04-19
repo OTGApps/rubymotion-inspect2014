@@ -29,6 +29,10 @@ class ScheduleSpeakerCellView < PM::TableViewCell
     @speaker_image.image = i['speaker_image'].uiimage.rounded(3)
   end
 
+  def multi_line?
+    @title_label.numberOfLines > 1
+  end
+
   def layoutSubviews
     super
     self.contentView.layer.sublayers[0].frame = self.contentView.bounds
