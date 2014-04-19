@@ -20,6 +20,7 @@ Motion::Project::App.setup do |app|
 
   app.pods do
     pod 'REFrostedViewController'
+    pod 'SDWebImage'
     pod 'FlurrySDK'
   end
   app.vendor_project('vendor/MTLabel', :xcode, :target => 'MTLabel', :headers_dir => 'MTLabel')

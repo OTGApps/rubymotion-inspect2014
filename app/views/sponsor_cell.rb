@@ -5,12 +5,13 @@ class SponsorCell < PM::TableViewCell
     super.tap do
       self.contentView.stylesheet = Teacup::Stylesheet[:sponsor_cell]
       layout(self.contentView, :content_view) do
-        @sponsor = subview(UIImageView, :sponsor)
+        @sponsor = subview(CachedImage, :sponsor)
       end
     end
   end
 
   def sponsor_image=(i)
-    @sponsor.image = i
+    @sponsor.placeholder = 'speaker_placeholder'
+    @sponsor.set_image i
   end
 end

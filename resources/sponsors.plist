@@ -6,7 +6,7 @@
 			<key>name</key>
 			<string>Heroku</string>
 			<key>image</key>
-			<string>sponsors/heroku</string>
+			<string>sponsors/heroku.png</string>
 			<key>www</key>
 			<string>http://heroku.com</string>
 		</dict>
@@ -14,7 +14,7 @@
 			<key>name</key>
 			<string>JetBrains</string>
 			<key>image</key>
-			<string>sponsors/jetbrains</string>
+			<string>sponsors/jetbrains.png</string>
 			<key>www</key>
 			<string>http://jetbrains.com</string>
 		</dict>
@@ -22,7 +22,7 @@
 			<key>name</key>
 			<string>Cyrus Innovation</string>
 			<key>image</key>
-			<string>sponsors/cyrus-innovation</string>
+			<string>sponsors/cyrus-innovation.png</string>
 			<key>www</key>
 			<string>http://cyrusinnovation.com</string>
 		</dict>
@@ -30,7 +30,7 @@
 			<key>name</key>
 			<string>Nedap</string>
 			<key>image</key>
-			<string>sponsors/nedap</string>
+			<string>sponsors/nedap.png</string>
 			<key>www</key>
 			<string>http://nedap.com</string>
 		</dict>
@@ -38,7 +38,7 @@
 			<key>name</key>
 			<string>Boxcar</string>
 			<key>image</key>
-			<string>sponsors/boxcar</string>
+			<string>sponsors/boxcar.png</string>
 			<key>www</key>
 			<string>http://boxcar.io</string>
 		</dict>
@@ -46,7 +46,7 @@
 			<key>name</key>
 			<string>Pragmatic Studio</string>
 			<key>image</key>
-			<string>sponsors/pragmatic-studio</string>
+			<string>sponsors/pragmatic-studio.png</string>
 			<key>www</key>
 			<string>http://pragmaticstudio.com</string>
 		</dict>
@@ -54,7 +54,7 @@
 			<key>name</key>
 			<string>Belighted</string>
 			<key>image</key>
-			<string>sponsors/belighted</string>
+			<string>sponsors/belighted.png</string>
 			<key>www</key>
 			<string>http://belighted.be</string>
 		</dict>
