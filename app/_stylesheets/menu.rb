@@ -36,22 +36,19 @@ Teacup::Stylesheet.new(:menu) do
     constraints: [
       constrain_below(:header, 10),
     ],
-    title: 'TALKS',
-    image: 'menu-talks'.uiimage
+    title: 'TALKS'
 
   style :location, extends: :menu_buttons,
     constraints: [
       constrain_below(:talks)
     ],
-    title: 'LOCATION',
-    image: 'menu-location'.uiimage
+    title: 'LOCATION'
 
   style :party, extends: :menu_buttons,
     constraints: [
       constrain_below(:location)
     ],
-    title: 'PARTY',
-    image: 'menu-beer'.uiimage
+    title: 'PARTY'
 
   style :bottom_buttons, extends: :font_menu,
     backgroundImage: 'button-menu-ticket'.uiimage,
