@@ -211,13 +211,13 @@
 			<key>type</key>
 			<string>talk</string>
 			<key>time</key>
-			<string>09:00</string>
+			<string>09:15</string>
 			<key>title</key>
-			<string>How Ruby hackers built the new Objective-C Open Source community</string>
+			<string>Making RubyMotion Better - Structure, Gems, and Community</string>
 			<key>speaker</key>
-			<string>Mattt Thompson</string>
+			<string>Jack Watson-Hamblin</string>
 			<key>speaker_company</key>
-			<string>Heroku</string>
+			<string>MotionInMotion</string>
 			<key>speaker_image</key>
 			<string>speakers/mattt_small.png</string>
 			<key>speaker_index</key>
@@ -225,25 +225,15 @@
 		</dict>
 		<dict>
 			<key>type</key>
-			<string>break</string>
-			<key>time</key>
-			<string>09:30</string>
-			<key>title</key>
-			<string>Break</string>
-			<key>icon</key>
-			<string>coffee-cup.png</string>
-		</dict>
-		<dict>
-			<key>type</key>
 			<string>talk</string>
 			<key>time</key>
-			<string>09:45</string>
+			<string>09:50</string>
 			<key>title</key>
-			<string>More Than You Need to Know About CocoaPods</string>
+			<string>Don't Let the Cocoa API Crush Your Ruby Code</string>
 			<key>speaker</key>
-			<string>Eloy Duran</string>
+			<string>Alex Rothenberg</string>
 			<key>speaker_company</key>
-			<string>Fingertips</string>
+			<string>Independent</string>
 			<key>speaker_image</key>
 			<string>speakers/eloy_small.png</string>
 			<key>speaker_index</key>
@@ -253,7 +243,7 @@
 			<key>type</key>
 			<string>break</string>
 			<key>time</key>
-			<string>10:15</string>
+			<string>10:25</string>
 			<key>title</key>
 			<string>Break</string>
 			<key>icon</key>
@@ -263,13 +253,13 @@
 			<key>type</key>
 			<string>talk</string>
 			<key>time</key>
-			<string>10:30</string>
+			<string>10:45</string>
 			<key>title</key>
-			<string>Wrapping iOS in RubyMotion</string>
+			<string>Reactive RubyMotion</string>
 			<key>speaker</key>
-			<string>Clay Allsopp</string>
+			<string>Dave Lee</string>
 			<key>speaker_company</key>
-			<string>Propeller</string>
+			<string>Independent</string>
 			<key>speaker_image</key>
 			<string>speakers/clay_small.png</string>
 			<key>speaker_index</key>
@@ -277,25 +267,15 @@
 		</dict>
 		<dict>
 			<key>type</key>
-			<string>break</string>
-			<key>time</key>
-			<string>11:00</string>
-			<key>title</key>
-			<string>Break</string>
-			<key>icon</key>
-			<string>coffee-cup.png</string>
-		</dict>
-		<dict>
-			<key>type</key>
 			<string>talk</string>
 			<key>time</key>
-			<string>11:15</string>
+			<string>11:20</string>
 			<key>title</key>
-			<string>Goodbye IB, Hello Teacup</string>
+			<string>Building Apps that Build Apps</string>
 			<key>speaker</key>
-			<string>Colin Gray</string>
+			<string>Clay Allsopp</string>
 			<key>speaker_company</key>
-			<string>Simple Energy</string>
+			<string>Propellar</string>
 			<key>speaker_image</key>
 			<string>speakers/colin_small.png</string>
 			<key>speaker_index</key>
@@ -303,25 +283,15 @@
 		</dict>
 		<dict>
 			<key>type</key>
-			<string>break</string>
-			<key>time</key>
-			<string>11:45</string>
-			<key>title</key>
-			<string>Break</string>
-			<key>icon</key>
-			<string>coffee-cup.png</string>
-		</dict>
-		<dict>
-			<key>type</key>
 			<string>talk</string>
 			<key>time</key>
-			<string>12:00</string>
+			<string>11:55</string>
 			<key>title</key>
-			<string>Elevate your Intent</string>
+			<string>Pixate</string>
 			<key>speaker</key>
-			<string>Matt Green</string>
+			<string>Paul Colton</string>
 			<key>speaker_company</key>
-			<string>Independent</string>
+			<string>CEO Pixate</string>
 			<key>speaker_image</key>
 			<string>speakers/matt_small.png</string>
 			<key>speaker_index</key>
@@ -341,11 +311,11 @@
 			<key>type</key>
 			<string>talk</string>
 			<key>time</key>
-			<string>14:00</string>
+			<string>2:00</string>
 			<key>title</key>
-			<string>Using BubbleWrap to Quickly Build RubyMotion Apps</string>
+			<string>RubyMotion and Accessibility</string>
 			<key>speaker</key>
-      <string>Marin Usalj</string>
+      <string>Austin Seraphin</string>
 			<key>speaker_company</key>
 			<string>Independent</string>
 			<key>speaker_image</key>
@@ -355,25 +325,15 @@
 		</dict>
 		<dict>
 			<key>type</key>
-			<string>break</string>
-			<key>time</key>
-			<string>14:30</string>
-			<key>title</key>
-			<string>Break</string>
-			<key>icon</key>
-			<string>coffee-cup.png</string>
-		</dict>
-		<dict>
-			<key>type</key>
 			<string>talk</string>
 			<key>time</key>
-			<string>14:45</string>
+			<string>2:35</string>
 			<key>title</key>
-			<string>Mixing CoffeeScript in RubyMotion apps</string>
+			<string>AVFoundation</string>
 			<key>speaker</key>
-			<string>Michael Erasmus</string>
+			<string>Ivan Acosta-Rubio</string>
 			<key>speaker_company</key>
-			<string>motioncasts.tv</string>
+			<string>Software Criollo</string>
 			<key>speaker_image</key>
 			<string>speakers/michael_small.png</string>
 			<key>speaker_index</key>
@@ -383,7 +343,7 @@
 			<key>type</key>
 			<string>break</string>
 			<key>time</key>
-			<string>15:15</string>
+			<string>3:10</string>
 			<key>title</key>
 			<string>Break</string>
 			<key>icon</key>
@@ -393,13 +353,13 @@
 			<key>type</key>
 			<string>talk</string>
 			<key>time</key>
-			<string>15:30</string>
+			<string>3:30</string>
 			<key>title</key>
-			<string>Building Interactive Data Visualization Charts</string>
+			<string>SkFun: SpriteKit and RubyMotion</string>
 			<key>speaker</key>
-			<string>Amit Kumar</string>
+			<string>Will Raxworthy</string>
 			<key>speaker_company</key>
-			<string>McKinsey &amp; Company</string>
+			<string>Kinesis</string>
 			<key>speaker_image</key>
 			<string>speakers/amit_small.png</string>
 			<key>speaker_index</key>
@@ -407,25 +367,15 @@
 		</dict>
 		<dict>
 			<key>type</key>
-			<string>break</string>
-			<key>time</key>
-			<string>16:00</string>
-			<key>title</key>
-			<string>Break</string>
-			<key>icon</key>
-			<string>coffee-cup.png</string>
-		</dict>
-		<dict>
-			<key>type</key>
 			<string>talk</string>
 			<key>time</key>
-			<string>16:15</string>
+			<string>4:05</string>
 			<key>title</key>
-			<string>Cocos2D, an Easier Way</string>
+			<string>Connecting RubyMotion</string>
 			<key>speaker</key>
-			<string>Juan Karam</string>
+			<string>Mark Villacampa</string>
 			<key>speaker_company</key>
-			<string>Raku</string>
+			<string>Cabify</string>
 			<key>speaker_image</key>
 			<string>speakers/juan_small.png</string>
 			<key>speaker_index</key>
@@ -435,7 +385,7 @@
 			<key>type</key>
 			<string>break</string>
 			<key>time</key>
-			<string>16:45</string>
+			<string>4:40</string>
 			<key>title</key>
 			<string>Break</string>
 			<key>icon</key>
@@ -445,18 +395,34 @@
 			<key>type</key>
 			<string>talk</string>
 			<key>time</key>
-			<string>17:00</string>
+			<string>5:00</string>
 			<key>title</key>
-			<string>Let's Move with CoreMotion</string>
+			<string>Connecting RubyMotion to Enterprise Systems</string>
 			<key>speaker</key>
-			<string>Abhishek Nalwaya</string>
+			<string>Kevin Poorman</string>
 			<key>speaker_company</key>
-			<string>McKinsey &amp; Company</string>
+			<string>Independent</string>
 			<key>speaker_image</key>
 			<string>speakers/abhishek_small.png</string>
 			<key>speaker_index</key>
 			<integer>19</integer>
 		</dict>
+		<dict>
+			<key>type</key>
+			<string>talk</string>
+			<key>time</key>
+			<string>5:35</string>
+			<key>title</key>
+			<string>RubyMine</string>
+			<key>speaker</key>
+			<string>Dennis Ushakov</string>
+			<key>speaker_company</key>
+			<string>JetBrains</string>
+			<key>speaker_image</key>
+			<string>speakers/abhishek_small.png</string>
+			<key>speaker_index</key>
+			<integer>20</integer>
+		</dict>		
 	</array>
 </dict>
 </plist>
