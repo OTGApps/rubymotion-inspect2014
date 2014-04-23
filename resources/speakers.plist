@@ -8,27 +8,27 @@
 			<key>company</key>
 			<string>HipByte</string>
 			<key>description</key>
-			<string>Laurent is the creator of RubyMotion and the conference organizer. He will welcome you at the conference, serve you beer and will also talk about code optimization techniques.</string>
+			<string>Laurent is the creator of RubyMotion and the conference organizer. He will welcome you at the conference, and talk about RubyMotion's State of the Union.</string>
 			<key>twitter</key>
 			<string>lrz</string>
 			<key>www</key>
 			<string>http://www.rubymotion.com</string>
 			<key>speaker_image</key>
-      <string>speakers/laurent.png</string>
+      <string>speakers/2014/laurent.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Nick Quaranto</string>
+			<string>Jamon Holmgren</string>
 			<key>company</key>
-			<string>37signals</string>
+			<string>ClearSight Studio</string>
 			<key>description</key>
-			<string>Nick is a programmer at 37signals and also one of the mechanics behind rubygems.org. In his talk he will share tips about how can a Rubyist can jump in the iOS world and ship stuff easily.</string>
+			<string>Jamon is the owner of ClearSight Studio and the popular ProMotion framework, Jamon will talk about going from a prototype to a production app.</string>
 			<key>twitter</key>
-			<string>qrush</string>
+			<string>jamonholmgren</string>
 			<key>www</key>
-			<string>http://quaran.to</string>
+			<string>http://clearsightstudio.com</string>
 			<key>speaker_image</key>
-      <string>speakers/nick.png</string>
+      <string>speakers/2014/jamon.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
