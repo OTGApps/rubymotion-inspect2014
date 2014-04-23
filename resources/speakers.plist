@@ -42,7 +42,7 @@
 			<key>www</key>
 			<string>https://www.lesspainful.com/</string>
 			<key>speaker_image</key>
-      <string>speakers/karl.png</string>
+      <string>speakers/2014/nikolay.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -56,7 +56,7 @@
 			<key>www</key>
 			<string>http://en.wikipedia.org/wiki/Richard_Kilmer</string>
 			<key>speaker_image</key>
-      <string>speakers/rich.png</string>
+      <string>speakers/2014/todd.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -70,7 +70,7 @@
 			<key>www</key>
 			<string>http://behindthecurtain.us/</string>
 			<key>speaker_image</key>
-      <string>speakers/austin.png</string>
+      <string>speakers/2014/panel.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -84,7 +84,7 @@
 			<key>www</key>
 			<string>http://cocoamanifest.net/</string>
 			<key>speaker_image</key>
-      <string>speakers/jonathan.png</string>
+      <string>speakers/2014/mark.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -98,7 +98,7 @@
 			<key>www</key>
 			<string></string>
 			<key>speaker_image</key>
-      <string>speakers/joshua.png</string>
+      <string>speakers/2014/andy.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -112,7 +112,7 @@
 			<key>www</key>
 			<string>http://github.com/seanlilmateus</string>
 			<key>speaker_image</key>
-      <string>speakers/mateus.png</string>
+      <string>speakers/2014/isaac.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -126,7 +126,7 @@
 			<key>www</key>
 			<string>http://www.jetbrains.com/ruby</string>
 			<key>speaker_image</key>
-      <string>speakers/dennis.png</string>
+      <string>speakers/2014/lori.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -140,7 +140,7 @@
 			<key>www</key>
 			<string>http://kattrali.github.com/</string>
 			<key>speaker_image</key>
-      <string>speakers/delisa.png</string>
+      <string>speakers/2014/ken.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -154,7 +154,7 @@
 			<key>www</key>
 			<string>http://mattt.me/</string>
 			<key>speaker_image</key>
-      <string>speakers/mattt.png</string>
+      <string>speakers/2014/jack.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -168,7 +168,7 @@
 			<key>www</key>
 			<string>http://www.fngtps.com</string>
 			<key>speaker_image</key>
-      <string>speakers/eloy.png</string>
+      <string>speakers/2014/alex.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -182,7 +182,7 @@
 			<key>www</key>
 			<string>http://clayallsopp.com/</string>
 			<key>speaker_image</key>
-      <string>speakers/clay.png</string>
+      <string>speakers/2014/dave.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -196,7 +196,7 @@
 			<key>www</key>
 			<string>http://colinta.com/</string>
 			<key>speaker_image</key>
-      <string>speakers/colin.png</string>
+      <string>speakers/2014/clay.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -210,7 +210,7 @@
 			<key>www</key>
 			<string>https://github.com/mattgreen</string>
 			<key>speaker_image</key>
-      <string>speakers/matt.png</string>
+      <string>speakers/2014/paul.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -224,7 +224,7 @@
 			<key>www</key>
 			<string>http://mneorr.com/</string>
 			<key>speaker_image</key>
-      <string>speakers/marin.png</string>
+      <string>speakers/2014/austin.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -238,7 +238,7 @@
 			<key>www</key>
 			<string>http://motioncasts.tv/</string>
 			<key>speaker_image</key>
-      <string>speakers/michael.png</string>
+      <string>speakers/2014/ivan.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -252,7 +252,7 @@
 			<key>www</key>
 			<string>http://toamitkumar.com/</string>
 			<key>speaker_image</key>
-      <string>speakers/amit.png</string>
+      <string>speakers/2014/will.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -266,7 +266,7 @@
 			<key>www</key>
 			<string>http://raku.mx/</string>
 			<key>speaker_image</key>
-      <string>speakers/juan.png</string>
+      <string>speakers/2014/mark2.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -280,7 +280,7 @@
 			<key>www</key>
 			<string>http://nalwaya.com/</string>
 			<key>speaker_image</key>
-      <string>speakers/abhishek.png</string>
+      <string>speakers/2014/kevin.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -294,7 +294,7 @@
 			<key>www</key>
 			<string>http://nalwaya.com/</string>
 			<key>speaker_image</key>
-      <string>speakers/abhishek.png</string>
+      <string>speakers/2014/dennis.jpg</string>
 		</dict>
 	</array>
 </plist>
