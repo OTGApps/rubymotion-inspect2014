@@ -38,9 +38,9 @@
 			<key>description</key>
 			<string>Nikolay will present UnderOS, a project that aims to help web-developers to get into native iOS development by reusing knowledge and technologies they already know.</string>
 			<key>twitter</key>
-			<string>karlkrukow</string>
+			<string>nemshilov</string>
 			<key>www</key>
-			<string>https://www.lesspainful.com/</string>
+			<string>http://under-os.com/</string>
 			<key>speaker_image</key>
       <string>speakers/2014/nikolay.jpg</string>
 		</dict>
@@ -52,9 +52,9 @@
 			<key>description</key>
       <string>Todd is the creator of RubyMotionQuery (known as RMQ) and the writer of the Dispatch newsletter. He will cover what's new in RMQ.</string>
 			<key>twitter</key>
-			<string>rich_kilmer</string>
+			<string>twerth</string>
 			<key>www</key>
-			<string>http://en.wikipedia.org/wiki/Richard_Kilmer</string>
+			<string>http://infinitered.com/rmq/</string>
 			<key>speaker_image</key>
       <string>speakers/2014/todd.jpg</string>
 		</dict>
@@ -64,11 +64,11 @@
 			<key>company</key>
 			<string>Assorted</string>
 			<key>description</key>
-			<string>Austin is a blind programmer. In his talk, you will discover exactly how a blind person uses an iOS device and how RubyMotion makes writing accessible apps easier.</string>
+			<string>The Panel is dedicated to RubyMotion apps in production.  We will be inviting folks working on high-profile RubyMotion apps on stage, ask them about their experience and common pitfalls, then get questions from the audience.</string>
 			<key>twitter</key>
-			<string>omeron23</string>
+			<string>rubymotion</string>
 			<key>www</key>
-			<string>http://behindthecurtain.us/</string>
+			<string></string>
 			<key>speaker_image</key>
       <string>speakers/2014/panel.jpg</string>
 		</dict>
@@ -78,11 +78,11 @@
 			<key>company</key>
 			<string>Mohawk Apps</string>
 			<key>description</key>
-			<string>Jonathan is the mad scientist behind Navel Labs and also the scribbler-in-chief at Cocoa Manifest. In his talk he will explore the subtleties of the CoreData framework. Be prepared!</string>
+			<string>Mark Rickert, owner of Mohawk Apps, is the author of numerous RubyMotion apps, all of which are open-source. Mark also has a lot of experience marketing apps and will teach us a few tricks on how to promote an app in the App Store and through other channels.</string>
 			<key>twitter</key>
-			<string>jonathanpenn</string>
+			<string>markrickert</string>
 			<key>www</key>
-			<string>http://cocoamanifest.net/</string>
+			<string>http://www.mohawkapps.com/</string>
 			<key>speaker_image</key>
       <string>speakers/2014/mark.jpg</string>
 		</dict>
@@ -92,11 +92,11 @@
 			<key>company</key>
 			<string>Pivotal Labs</string>
 			<key>description</key>
-			<string>Joshua is a software engineer at BurnSide Digital and a former long-time Apple employee. He will talk about the life and times of an object, or, how to debug memory-related bugs.</string>
+			<string>Andy Pliszka works at Pivotal Labs on large iOS projects. He will talk about setting up RubyMotion for Test-Driven Development (TDD) and how to leverage test-first methodology when building RubyMotion projects.</string>
 			<key>twitter</key>
-			<string>manhattanmetric</string>
+			<string>AntiTyping</string>
 			<key>www</key>
-			<string></string>
+			<string>http://antityping.com/</string>
 			<key>speaker_image</key>
       <string>speakers/2014/andy.png</string>
 		</dict>
@@ -106,11 +106,11 @@
 			<key>company</key>
 			<string>SauceLabs</string>
 			<key>description</key>
-			<string>Mateus is a computer scientist for the largest European telecom and also a long-time RubyMotion hacker. His talk will focus on iOS concurrency patterns such as GCD and NSOperationQueue.</string>
+			<string>Isaac Murchie works at Sauce Labs and will talk about using tried-and-true Ruby tools, such as RSpec, Cucumber and Capybara, to automate the testing of RubyMotion projects with Appium, in order to deliver robust mobile apps.</string>
 			<key>twitter</key>
-			<string>seanlilmateus</string>
+			<string>imurchie</string>
 			<key>www</key>
-			<string>http://github.com/seanlilmateus</string>
+			<string>http://appium.io/</string>
 			<key>speaker_image</key>
       <string>speakers/2014/isaac.jpg</string>
 		</dict>
@@ -120,11 +120,11 @@
 			<key>company</key>
 			<string>Kudos</string>
 			<key>description</key>
-			<string>Dennis is the RubyMine project lead developer at JetBrains. He will talk about RubyMine and how you can use it to get more from RubyMotion.</string>
+			<string>Lori Olson, author of a RubyMotion book about Core Data, will share her experience in solving real problems using Core Data in RubyMotion apps.</string>
 			<key>twitter</key>
-			<string>en_Dal</string>
+			<string>wndxlori</string>
 			<key>www</key>
-			<string>http://www.jetbrains.com/ruby</string>
+			<string>http://book.coredatainmotion.com/</string>
 			<key>speaker_image</key>
       <string>speakers/2014/lori.jpg</string>
 		</dict>
@@ -134,11 +134,11 @@
 			<key>company</key>
 			<string>InfiniteRed</string>
 			<key>description</key>
-			<string>Delisa is a software developer at Neo and creator of the RubyMotion plugin for Redcar, the ruby editor. She will talk about customizing an iOS dev workflow using rubies all the way down.</string>
+			<string>Ken Miller, co-founder of InfiniteRed, is the author of CoreDataQuery (CDQ), a library which aims at making Core Data easier to use. Ken will talk about CDQ and what’s new.</string>
 			<key>twitter</key>
-			<string>kattrali</string>
+			<string>seriousken</string>
 			<key>www</key>
-			<string>http://kattrali.github.com/</string>
+			<string>https://github.com/infinitered/cdq</string>
 			<key>speaker_image</key>
       <string>speakers/2014/ken.jpg</string>
 		</dict>
@@ -148,11 +148,11 @@
 			<key>company</key>
 			<string>MotionInMotion</string>
 			<key>description</key>
-			<string>Mattt Thompson is the Mobile Lead at Heroku, and the creator and maintainer of popular open-source projects. He will talk about how Rubyists shaped the Objective-C community.</string>
+			<string>Jack Watson-Hamblin, creator of MotionInMotion, the popular weekly screencast, will talk about the RubyMotion community and what we can do to make it better.</string>
 			<key>twitter</key>
-			<string>mattt</string>
+			<string>RubyMotionTV</string>
 			<key>www</key>
-			<string>http://mattt.me/</string>
+			<string>https://motioninmotion.tv/</string>
 			<key>speaker_image</key>
       <string>speakers/2014/jack.jpg</string>
 		</dict>
@@ -162,11 +162,11 @@
 			<key>company</key>
 			<string>Independent</string>
 			<key>description</key>
-			<string>Eloy is a professional gesticulator at Fingertips and a long-time RubyMotion hacker. He will talk about writing functional tests and also cover CocoaPods, the package manager he invented.</string>
+			<string>Alex Rothenberg is a software engineer at McKinsey and the author of the motion-addressbook library. He will talk about simplifying the Cocoa APIs and making sure they do not crush your Ruby code.</string>
 			<key>twitter</key>
-			<string>alloy</string>
+			<string>AlexRothenberg</string>
 			<key>www</key>
-			<string>http://www.fngtps.com</string>
+			<string>https://github.com/alexrothenberg/motion-addressbook</string>
 			<key>speaker_image</key>
       <string>speakers/2014/alex.jpg</string>
 		</dict>
@@ -176,11 +176,11 @@
 			<key>company</key>
 			<string>Independent</string>
 			<key>description</key>
-			<string>Clay is a key RubyMotion contributor, having written several tutorials, including a book for the Pragmatic Programmers, and having worked on numerous libraries. He will talk about writing wrappers for iOS.</string>
+			<string>Dave Lee is a contributor to ReactiveCocoa, a framework that provides Functional Reactive Programming to Cocoa apps. Dave will talk about integrating ReactiveCocoa in RubyMotion.</string>
 			<key>twitter</key>
-			<string>clayallsopp</string>
+			<string>kastiglione</string>
 			<key>www</key>
-			<string>http://clayallsopp.com/</string>
+			<string>https://github.com/ReactiveCocoa/ReactiveCocoa</string>
 			<key>speaker_image</key>
       <string>speakers/2014/dave.jpg</string>
 		</dict>
@@ -190,11 +190,11 @@
 			<key>company</key>
 			<string>Propeller</string>
 			<key>description</key>
-			<string>Colin is an iOS developer working for Simple Energy and an early RubyMotion user. He will talk about Teacup, a powerful library to build user interfaces that he co-authored with Conrad Irwin.</string>
+			<string>Clay Allsopp, author of the Pragmatic Programmers’ RubyMotion book and numerous libraries will talk about building build tools that build tools to build apps. Sounds crazy and interesting!</string>
 			<key>twitter</key>
-			<string>colinta</string>
+			<string>clayallsopp</string>
 			<key>www</key>
-			<string>http://colinta.com/</string>
+			<string>http://clayallsopp.com/</string>
 			<key>speaker_image</key>
       <string>speakers/2014/clay.jpg</string>
 		</dict>
@@ -204,11 +204,11 @@
 			<key>company</key>
 			<string>CEO Pixate</string>
 			<key>description</key>
-			<string>Matt Green is a software developer and the author of Nitron and other RubyMotion libraries. He will discuss how layering can simplify your development process, and show off his new gem!</string>
+			<string>Paul Colton is the co-Founder and CEO of Pixate. Paul will review the Freestyle framework and how it can be used to style RubyMotion apps using just plain CSS.</string>
 			<key>twitter</key>
-			<string>mattgreenrocks</string>
+			<string>paulcolton</string>
 			<key>www</key>
-			<string>https://github.com/mattgreen</string>
+			<string>http://www.pixate.com</string>
 			<key>speaker_image</key>
       <string>speakers/2014/paul.jpg</string>
 		</dict>
@@ -218,11 +218,11 @@
 			<key>company</key>
 			<string>Independent</string>
 			<key>description</key>
-			<string>Marin Usalj is a freelancer iOS developer living in San Francisco. He is one of the maintainers of BubbleWrap and he will talk about how using it to quickly building apps with networking, persistence and more.</string>
+			<string>Austin Seraphin is a blind developer and an accessibility expert. Austin was a speaker at #inspect 2013 last year and delivered one of the most acclaimed presentations. Since then, he authored the motion-accessibility gem and will talk about how making RubyMotion apps accessible to the blind.</string>
 			<key>twitter</key>
-			<string>mneorr</string>
+			<string>AustinSeraphin</string>
 			<key>www</key>
-			<string>http://mneorr.com/</string>
+			<string>https://github.com/austinseraphin/motion-accessibility</string>
 			<key>speaker_image</key>
       <string>speakers/2014/austin.jpg</string>
 		</dict>
@@ -232,11 +232,11 @@
 			<key>company</key>
 			<string>Software Criollo</string>
 			<key>description</key>
-			<string>Michael is a software developer living in South Africa and also one of the guys making the motioncasts.tv screencasts. In his talk he will cover mixing RubyMotion with CoffeeScript.</string>
+			<string>Ivan Acosta-Rubio writes iOS apps using RubyMotion at Software Criollo. In his talk, Ivan will introduce the AV-Foundation framework and how to capture media on iOS and OS X. Let’s write some spying tools!</string>
 			<key>twitter</key>
-			<string>michael_erasmus</string>
+			<string>ivanacostarubio</string>
 			<key>www</key>
-			<string>http://motioncasts.tv/</string>
+			<string>http://softwarecriollo.com/</string>
 			<key>speaker_image</key>
       <string>speakers/2014/ivan.jpg</string>
 		</dict>
@@ -246,11 +246,11 @@
 			<key>company</key>
 			<string>Kinesis</string>
 			<key>description</key>
-			<string>Amit is a Rubyist working for India's largest IT company and also an early RubyMotion developer. He will talk about creating interactive data visualization charts.</string>
+			<string>Will Raxworthy, author of numerous blog posts about RubyMotion, will talk about 2D game development, using the new SpriteKit framework and integrating with native game controllers, and eventually write a Flappy Bird clone!</string>
 			<key>twitter</key>
-			<string>toamit</string>
+			<string>willrax</string>
 			<key>www</key>
-			<string>http://toamitkumar.com/</string>
+			<string>http://blog.willrax.com/</string>
 			<key>speaker_image</key>
       <string>speakers/2014/will.jpg</string>
 		</dict>
@@ -260,11 +260,11 @@
 			<key>company</key>
 			<string>Cabify</string>
 			<key>description</key>
-			<string>Juan is an iOS developer working for Raku, a consultancy agency in Mexico. In his talk he will unveil the mysteries behind Core Animation and cocos2d and how you can leverage them in RubyMotion. </string>
+			<string>Mark Villacampa works for Cabify on their RubyMotion app and is also a hardware enthusiast, hacking 3D printers. Mark will talk about connecting RubyMotion to hardware, walk through all the available options, and giving recommendations for the folks interested to try at home.</string>
 			<key>twitter</key>
-			<string>JuanKaram</string>
+			<string>MarkVillacampa</string>
 			<key>www</key>
-			<string>http://raku.mx/</string>
+			<string>http://markvillacampa.com/</string>
 			<key>speaker_image</key>
       <string>speakers/2014/mark2.jpg</string>
 		</dict>
@@ -274,11 +274,11 @@
 			<key>company</key>
 			<string>Independent</string>
 			<key>description</key>
-			<string>Abhishek will be joined by Akshat Paul, they are both tech leads at McKinsey and authors of an upcoming RubyMotion book. They will talk about CoreMotion and how you can make an intuitive app using sensors.</string>
+			<string>Kevin Poorman is a software architect at West Monroe Partners and a certified Force.com developer. He authored several RubyMotion apps, all tied to the Salesforce enterprise resource, and will talk about connecting RubyMotion to enterprise systems.</string>
 			<key>twitter</key>
-      <string>nalwayaabhishek</string>
+      <string>codefriar</string>
 			<key>www</key>
-			<string>http://nalwaya.com/</string>
+			<string>http://codefriar.com/</string>
 			<key>speaker_image</key>
       <string>speakers/2014/kevin.jpg</string>
 		</dict>
@@ -288,11 +288,11 @@
 			<key>company</key>
 			<string>JetBrains</string>
 			<key>description</key>
-			<string>Abhishek will be joined by Akshat Paul, they are both tech leads at McKinsey and authors of an upcoming RubyMotion book. They will talk about CoreMotion and how you can make an intuitive app using sensors.</string>
+			<string>Dennis Ushakov, a software engineer at JetBrains, will show off RubyMine and its excellent integration with the RubyMotion toolchain.</string>
 			<key>twitter</key>
-      <string>nalwayaabhishek</string>
+      <string>en_Dal</string>
 			<key>www</key>
-			<string>http://nalwaya.com/</string>
+			<string>http://blog.jetbrains.com/ruby/</string>
 			<key>speaker_image</key>
       <string>speakers/2014/dennis.jpg</string>
 		</dict>
