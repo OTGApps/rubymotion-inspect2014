@@ -22,7 +22,7 @@
 			<key>title</key>
 			<string>Welcome</string>
 			<key>icon</key>
-			<string>dot.png</string>
+			<string>welcome.png</string>
 		</dict>
 		<dict>
 			<key>type</key>
@@ -232,7 +232,7 @@
 			<key>title</key>
 			<string>CocoaKucha</string>
 			<key>icon</key>
-			<string>dot.png</string>
+			<string>cocoa.png</string>
 		</dict>
 	</array>
 	<key>d29</key>
@@ -255,7 +255,7 @@
 			<key>title</key>
 			<string>Welcome</string>
 			<key>icon</key>
-			<string>dot.png</string>
+			<string>welcome.png</string>
 		</dict>	
 		<dict>
 			<key>type</key>
@@ -481,7 +481,7 @@
 			<key>title</key>
 			<string>Party</string>
 			<key>icon</key>
-			<string>menu-party.png</string>
+			<string>party.png</string>
 		</dict>
 	</array>
 </dict>
