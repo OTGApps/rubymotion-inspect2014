@@ -36,7 +36,7 @@
 			<key>speaker_company</key>
 			<string>HipByte</string>
 			<key>speaker_image</key>
-			<string>speakers/laurent_small.png</string>
+			<string>speakers/2014/laurent_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>0</integer>
 		</dict>
@@ -62,7 +62,7 @@
 			<key>speaker_company</key>
 			<string>ClearSight Studio</string>
 			<key>speaker_image</key>
-			<string>speakers/nick_small.png</string>
+			<string>speakers/2014/jamon_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>1</integer>
 		</dict>
@@ -78,7 +78,7 @@
 			<key>speaker_company</key>
 			<string>Independent</string>
 			<key>speaker_image</key>
-			<string>speakers/karl_small.png</string>
+			<string>speakers/2014/nikolay_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>2</integer>
 		</dict>
@@ -94,7 +94,7 @@
 			<key>speaker_company</key>
 			<string>InfiniteRed</string>
 			<key>speaker_image</key>
-			<string>speakers/rich_small.png</string>
+			<string>speakers/2014/todd_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>3</integer>
 		</dict>
@@ -120,7 +120,7 @@
 			<key>speaker_company</key>
 			<string>Assorted</string>
 			<key>speaker_image</key>
-			<string>speakers/austin_small.png</string>
+			<string>speakers/2014/panel_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>4</integer>
 		</dict>
@@ -136,7 +136,7 @@
 			<key>speaker_company</key>
 			<string>Mohawk Apps</string>
 			<key>speaker_image</key>
-			<string>speakers/jonathan_small.png</string>
+			<string>speakers/2014/mark_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>5</integer>
 		</dict>
@@ -162,7 +162,7 @@
 			<key>speaker_company</key>
 			<string>Pivotal Labs</string>
 			<key>speaker_image</key>
-			<string>speakers/joshua_small.png</string>
+			<string>speakers/2014/andy_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>6</integer>
 		</dict>
@@ -178,7 +178,7 @@
 			<key>speaker_company</key>
 			<string>SauceLabs</string>
 			<key>speaker_image</key>
-			<string>speakers/mateus_small.png</string>
+			<string>speakers/2014/isaac_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>7</integer>
 		</dict>
@@ -204,7 +204,7 @@
 			<key>speaker_company</key>
 			<string>Kudos</string>
 			<key>speaker_image</key>
-			<string>speakers/dennis_small.png</string>
+			<string>speakers/2014/lori_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>8</integer>
 		</dict>
@@ -220,7 +220,7 @@
 			<key>speaker_company</key>
 			<string>InfiniteRed</string>
 			<key>speaker_image</key>
-			<string>speakers/delisa_small.png</string>
+			<string>speakers/2014/ken_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>9</integer>
 		</dict>
@@ -269,7 +269,7 @@
 			<key>speaker_company</key>
 			<string>MotionInMotion</string>
 			<key>speaker_image</key>
-			<string>speakers/mattt_small.png</string>
+			<string>speakers/2014/jack_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>10</integer>
 		</dict>
@@ -285,7 +285,7 @@
 			<key>speaker_company</key>
 			<string>Independent</string>
 			<key>speaker_image</key>
-			<string>speakers/eloy_small.png</string>
+			<string>speakers/2014/alex_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>11</integer>
 		</dict>
@@ -311,7 +311,7 @@
 			<key>speaker_company</key>
 			<string>Independent</string>
 			<key>speaker_image</key>
-			<string>speakers/clay_small.png</string>
+			<string>speakers/2014/dave_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>12</integer>
 		</dict>
@@ -327,7 +327,7 @@
 			<key>speaker_company</key>
 			<string>Propeller</string>
 			<key>speaker_image</key>
-			<string>speakers/colin_small.png</string>
+			<string>speakers/2014/clay_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>13</integer>
 		</dict>
@@ -343,7 +343,7 @@
 			<key>speaker_company</key>
 			<string>CEO Pixate</string>
 			<key>speaker_image</key>
-			<string>speakers/matt_small.png</string>
+			<string>speakers/2014/paul_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>14</integer>
 		</dict>
@@ -369,7 +369,7 @@
 			<key>speaker_company</key>
 			<string>Independent</string>
 			<key>speaker_image</key>
-			<string>speakers/marin_small.png</string>
+			<string>speakers/2014/austin_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>15</integer>
 		</dict>
@@ -385,7 +385,7 @@
 			<key>speaker_company</key>
 			<string>Software Criollo</string>
 			<key>speaker_image</key>
-			<string>speakers/michael_small.png</string>
+			<string>speakers/2014/ivan_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>16</integer>
 		</dict>
@@ -411,7 +411,7 @@
 			<key>speaker_company</key>
 			<string>Kinesis</string>
 			<key>speaker_image</key>
-			<string>speakers/amit_small.png</string>
+			<string>speakers/2014/will_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>17</integer>
 		</dict>
@@ -427,7 +427,7 @@
 			<key>speaker_company</key>
 			<string>Cabify</string>
 			<key>speaker_image</key>
-			<string>speakers/juan_small.png</string>
+			<string>speakers/2014/mark2_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>18</integer>
 		</dict>
@@ -453,7 +453,7 @@
 			<key>speaker_company</key>
 			<string>Independent</string>
 			<key>speaker_image</key>
-			<string>speakers/abhishek_small.png</string>
+			<string>speakers/2014/kevin_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>19</integer>
 		</dict>
@@ -469,7 +469,7 @@
 			<key>speaker_company</key>
 			<string>JetBrains</string>
 			<key>speaker_image</key>
-			<string>speakers/abhishek_small.png</string>
+			<string>speakers/2014/dennis_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>20</integer>
 		</dict>		
