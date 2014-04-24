@@ -25,23 +25,20 @@ class SpeakerViewController < PM::Screen
   end
 
   def will_appear
-    @view_is_set_up ||= begin
-      s = speaker_properties
-      ap s if BW.debug?
-      @speaker_image.placeholder = 'speaker_placeholder'
-      @speaker_image.set_image s['speaker_image']
-      @speaker_name.text = s['name']
-      @speaker_company.text = " #{s['company']}  "
-      @speaker_bio.text = s['description']
+    s = speaker_properties
+    ap s if BW.debug?
+    @speaker_image.placeholder = 'speaker_placeholder'
+    @speaker_image.set_image s['speaker_image']
+    @speaker_name.text = s['name']
+    @speaker_company.text = " #{s['company']}  "
+    @speaker_bio.text = s['description']
 
-      @speaker_twitter.on(:touch) do
-        "https://twitter.com/#{s['twitter']}".nsurl.open
-      end
+    @speaker_twitter.on(:touch) do
+      "https://twitter.com/#{s['twitter']}".nsurl.open
+    end
 
-      @speaker_www.on(:touch) do
-        s['www'].nsurl.open
-      end
-      true
+    @speaker_www.on(:touch) do
+      s['www'].nsurl.open
     end
   end
 
