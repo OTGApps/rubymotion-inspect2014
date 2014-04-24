@@ -88,6 +88,7 @@ class TalksViewController < GenericTableScreen
     {
       cell_identifier: "schedule_break_cell",
       cell_class: ScheduleBreakCellView,
+      selection_style: UITableViewCellSelectionStyleNone,
       height: 32.0,
       item: item
     }
