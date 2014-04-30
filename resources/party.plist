@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>place</key>
-	<string>Délirium Café</string>
+	<string>Fort Mason (Same Place)</string>
 	<key>description</key>
-	<string>On Friday night you are invited to an awesome after-party at the Délirium Café.\n\nThe Délirium is known for its long beer list, standing at 2,004 different brands in January 2004 as recorded in the The Guinness Book of Records.\n\nThe bar is located in the small alley called Impasse de la Fidélité, only a couple of hundred metres from the Grand-Place. Don&apos;t miss the Jeanneke Pis statue nearby!</string>
+	<string>Thursday at 8pm (20:00), we will enjoy merriment in our after-party.\n\n The after-party will be located in the same place as the talks so that travel should be easy.\n\n There will be food and refreshments to re-stimulate your code drenched brain.</string>
 	<key>latitude</key>
-	<real>50.848418</real>
+	<real>37.8078</real>
 	<key>longitude</key>
-	<real>4.353877</real>
+	<real>-122.4297</real>
 	<key>span</key>
-	<real>0.001</real>
+	<real>0.02</real>
 </dict>
 </plist>
