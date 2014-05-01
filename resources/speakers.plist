@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
+<dict>
+	<key>version</key>
+	<integer>1</integer>
+	<key>speakers</key>
 	<array>
 		<dict>
 			<key>name</key>
@@ -8,13 +12,13 @@
 			<key>company</key>
 			<string>HipByte</string>
 			<key>description</key>
-			<string>Laurent is the creator of RubyMotion and the conference organizer. He will welcome you at the conference, and talk about RubyMotion's State of the Union.</string>
+			<string>Laurent is the creator of RubyMotion and the conference organizer. He will welcome you at the conference, and talk about RubyMotion&apos;s State of the Union.</string>
 			<key>twitter</key>
 			<string>lrz</string>
 			<key>www</key>
 			<string>http://www.rubymotion.com</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/laurent.jpg</string>
+			<string>speakers/2014/laurent.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -28,7 +32,7 @@
 			<key>www</key>
 			<string>http://clearsightstudio.com</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/jamon.jpg</string>
+			<string>speakers/2014/jamon.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -42,7 +46,7 @@
 			<key>www</key>
 			<string>http://under-os.com/</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/nikolay.jpg</string>
+			<string>speakers/2014/nikolay.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -50,13 +54,13 @@
 			<key>company</key>
 			<string>InfiniteRed</string>
 			<key>description</key>
-      <string>Todd is the creator of RubyMotionQuery (known as RMQ) and the writer of the Dispatch newsletter. He will cover what's new in RMQ.</string>
+			<string>Todd is the creator of RubyMotionQuery (known as RMQ) and the writer of the Dispatch newsletter. He will cover what&apos;s new in RMQ.</string>
 			<key>twitter</key>
 			<string>twerth</string>
 			<key>www</key>
 			<string>http://infinitered.com/rmq/</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/todd.jpg</string>
+			<string>speakers/2014/todd.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -70,7 +74,7 @@
 			<key>www</key>
 			<string></string>
 			<key>speaker_image</key>
-      <string>speakers/2014/panel.jpg</string>
+			<string>speakers/2014/panel.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -84,7 +88,7 @@
 			<key>www</key>
 			<string>http://www.mohawkapps.com/</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/mark.jpg</string>
+			<string>speakers/2014/mark.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -98,7 +102,7 @@
 			<key>www</key>
 			<string>http://antityping.com/</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/andy.png</string>
+			<string>speakers/2014/andy.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -112,7 +116,7 @@
 			<key>www</key>
 			<string>http://appium.io/</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/isaac.jpg</string>
+			<string>speakers/2014/isaac.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -126,7 +130,7 @@
 			<key>www</key>
 			<string>http://book.coredatainmotion.com/</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/lori.jpg</string>
+			<string>speakers/2014/lori.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -140,7 +144,7 @@
 			<key>www</key>
 			<string>https://github.com/infinitered/cdq</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/ken.jpg</string>
+			<string>speakers/2014/ken.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -154,7 +158,7 @@
 			<key>www</key>
 			<string>https://motioninmotion.tv/</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/jack.jpg</string>
+			<string>speakers/2014/jack.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -168,7 +172,7 @@
 			<key>www</key>
 			<string>https://github.com/alexrothenberg/motion-addressbook</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/alex.jpg</string>
+			<string>speakers/2014/alex.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -182,7 +186,7 @@
 			<key>www</key>
 			<string>https://github.com/ReactiveCocoa/ReactiveCocoa</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/dave.jpg</string>
+			<string>speakers/2014/dave.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -196,7 +200,7 @@
 			<key>www</key>
 			<string>http://clayallsopp.com/</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/clay.jpg</string>
+			<string>speakers/2014/clay.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -210,7 +214,7 @@
 			<key>www</key>
 			<string>http://www.pixate.com</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/paul.jpg</string>
+			<string>speakers/2014/paul.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -224,7 +228,7 @@
 			<key>www</key>
 			<string>https://github.com/austinseraphin/motion-accessibility</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/austin.jpg</string>
+			<string>speakers/2014/austin.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -238,7 +242,7 @@
 			<key>www</key>
 			<string>http://softwarecriollo.com/</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/ivan.jpg</string>
+			<string>speakers/2014/ivan.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -252,7 +256,7 @@
 			<key>www</key>
 			<string>http://blog.willrax.com/</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/will.jpg</string>
+			<string>speakers/2014/will.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -266,7 +270,7 @@
 			<key>www</key>
 			<string>http://markvillacampa.com/</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/mark2.jpg</string>
+			<string>speakers/2014/mark2.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -276,11 +280,11 @@
 			<key>description</key>
 			<string>Kevin Poorman is a software architect at West Monroe Partners and a certified Force.com developer. He authored several RubyMotion apps, all tied to the Salesforce enterprise resource, and will talk about connecting RubyMotion to enterprise systems.</string>
 			<key>twitter</key>
-      <string>codefriar</string>
+			<string>codefriar</string>
 			<key>www</key>
 			<string>http://codefriar.com/</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/kevin.jpg</string>
+			<string>speakers/2014/kevin.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -290,11 +294,12 @@
 			<key>description</key>
 			<string>Dennis Ushakov, a software engineer at JetBrains, will show off RubyMine and its excellent integration with the RubyMotion toolchain.</string>
 			<key>twitter</key>
-      <string>en_Dal</string>
+			<string>en_Dal</string>
 			<key>www</key>
 			<string>http://blog.jetbrains.com/ruby/</string>
 			<key>speaker_image</key>
-      <string>speakers/2014/dennis.jpg</string>
+			<string>speakers/2014/dennis.jpg</string>
 		</dict>
 	</array>
+</dict>
 </plist>

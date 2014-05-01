@@ -21,9 +21,6 @@ class SpeakerViewController < PM::Screen
     end
   end
 
-  def on_init
-  end
-
   def will_appear
     s = speaker_properties
     ap s if BW.debug?
@@ -47,23 +44,8 @@ class SpeakerViewController < PM::Screen
   end
 
   def speaker_properties
-    return if @speaker < 0 || @speaker >= all_speakers.length
-    all_speakers[@speaker]
+    all = SpeakerData.sharedSpeakers.all
+    return if @speaker < 0 || @speaker >= all.length
+    all[@speaker]
   end
-
-  def all_speakers
-    return @speakers unless @speakers.nil?
-
-    path = "speakers.plist"
-    if path.document_path.file_exists?
-      @speakers = NSMutableArray.arrayWithContentsOfFile(path.document_path)
-      unless @speakers
-        @speakers = NSMutableArray.arrayWithContentsOfFile(path.resource_path)
-      end
-    else
-      @speakers = NSMutableArray.arrayWithContentsOfFile(path.resource_path)
-    end
-
-  end
-
 end
