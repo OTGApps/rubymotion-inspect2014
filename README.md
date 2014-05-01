@@ -18,6 +18,9 @@ To run the application:
 
 ## Authors
 
+* [Mark Rickert](https://twitter.com/markrickert)
+* [Gant Laborde](https://twitter.com/GantLaborde)
+
 ## Original Authors
 
 This version was built upon the original #inspect2013 app, but started as a new repository and __heavily__ refactored to update to more modern RubyMotion programming techniques and for iOS 7. Authors of the original app are:
