@@ -5,7 +5,7 @@ class SpeakerData
   end
 
   def all
-    return @speakers unless @speakers.nil?
+    return @speakers['speakers'] unless @speakers.nil?
 
     path = "speakers.plist"
     if path.document_path.file_exists?
@@ -22,7 +22,7 @@ class SpeakerData
       App::Persistence['speakers_version'] = @speakers['version']
 
       # Clear all cache
-      ap "Clearing speaker image cache"
+      ap "Clearing speaker image cache" if BW.debug?
       imageCache = SDImageCache.sharedImageCache
       imageCache.clearMemory
       imageCache.clearDisk
