@@ -12,7 +12,6 @@ class SponsorsViewController < GenericTableScreen
   def build_cells
     cells = []
     sponsors.each_with_index do |sponsor, index|
-      p sponsor['image']
       cells << {
         cell_class: SponsorCell,
         sponsor_image: sponsor['image'],
