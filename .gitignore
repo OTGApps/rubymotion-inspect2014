@@ -18,3 +18,7 @@ vendor/Pods
 
 xcuserdata
 /vendor/Podfile.lock
+
+/provisioning/
+
+/_release/
