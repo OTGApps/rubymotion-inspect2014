@@ -16,6 +16,14 @@ To run the application:
 2. `rake pod:install`
 3. `rake`
 
+## Screenshots
+
+<a href="_marketing/_screenshots/1.0.0/iPhone4/1.png"><img src="_marketing/_screenshots/1.0.0/iPhone4/1.png" width="120"></a>
+<a href="_marketing/_screenshots/1.0.0/iPhone4/2.png"><img src="_marketing/_screenshots/1.0.0/iPhone4/2.png" width="120"></a>
+<a href="_marketing/_screenshots/1.0.0/iPhone4/3.png"><img src="_marketing/_screenshots/1.0.0/iPhone4/3.png" width="120"></a>
+<a href="_marketing/_screenshots/1.0.0/iPhone4/4.png"><img src="_marketing/_screenshots/1.0.0/iPhone4/4.png" width="120"></a>
+<a href="_marketing/_screenshots/1.0.0/iPhone4/5.png"><img src="_marketing/_screenshots/1.0.0/iPhone4/5.png" width="120"></a>
+
 ## Authors
 
 * [Mark Rickert](https://twitter.com/markrickert)
@@ -39,4 +47,4 @@ This version was built upon the original #inspect2013 app, but started as a new 
 
 ## License
 
-See LICENSE
+See LICENSE file.
