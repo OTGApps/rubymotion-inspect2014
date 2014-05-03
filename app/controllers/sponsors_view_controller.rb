@@ -15,7 +15,7 @@ class SponsorsViewController < GenericTableScreen
       cells << {
         cell_class: SponsorCell,
         sponsor_image: sponsor['image'],
-        height: (index == 0) ? 144 : 72,
+        height: (index == 0) ? 155 : 100,
         action: :open_sponsor_url,
         arguments: { url: sponsor['www'] },
         accessory_type: UITableViewCellAccessoryDisclosureIndicator

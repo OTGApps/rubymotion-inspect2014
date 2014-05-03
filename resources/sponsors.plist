@@ -4,59 +4,27 @@
 	<array>
 		<dict>
 			<key>name</key>
-			<string>Heroku</string>
+			<string>Pixate</string>
 			<key>image</key>
-			<string>sponsors/heroku.png</string>
+			<string>sponsors/pixate_large.png</string>
 			<key>www</key>
-			<string>http://heroku.com</string>
+			<string>http://pixate.com</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>JetBrains</string>
+			<string>Terrible Labs</string>
 			<key>image</key>
-			<string>sponsors/jetbrains.png</string>
+			<string>sponsors/terrible_labs_small.png</string>
 			<key>www</key>
-			<string>http://jetbrains.com</string>
+			<string>http://terriblelabs.com/</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Cyrus Innovation</string>
+			<string>RubyMine</string>
 			<key>image</key>
-			<string>sponsors/cyrus-innovation.png</string>
+			<string>sponsors/rubymine_small.png</string>
 			<key>www</key>
-			<string>http://cyrusinnovation.com</string>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Nedap</string>
-			<key>image</key>
-			<string>sponsors/nedap.png</string>
-			<key>www</key>
-			<string>http://nedap.com</string>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Boxcar</string>
-			<key>image</key>
-			<string>sponsors/boxcar.png</string>
-			<key>www</key>
-			<string>http://boxcar.io</string>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Pragmatic Studio</string>
-			<key>image</key>
-			<string>sponsors/pragmatic-studio.png</string>
-			<key>www</key>
-			<string>http://pragmaticstudio.com</string>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Belighted</string>
-			<key>image</key>
-			<string>sponsors/belighted.png</string>
-			<key>www</key>
-			<string>http://belighted.be</string>
+			<string>http://www.jetbrains.com/ruby/</string>
 		</dict>
 	</array>
 </plist>
