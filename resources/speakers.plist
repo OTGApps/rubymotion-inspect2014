@@ -80,13 +80,13 @@
 			<key>name</key>
 			<string>Mark Rickert</string>
 			<key>company</key>
-			<string>Mohawk Apps</string>
+			<string>Skookum Digital Works</string>
 			<key>description</key>
-			<string>Mark Rickert, owner of Mohawk Apps, is the author of numerous RubyMotion apps, all of which are open-source. Mark also has a lot of experience marketing apps and will teach us a few tricks on how to promote an app in the App Store and through other channels.</string>
+			<string>Mark Rickert, is the author of numerous RubyMotion apps, all of which are open-source. Mark also has a lot of experience marketing apps and will teach us a few tricks on how to promote an app in the App Store and through other channels.</string>
 			<key>twitter</key>
 			<string>markrickert</string>
 			<key>www</key>
-			<string>http://www.mohawkapps.com/</string>
+			<string>http://www.skookum.com/</string>
 			<key>speaker_image</key>
 			<string>speakers/2014/mark.jpg</string>
 		</dict>
