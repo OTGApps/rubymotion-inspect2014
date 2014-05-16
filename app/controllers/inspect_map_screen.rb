@@ -65,7 +65,6 @@ class InspectMapScreen < GenericScreen
 
   def button_tapped(sender)
     # Create an MKMapItem to pass to the Maps app
-    coordinate = CLLocationCoordinate2DMake(16.775, -3.009);
     placemark = MKPlacemark.alloc.initWithCoordinate(coordinate, addressDictionary:nil)
     map_item = MKMapItem.alloc.initWithPlacemark(placemark)
     map_item.setName(map_data['place'])
