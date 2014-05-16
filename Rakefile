@@ -11,16 +11,12 @@ end
 Motion::Project::App.setup do |app|
   app.name = 'Inspect 2014'
   app.deployment_target = '7.0'
-  app.frameworks += %w{MapKit}
-  app.seed_id = '7N372VT8HB'
+  app.frameworks += %w(MapKit)
   app.identifier = 'com.mohawkapps.inspect'
-  app.version = '1'
-  app.short_version = '1.0.0'
+  app.version = '2'
+  app.short_version = '1.0.1'
   app.icons = Dir.glob("resources/Icon*.png").map{|icon| icon.split("/").last}
   app.prerendered_icon = true
-  app.entitlements['keychain-access-groups'] = [
-    app.seed_id + '.' + app.identifier
-  ]
 
   app.pods do
     pod 'REFrostedViewController'
@@ -31,7 +27,11 @@ Motion::Project::App.setup do |app|
 
   app.development do
     app.entitlements['get-task-allow'] = true
+    app.seed_id = '7N372VT8HB'
     app.identifier = app.seed_id + '.' + app.identifier
+    app.entitlements['keychain-access-groups'] = [
+      app.seed_id + '.' + app.identifier
+    ]
     app.codesign_certificate = "iPhone Developer: Mark Rickert (YA2VZGDX4S)"
     app.provisioning_profile = "../Provisioning/WildcardDevelopment.mobileprovision"
   end
