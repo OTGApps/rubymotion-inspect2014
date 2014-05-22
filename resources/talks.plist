@@ -114,13 +114,13 @@
 			<key>time</key>
 			<string>2:00</string>
 			<key>title</key>
-			<string>RubyMotion In Production</string>
+			<string>Kill the Controllers</string>
 			<key>speaker</key>
-			<string>Panel</string>
+			<string>Colin T.A. Gray</string>
 			<key>speaker_company</key>
-			<string>Assorted</string>
+			<string>HipByte &amp; Jukely</string>
 			<key>speaker_image</key>
-			<string>speakers/2014/panel_small.jpg</string>
+			<string>speakers/2014/colin_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>4</integer>
 		</dict>
