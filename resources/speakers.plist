@@ -140,7 +140,7 @@ He'll also be introducing a new layout and styling gem called MotionKit, which h
 			<key>company</key>
 			<string>InfiniteRed</string>
 			<key>description</key>
-			<string>Ken Miller, co-founder of InfiniteRed, is the author of CoreDataQuery (CDQ), a library which aims at making Core Data easier to use. Ken will talk about CDQ and what’s new.</string>
+			<string>Ken Miller, co-founder of InfiniteRed, is the author of CoreDataQuery (CDQ), a library which aims at making Core Data easier to use. Ken will talk about CDQ and what's new.</string>
 			<key>twitter</key>
 			<string>seriousken</string>
 			<key>www</key>
@@ -196,7 +196,7 @@ He'll also be introducing a new layout and styling gem called MotionKit, which h
 			<key>company</key>
 			<string>Propeller</string>
 			<key>description</key>
-			<string>Clay Allsopp, author of the Pragmatic Programmers’ RubyMotion book and numerous libraries will talk about building build tools that build tools to build apps. Sounds crazy and interesting!</string>
+			<string>Clay Allsopp, author of the Pragmatic Programmers' RubyMotion book and numerous libraries will talk about building build tools that build tools to build apps. Sounds crazy and interesting!</string>
 			<key>twitter</key>
 			<string>clayallsopp</string>
 			<key>www</key>
@@ -238,7 +238,7 @@ He'll also be introducing a new layout and styling gem called MotionKit, which h
 			<key>company</key>
 			<string>Software Criollo</string>
 			<key>description</key>
-			<string>Ivan Acosta-Rubio writes iOS apps using RubyMotion at Software Criollo. In his talk, Ivan will introduce the AV-Foundation framework and how to capture media on iOS and OS X. Let’s write some spying tools!</string>
+			<string>Ivan Acosta-Rubio writes iOS apps using RubyMotion at Software Criollo. In his talk, Ivan will introduce the AV-Foundation framework and how to capture media on iOS and OS X. Let's write some spying tools!</string>
 			<key>twitter</key>
 			<string>ivanacostarubio</string>
 			<key>www</key>
