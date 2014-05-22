@@ -72,9 +72,9 @@
 
 He'll also be introducing a new layout and styling gem called MotionKit, which he created with Jamon Holmgren.  He describes it as the "spiritual successor" to Teacup.  It goes beyond providing a styling DSL, it's a way of organizing your view code so that your UI is separated from the rest of your application logic.</string>
 			<key>twitter</key>
-			<string>rubymotion</string>
+			<string>colinta</string>
 			<key>www</key>
-			<string></string>
+			<string>http://colinta.com/</string>
 			<key>speaker_image</key>
 			<string>speakers/2014/colin.jpg</string>
 		</dict>
