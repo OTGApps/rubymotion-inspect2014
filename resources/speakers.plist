@@ -64,17 +64,19 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Panel</string>
+			<string>Colin T.A. Gray</string>
 			<key>company</key>
-			<string>Assorted</string>
+			<string>HipByte &amp; Jukely</string>
 			<key>description</key>
-			<string>The Panel is dedicated to RubyMotion apps in production.  We will be inviting folks working on high-profile RubyMotion apps on stage, ask them about their experience and common pitfalls, then get questions from the audience.</string>
+			<string>Cocoa and Cocoa Touch developers have been slowly waking up to the fact that their controllers suffer from a huge amount of bloat.  Colin is going to share some strategies that will slim down controllers so that they are manageable: more testable, more maintainable, and easier to understand.
+
+He'll also be introducing a new layout and styling gem called MotionKit, which he created with Jamon Holmgren.  He describes it as the "spiritual successor" to Teacup.  It goes beyond providing a styling DSL, it's a way of organizing your view code so that your UI is separated from the rest of your application logic.</string>
 			<key>twitter</key>
-			<string>rubymotion</string>
+			<string>colinta</string>
 			<key>www</key>
-			<string></string>
+			<string>http://colinta.com/</string>
 			<key>speaker_image</key>
-			<string>speakers/2014/panel.jpg</string>
+			<string>speakers/2014/colin.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
