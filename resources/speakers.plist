@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>version</key>
-	<integer>3</integer>
+	<integer>4</integer>
 	<key>speakers</key>
 	<array>
 		<dict>
@@ -64,19 +64,23 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Colin T.A. Gray</string>
+			<string>Panel</string>
 			<key>company</key>
-			<string>HipByte &amp; Jukely</string>
+			<string>Assorted</string>
 			<key>description</key>
-			<string>Cocoa and Cocoa Touch developers have been slowly waking up to the fact that their controllers suffer from a huge amount of bloat.  Colin is going to share some strategies that will slim down controllers so that they are manageable: more testable, more maintainable, and easier to understand.
+			<string>We all hope that the apps we're working on become popular, but what do we do once we get there?  Our panel will include developers who built apps that are enjoying popularity, and we'll hear about how they maintain their apps so that they continue to enjoy that success.
 
-He'll also be introducing a new layout and styling gem called MotionKit, which he created with Jamon Holmgren.  He describes it as the "spiritual successor" to Teacup.  It goes beyond providing a styling DSL, it's a way of organizing your view code so that your UI is separated from the rest of your application logic.</string>
+Daniel Dickison from Bandcamp
+Ryan Romanchuk from Frontback
+and Colin Gray from Jukely
+
+Gant Laborde will lead the discussion, with questions from the audience.</string>
 			<key>twitter</key>
-			<string>colinta</string>
+			<string>rubymotion</string>
 			<key>www</key>
-			<string>http://colinta.com/</string>
+			<string>http://meetup.rubymotion.com/</string>
 			<key>speaker_image</key>
-			<string>speakers/2014/colin.jpg</string>
+			<string>speakers/2014/panel.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -94,17 +98,19 @@ He'll also be introducing a new layout and styling gem called MotionKit, which h
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Andy Pliszka</string>
+			<string>Colin T.A. Gray</string>
 			<key>company</key>
-			<string>Pivotal Labs</string>
+			<string>HipByte &amp; Jukely</string>
 			<key>description</key>
-			<string>Andy Pliszka works at Pivotal Labs on large iOS projects. He will talk about setting up RubyMotion for Test-Driven Development (TDD) and how to leverage test-first methodology when building RubyMotion projects.</string>
+			<string>Cocoa and Cocoa Touch developers have been slowly waking up to the fact that their controllers suffer from a huge amount of bloat.  Colin is going to share some strategies that will slim down controllers so that they are manageable: more testable, more maintainable, and easier to understand.
+
+He'll also be introducing a new layout and styling gem called MotionKit, which he created with Jamon Holmgren.  He describes it as the "spiritual successor" to Teacup.  It goes beyond providing a styling DSL, it's a way of organizing your view code so that your UI is separated from the rest of your application logic.</string>
 			<key>twitter</key>
-			<string>AntiTyping</string>
+			<string>colinta</string>
 			<key>www</key>
-			<string>http://antityping.com/</string>
+			<string>http://colinta.com/</string>
 			<key>speaker_image</key>
-			<string>speakers/2014/andy.jpg</string>
+			<string>speakers/2014/colin.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
