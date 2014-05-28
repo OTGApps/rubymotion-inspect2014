@@ -36,17 +36,17 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Nikolay Nemshilov</string>
+			<string>Dennis Ushakov</string>
 			<key>company</key>
-			<string>Independent</string>
+			<string>JetBrains</string>
 			<key>description</key>
-			<string>Nikolay will present UnderOS, a project that aims to help web-developers to get into native iOS development by reusing knowledge and technologies they already know.</string>
+			<string>Dennis Ushakov, a software engineer at JetBrains, will show off RubyMine and its excellent integration with the RubyMotion toolchain.</string>
 			<key>twitter</key>
-			<string>nemshilov</string>
+			<string>en_Dal</string>
 			<key>www</key>
-			<string>http://under-os.com/</string>
+			<string>http://blog.jetbrains.com/ruby/</string>
 			<key>speaker_image</key>
-			<string>speakers/2014/nikolay.jpg</string>
+			<string>speakers/2014/dennis.jpg</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -290,18 +290,18 @@ He'll also be introducing a new layout and styling gem called MotionKit, which h
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Dennis Ushakov</string>
+			<string>Nikolay Nemshilov</string>
 			<key>company</key>
-			<string>JetBrains</string>
+			<string>Independent</string>
 			<key>description</key>
-			<string>Dennis Ushakov, a software engineer at JetBrains, will show off RubyMine and its excellent integration with the RubyMotion toolchain.</string>
+			<string>Nikolay will present UnderOS, a project that aims to help web-developers to get into native iOS development by reusing knowledge and technologies they already know.</string>
 			<key>twitter</key>
-			<string>en_Dal</string>
+			<string>nemshilov</string>
 			<key>www</key>
-			<string>http://blog.jetbrains.com/ruby/</string>
+			<string>http://under-os.com/</string>
 			<key>speaker_image</key>
-			<string>speakers/2014/dennis.jpg</string>
-		</dict>
+			<string>speakers/2014/nikolay.jpg</string>
+		</dict>		
 	</array>
 </dict>
 </plist>

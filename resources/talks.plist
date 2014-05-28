@@ -70,18 +70,18 @@
 			<key>type</key>
 			<string>talk</string>
 			<key>time</key>
-			<string>11:20</string>
+			<string>5:35</string>
 			<key>title</key>
-			<string>UnderOS, Native iOS for Web-Developers</string>
+			<string>RubyMine</string>
 			<key>speaker</key>
-			<string>Nikolay Nemshilov</string>
+			<string>Dennis Ushakov</string>
 			<key>speaker_company</key>
-			<string>Independent</string>
+			<string>JetBrains</string>
 			<key>speaker_image</key>
-			<string>speakers/2014/nikolay_small.jpg</string>
+			<string>speakers/2014/dennis_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>2</integer>
-		</dict>
+		</dict>				
 		<dict>
 			<key>type</key>
 			<string>talk</string>
@@ -461,18 +461,18 @@
 			<key>type</key>
 			<string>talk</string>
 			<key>time</key>
-			<string>5:35</string>
+			<string>11:20</string>
 			<key>title</key>
-			<string>RubyMine</string>
+			<string>UnderOS, Native iOS for Web-Developers</string>
 			<key>speaker</key>
-			<string>Dennis Ushakov</string>
+			<string>Nikolay Nemshilov</string>
 			<key>speaker_company</key>
-			<string>JetBrains</string>
+			<string>Independent</string>
 			<key>speaker_image</key>
-			<string>speakers/2014/dennis_small.jpg</string>
+			<string>speakers/2014/nikolay_small.jpg</string>
 			<key>speaker_index</key>
 			<integer>20</integer>
-		</dict>		
+		</dict>	
 		<dict>
 			<key>type</key>
 			<string>break</string>
